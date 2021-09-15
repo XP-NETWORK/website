@@ -114,7 +114,7 @@
                           <div class="fcs-cards">
                              <div class="fcs-card-img"><img src="/assets/img/ambas/ambass_4.svg"></div>
                              <h4 class="title">内容审核</h4>
-                             <p>积极参与我们的社区，始终保持对我们的忠诚。与他人分享对话、搜集意见、分享新闻等。</p>
+                             <p>积极参与我们的社区，始终保持对我们的忠诚。与他人分享对话、搜集意见、分享新闻等</p>
                           </div>
                        </div>
                     </div>
@@ -242,6 +242,20 @@
              columns: 1,
              placeholder: '选择语言*'
          });
+
+            jQuery(document).ready(function(){
+      jQuery(document).on("click",".ms-options input[type=checkbox]",function(){
+         
+         var count_select = jQuery(".ms-options input[type=checkbox]:checked").length;
+         console.log(count_select);
+         if(count_select>3){
+         setTimeout(function(){
+            jQuery(".ms-options-wrap button").text(count_select+" 选中");       
+         }); 
+         }
+      });
+   });
+
          $(document).ready(function(){
           jQuery(document).on("blur","#form input",function(){
             if(jQuery(this).val()==""){
