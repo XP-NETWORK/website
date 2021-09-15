@@ -1,0 +1,3702 @@
+<html class="blocked121">
+   <head>
+      <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta property="twitter:image" content="https://xp.network/wpog.png" />
+      <meta name="twitter:image:src" content="https://xp.network/wpog.png">
+      <meta content="XP.network" property="twitter:title">
+      <meta content="1st blockchain-agnostic platform for building NFT dApps without code | Built on Substrate with a Polkadot parachain | Deploy & migrate in 1 click | Supports 10+ blockchains" property="twitter:description">
+      <meta content="summary_large_image" name="twitter:card">
+      <title>XP.network Whitepaper</title>
+
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- OwlCarosel CSS -->
+      <link rel="stylesheet" href="assets/css/owl.carousel.css">
+      <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- main css -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="assets/css/responsive.css">
+
+      <style type="text/css">
+         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
+         form {
+         font-family: "Work Sans";
+         z-index: 100;
+         color: #fff;
+         display: flex;
+         flex-direction: column;
+         background-color: rgba(3, 12, 33, .95);
+         padding: 50px;
+         position: absolute;
+         top: 0px;
+         padding-top: 40px;
+         width: 600px;
+         opacity: 0px;
+         right: -715px;
+         z-index: 300;
+         transition: 0.3s;
+         height: calc(100vh - 112px);
+         overflow-y: auto;
+         }
+         .mobile2 {
+         display: none;
+         }
+         .clofomra {
+         width: 50px;
+         background-color: transparent;
+         margin-top: 0px;
+         }
+         input,
+         select,
+         textarea {
+         background: rgba(255, 255, 255, .05);
+         border: 1px solid transparent;
+         font-family: "Work Sans";
+         color: #fff;
+         font-size: 16px;
+         }
+         .form-top {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         }
+         input {
+         height: 50px;
+         margin-bottom: 20px;
+         }
+         button:focus {
+         outline: none;
+         }
+         .success-wind {
+         z-index: 300;
+         position: absolute;
+         bottom: 0px;
+         width: calc(100% - 40px);
+         left: 0px;
+         height: 120px;
+         display: flex;
+         justify-content: center;
+         background: rgba(47, 51, 48, 0.9);
+         backdrop-filter: blur(4px);
+         padding: 0px 20px;
+         transition: 0.3s;
+         pointer-events: none;
+         }
+         .success-wind p {
+         max-width: 300px;
+         line-height: 150%;
+         height: fit-content;
+         margin-top: 32px;
+         }
+         .success-wind img {
+         margin-right: 30px;
+         width: 30px;
+         height: 30px;
+         margin-top: 38px;
+         }
+         .second {
+         width: calc(100% - 60px);
+         min-height: 100vh;
+         background: linear-gradient(113.72deg, #512adb 21.55%, #4d29cd 78.72%);
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         z-index: 100;
+         padding: 0px 30px;
+         display: flex;
+         justify-content: center;
+         color: #fff;
+         position: relative;
+         }
+         input:focus,
+         textarea:focus,
+         select:focus {
+         outline: none;
+         box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.25);
+         }
+         form button {
+         color: #030c21 !important;
+         font-weight: 600;
+         font-size: 18px;
+         font-family: inter;
+         background: #fff !important;
+         border: 2px solid #7868d1;
+         margin-top: 20px;
+         color: #fff;
+         height: 60px;
+         cursor: pointer;
+         font-size: 22px;
+         border-radius: 6px;
+         min-height: 40px;
+         }
+         input {
+         width: calc(100%);
+         padding-left: 10px;
+         }
+         select {
+         width: calc(100%);
+         padding-left: 10px;
+         }
+         select {
+         height: 52px;
+         margin-bottom: 20px;
+         }
+         textarea {
+         padding-top: 10px;
+         height: 100px;
+         height: 10vh;
+         min-height: 50px;
+         padding-left: 10px;
+         padding-right: 20px;
+         }
+         #overlay {
+         width: 100vw;
+         height: 100%;
+         z-index: 200;
+         opacity: 0;
+         transition: 0.3s;
+         background-color: #090909;
+         position: absolute;
+         top: 0px;
+         }
+         .formla {
+         width: calc(100% - 20px);
+         min-height: calc(100vh - 40px);
+         position: static !important;
+         opacity: 1 !important;
+         padding-bottom: 0px !important;
+         padding-top: 20px !important;
+         }
+         .formla textarea {
+         height: 10vh !important;
+         min-height: auto !important;
+         }
+         .formla input,
+         .formla select {
+         height: 5vh !important;
+         min-height: auto !important;
+         }
+         .formla button {
+         height: 8vh !important;
+         }
+         .formla .form-top h2 {
+         font-size: 25px;
+         }
+         input::placeholder,
+         select,
+         textarea::placeholder {
+         color: #fff;
+         font-size: 16px;
+         font-family: "Work Sans";
+         }
+         ol.lst-kix_ddzctujkbgrz-2.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-2 0
+         }
+         ol.lst-kix_bzyghqbo1yk-1.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-1 0
+         }
+         ol.lst-kix_yglygzermm0b-3.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-3 0
+         }
+         ol.lst-kix_pawu44rb672f-8.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-8 0
+         }
+         .lst-kix_vrs0vqw8s8e-7>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-7
+         }
+         .lst-kix_nak6ptbbd9vs-0>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-0
+         }
+         ol.lst-kix_a9f2ffenin9w-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-6.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-6 0
+         }
+         ol.lst-kix_a9f2ffenin9w-2 {
+         list-style-type: none
+         }
+         .lst-kix_pawu44rb672f-8>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-8
+         }
+         .lst-kix_yglygzermm0b-5>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-5
+         }
+         ol.lst-kix_h9n7tjd69jcg-4.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-4 0
+         }
+         ol.lst-kix_a9f2ffenin9w-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-0 {
+         list-style-type: none
+         }
+         .lst-kix_ddzctujkbgrz-4>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-4
+         }
+         ol.lst-kix_a9f2ffenin9w-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_a9f2ffenin9w-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_a9f2ffenin9w-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_a9f2ffenin9w-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-6 {
+         list-style-type: none
+         }
+         .lst-kix_rrll55e9cnzk-1>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-1
+         }
+         ol.lst-kix_bzyghqbo1yk-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-8 {
+         list-style-type: none
+         }
+         .lst-kix_h9n7tjd69jcg-0>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-0, decimal) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-2>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-2, lower-roman) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-3>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-3, decimal) ". "
+         }
+         ol.lst-kix_a9f2ffenin9w-8 {
+         list-style-type: none
+         }
+         .lst-kix_bzyghqbo1yk-6>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-6
+         }
+         ol.lst-kix_a9f2ffenin9w-7 {
+         list-style-type: none
+         }
+         .lst-kix_yglygzermm0b-3>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-3, decimal) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-1>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-1
+         }
+         .lst-kix_yglygzermm0b-4>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-4, lower-latin) ". "
+         }
+         ol.lst-kix_vrs0vqw8s8e-7.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-7 0
+         }
+         .lst-kix_h9n7tjd69jcg-1>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-1, lower-latin) ". "
+         }
+         .lst-kix_yglygzermm0b-5>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-5, lower-roman) ". "
+         }
+         ol.lst-kix_cokqpxx9w17o-1.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-1 0
+         }
+         .lst-kix_h9n7tjd69jcg-8>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-8, lower-roman) ". "
+         }
+         .lst-kix_yglygzermm0b-6>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-6, decimal) ". "
+         }
+         .lst-kix_ig89u214r8da-8>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-8
+         }
+         .lst-kix_h9n7tjd69jcg-7>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-7, lower-latin) ". "
+         }
+         ol.lst-kix_cokqpxx9w17o-8.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-8 0
+         }
+         .lst-kix_pawu44rb672f-1>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-1
+         }
+         .lst-kix_yglygzermm0b-8>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-8, lower-roman) ". "
+         }
+         ol.lst-kix_rrll55e9cnzk-4.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-4 0
+         }
+         .lst-kix_h9n7tjd69jcg-4>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-4, lower-latin) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-6>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-6, decimal) ". "
+         }
+         .lst-kix_yglygzermm0b-7>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-7, lower-latin) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-5>li:before {
+         content: ""counter(lst-ctn-kix_h9n7tjd69jcg-5, lower-roman) ". "
+         }
+         .lst-kix_rrll55e9cnzk-8>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-8
+         }
+         .lst-kix_pc7slt30pvn0-7>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-7
+         }
+         .lst-kix_vrs0vqw8s8e-0>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-0
+         }
+         .lst-kix_ig89u214r8da-1>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-1
+         }
+         ol.lst-kix_h9n7tjd69jcg-8 {
+         list-style-type: none
+         }
+         .lst-kix_h9n7tjd69jcg-5>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-5
+         }
+         ol.lst-kix_nak6ptbbd9vs-1.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-1 0
+         }
+         .lst-kix_h9n7tjd69jcg-8>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-8
+         }
+         .lst-kix_ddzctujkbgrz-8>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-8
+         }
+         ol.lst-kix_nak6ptbbd9vs-8.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-8 0
+         }
+         ol.lst-kix_pawu44rb672f-1.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-1 0
+         }
+         ol.lst-kix_h9n7tjd69jcg-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_a9f2ffenin9w-4.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-4 0
+         }
+         ol.lst-kix_h9n7tjd69jcg-1 {
+         list-style-type: none
+         }
+         .lst-kix_yglygzermm0b-1>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-1
+         }
+         ol.lst-kix_h9n7tjd69jcg-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-7 {
+         list-style-type: none
+         }
+         .lst-kix_bzyghqbo1yk-6>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-6, decimal) ". "
+         }
+         ol.lst-kix_rrll55e9cnzk-2.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-2 0
+         }
+         .lst-kix_cokqpxx9w17o-5>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-5
+         }
+         .lst-kix_bzyghqbo1yk-4>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-4, lower-latin) ". "
+         }
+         .lst-kix_bzyghqbo1yk-8>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-8, lower-roman) ". "
+         }
+         .lst-kix_ddzctujkbgrz-0>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-0
+         }
+         ol.lst-kix_bzyghqbo1yk-8.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-8 0
+         }
+         .lst-kix_pawu44rb672f-4>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-4
+         }
+         .lst-kix_nak6ptbbd9vs-7>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-7
+         }
+         .lst-kix_bzyghqbo1yk-0>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-0, decimal) ". "
+         }
+         .lst-kix_bzyghqbo1yk-2>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-2, lower-roman) ". "
+         }
+         ol.lst-kix_h9n7tjd69jcg-2.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-2 0
+         }
+         .lst-kix_pc7slt30pvn0-4>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-4
+         }
+         .lst-kix_vrs0vqw8s8e-3>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-3
+         }
+         .lst-kix_cokqpxx9w17o-3>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-3, decimal) ". "
+         }
+         .lst-kix_cokqpxx9w17o-5>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-5, lower-roman) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-4>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-4
+         }
+         .lst-kix_rrll55e9cnzk-4>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-4
+         }
+         .lst-kix_yglygzermm0b-8>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-8
+         }
+         .lst-kix_cokqpxx9w17o-4>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-4
+         }
+         .lst-kix_cokqpxx9w17o-7>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-7, lower-latin) ". "
+         }
+         .lst-kix_ig89u214r8da-5>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-5
+         }
+         .lst-kix_ddzctujkbgrz-1>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-1
+         }
+         ol.lst-kix_bzyghqbo1yk-6.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-6 0
+         }
+         .lst-kix_rrll55e9cnzk-1>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-1, lower-latin) ". "
+         }
+         .lst-kix_yglygzermm0b-1>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-1, lower-latin) ". "
+         }
+         ol.lst-kix_ddzctujkbgrz-7.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-7 0
+         }
+         .lst-kix_rrll55e9cnzk-3>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-3, decimal) ". "
+         }
+         .lst-kix_rrll55e9cnzk-5>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-5, lower-roman) ". "
+         }
+         ol.lst-kix_yglygzermm0b-1.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-1 0
+         }
+         ol.lst-kix_a9f2ffenin9w-2.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-2 0
+         }
+         .lst-kix_rrll55e9cnzk-7>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-7, lower-latin) ". "
+         }
+         ol.lst-kix_ig89u214r8da-8.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-8 0
+         }
+         .lst-kix_a9f2ffenin9w-3>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-3
+         }
+         .lst-kix_bzyghqbo1yk-2>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-2
+         }
+         .lst-kix_pc7slt30pvn0-3>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-3
+         }
+         ol.lst-kix_a9f2ffenin9w-1.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-1 0
+         }
+         .lst-kix_m6qiogu01eom-7>li:before {
+         content: "+  "
+         }
+         .lst-kix_rrll55e9cnzk-0>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-0
+         }
+         ol.lst-kix_pc7slt30pvn0-2.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-2 0
+         }
+         ol.lst-kix_rrll55e9cnzk-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_rrll55e9cnzk-8 {
+         list-style-type: none
+         }
+         .lst-kix_m6qiogu01eom-3>li:before {
+         content: "+  "
+         }
+         .lst-kix_nak6ptbbd9vs-3>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-3, decimal) ". "
+         }
+         ol.lst-kix_bzyghqbo1yk-4.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-4 0
+         }
+         .lst-kix_m6qiogu01eom-4>li:before {
+         content: "+  "
+         }
+         .lst-kix_nak6ptbbd9vs-2>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-2, lower-roman) ". "
+         }
+         ol.lst-kix_rrll55e9cnzk-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_rrll55e9cnzk-1 {
+         list-style-type: none
+         }
+         .lst-kix_nak6ptbbd9vs-7>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-7, lower-latin) ". "
+         }
+         ol.lst-kix_rrll55e9cnzk-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_rrll55e9cnzk-3 {
+         list-style-type: none
+         }
+         .lst-kix_ig89u214r8da-0>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-0
+         }
+         ol.lst-kix_rrll55e9cnzk-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_rrll55e9cnzk-5 {
+         list-style-type: none
+         }
+         .lst-kix_a9f2ffenin9w-0>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-0
+         }
+         ol.lst-kix_rrll55e9cnzk-6 {
+         list-style-type: none
+         }
+         .lst-kix_a9f2ffenin9w-0>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-0, lower-latin) ". "
+         }
+         .lst-kix_pawu44rb672f-0>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-0, decimal) ". "
+         }
+         .lst-kix_m6qiogu01eom-0>li:before {
+         content: "+  "
+         }
+         .lst-kix_pawu44rb672f-1>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-1, lower-latin) ". "
+         }
+         .lst-kix_nak6ptbbd9vs-6>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-6, decimal) ". "
+         }
+         .lst-kix_yjbgudoj8l7g-5>li:before {
+         content: "-  "
+         }
+         .lst-kix_vrs0vqw8s8e-6>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-6
+         }
+         .lst-kix_yjbgudoj8l7g-2>li:before {
+         content: "-  "
+         }
+         .lst-kix_yjbgudoj8l7g-6>li:before {
+         content: "-  "
+         }
+         ol.lst-kix_rrll55e9cnzk-1.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-1 0
+         }
+         ol.lst-kix_vrs0vqw8s8e-4.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-4 0
+         }
+         ol.lst-kix_yglygzermm0b-6.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-6 0
+         }
+         .lst-kix_yglygzermm0b-2>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-2
+         }
+         .lst-kix_nak6ptbbd9vs-1>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-1
+         }
+         .lst-kix_yjbgudoj8l7g-1>li:before {
+         content: "-  "
+         }
+         .lst-kix_m6qiogu01eom-8>li:before {
+         content: "+  "
+         }
+         .lst-kix_ig89u214r8da-2>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-2
+         }
+         .lst-kix_1nzil04q451w-8>li:before {
+         content: "-  "
+         }
+         .lst-kix_1nzil04q451w-5>li:before {
+         content: "-  "
+         }
+         ol.lst-kix_rrll55e9cnzk-0.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-0 0
+         }
+         .lst-kix_rrll55e9cnzk-2>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-2
+         }
+         ol.lst-kix_bzyghqbo1yk-3.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-3 0
+         }
+         ol.lst-kix_pc7slt30pvn0-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-5 {
+         list-style-type: none
+         }
+         .lst-kix_bzyghqbo1yk-1>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-1
+         }
+         ol.lst-kix_pc7slt30pvn0-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-3 {
+         list-style-type: none
+         }
+         .lst-kix_pawu44rb672f-7>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-7
+         }
+         ol.lst-kix_pc7slt30pvn0-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-2 {
+         list-style-type: none
+         }
+         .lst-kix_pc7slt30pvn0-0>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-0, lower-latin) ". "
+         }
+         ol.lst-kix_pc7slt30pvn0-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-7.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-7 0
+         }
+         ol.lst-kix_pc7slt30pvn0-1.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-1 0
+         }
+         .lst-kix_a9f2ffenin9w-4>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-4, lower-roman) ". "
+         }
+         .lst-kix_ig89u214r8da-7>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-7
+         }
+         ol.lst-kix_pc7slt30pvn0-8.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-8 0
+         }
+         .lst-kix_ig89u214r8da-4>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-4
+         }
+         .lst-kix_nak6ptbbd9vs-5>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-5
+         }
+         .lst-kix_a9f2ffenin9w-3>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-3, lower-latin) ". "
+         }
+         .lst-kix_cokqpxx9w17o-1>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-1, lower-latin) ". "
+         }
+         .lst-kix_pawu44rb672f-4>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-4, lower-latin) ". "
+         }
+         .lst-kix_pawu44rb672f-5>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-5, lower-roman) ". "
+         }
+         .lst-kix_cokqpxx9w17o-0>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-0, decimal) ". "
+         }
+         .lst-kix_a9f2ffenin9w-2>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-2
+         }
+         .lst-kix_1nzil04q451w-1>li:before {
+         content: "-  "
+         }
+         .lst-kix_ddzctujkbgrz-5>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-5
+         }
+         .lst-kix_1nzil04q451w-0>li:before {
+         content: "-  "
+         }
+         .lst-kix_1nzil04q451w-4>li:before {
+         content: "-  "
+         }
+         .lst-kix_a9f2ffenin9w-7>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-7, lower-roman) ". "
+         }
+         .lst-kix_nak6ptbbd9vs-8>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-8
+         }
+         .lst-kix_a9f2ffenin9w-8>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-8, decimal) ". "
+         }
+         .lst-kix_pawu44rb672f-8>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-8, lower-roman) ". "
+         }
+         ol.lst-kix_yglygzermm0b-5.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-5 0
+         }
+         .lst-kix_ddzctujkbgrz-5>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-5, lower-roman) ". "
+         }
+         .lst-kix_bzyghqbo1yk-7>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-7, lower-latin) ". "
+         }
+         .lst-kix_ddzctujkbgrz-1>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-1, lower-latin) ". "
+         }
+         ol.lst-kix_vrs0vqw8s8e-5.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-5 0
+         }
+         ol.lst-kix_yglygzermm0b-7.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-7 0
+         }
+         .lst-kix_rrll55e9cnzk-5>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-5
+         }
+         ol.lst-kix_a9f2ffenin9w-8.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-8 0
+         }
+         .lst-kix_h9n7tjd69jcg-6>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-6
+         }
+         .lst-kix_bzyghqbo1yk-3>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-3, decimal) ". "
+         }
+         .lst-kix_cokqpxx9w17o-4>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-4, lower-latin) ". "
+         }
+         .lst-kix_pawu44rb672f-5>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-5
+         }
+         ol.lst-kix_a9f2ffenin9w-5.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-5 0
+         }
+         ol.lst-kix_pc7slt30pvn0-6.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-6 0
+         }
+         .lst-kix_cokqpxx9w17o-8>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-8, lower-roman) ". "
+         }
+         ol.lst-kix_vrs0vqw8s8e-0.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-0 0
+         }
+         ol.lst-kix_bzyghqbo1yk-0.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-0 0
+         }
+         .lst-kix_pc7slt30pvn0-3>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-3, lower-latin) ". "
+         }
+         .lst-kix_pc7slt30pvn0-5>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-5
+         }
+         .lst-kix_vrs0vqw8s8e-4>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-4
+         }
+         .lst-kix_a9f2ffenin9w-7>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-7
+         }
+         ol.lst-kix_pc7slt30pvn0-3.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-3 0
+         }
+         .lst-kix_rrll55e9cnzk-7>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-7
+         }
+         .lst-kix_pc7slt30pvn0-7>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-7, lower-roman) ". "
+         }
+         .lst-kix_rrll55e9cnzk-0>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-0, decimal) ". "
+         }
+         ol.lst-kix_a9f2ffenin9w-6.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-6 0
+         }
+         .lst-kix_cokqpxx9w17o-8>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-8
+         }
+         .lst-kix_rrll55e9cnzk-4>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-4, lower-latin) ". "
+         }
+         .lst-kix_ig89u214r8da-6>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-6, lower-latin) ". "
+         }
+         .lst-kix_yglygzermm0b-0>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-0, decimal) ". "
+         }
+         .lst-kix_yglygzermm0b-0>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-0
+         }
+         .lst-kix_rrll55e9cnzk-8>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-8, lower-roman) ". "
+         }
+         .lst-kix_pawu44rb672f-0>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-0
+         }
+         ol.lst-kix_pc7slt30pvn0-4.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-4 0
+         }
+         .lst-kix_ddzctujkbgrz-3>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-3
+         }
+         .lst-kix_cokqpxx9w17o-1>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-1
+         }
+         ol.lst-kix_vrs0vqw8s8e-3.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-3 0
+         }
+         .lst-kix_ig89u214r8da-2>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-2, decimal) ". "
+         }
+         .lst-kix_nak6ptbbd9vs-3>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-3
+         }
+         ol.lst-kix_vrs0vqw8s8e-2.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-2 0
+         }
+         ol.lst-kix_a9f2ffenin9w-7.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-7 0
+         }
+         .lst-kix_pc7slt30pvn0-0>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-0
+         }
+         ol.lst-kix_yglygzermm0b-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-8.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-8 0
+         }
+         ol.lst-kix_yglygzermm0b-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_yglygzermm0b-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-0.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-0 0
+         }
+         ol.lst-kix_vrs0vqw8s8e-1.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-1 0
+         }
+         ol.lst-kix_pc7slt30pvn0-5.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-5 0
+         }
+         .lst-kix_yglygzermm0b-3>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-3
+         }
+         ol.lst-kix_nak6ptbbd9vs-2.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-2 0
+         }
+         .lst-kix_bzyghqbo1yk-4>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-4
+         }
+         ol.lst-kix_vrs0vqw8s8e-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_vrs0vqw8s8e-6 {
+         list-style-type: none
+         }
+         .lst-kix_ddzctujkbgrz-6>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-6
+         }
+         ol.lst-kix_vrs0vqw8s8e-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_vrs0vqw8s8e-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_vrs0vqw8s8e-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-2.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-2 0
+         }
+         ol.lst-kix_vrs0vqw8s8e-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_vrs0vqw8s8e-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-7.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-7 0
+         }
+         ol.lst-kix_vrs0vqw8s8e-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-2.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-2 0
+         }
+         ol.lst-kix_rrll55e9cnzk-3.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-3 0
+         }
+         ol.lst-kix_ddzctujkbgrz-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-0 {
+         list-style-type: none
+         }
+         .lst-kix_a9f2ffenin9w-1>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-1
+         }
+         ol.lst-kix_ddzctujkbgrz-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_bzyghqbo1yk-7.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-7 0
+         }
+         ol.lst-kix_ddzctujkbgrz-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-3.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-3 0
+         }
+         ol.lst-kix_nak6ptbbd9vs-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_nak6ptbbd9vs-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_nak6ptbbd9vs-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_pc7slt30pvn0-0.start {
+         counter-reset: lst-ctn-kix_pc7slt30pvn0-0 0
+         }
+         .lst-kix_yglygzermm0b-7>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-7
+         }
+         .lst-kix_vrs0vqw8s8e-8>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-8, lower-roman) ". "
+         }
+         .lst-kix_vrs0vqw8s8e-6>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-6, decimal) ". "
+         }
+         .lst-kix_vrs0vqw8s8e-7>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-7, lower-latin) ". "
+         }
+         ol.lst-kix_nak6ptbbd9vs-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_a9f2ffenin9w-3.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-3 0
+         }
+         ol.lst-kix_nak6ptbbd9vs-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_nak6ptbbd9vs-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_nak6ptbbd9vs-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_nak6ptbbd9vs-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-7.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-7 0
+         }
+         ol.lst-kix_vrs0vqw8s8e-6.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-6 0
+         }
+         ol.lst-kix_nak6ptbbd9vs-3 {
+         list-style-type: none
+         }
+         .lst-kix_vrs0vqw8s8e-3>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-3, decimal) ". "
+         }
+         ol.lst-kix_ig89u214r8da-5.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-5 0
+         }
+         .lst-kix_vrs0vqw8s8e-4>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-4, lower-latin) ". "
+         }
+         .lst-kix_vrs0vqw8s8e-5>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-5, lower-roman) ". "
+         }
+         ol.lst-kix_nak6ptbbd9vs-7.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-7 0
+         }
+         .lst-kix_vrs0vqw8s8e-0>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-0, decimal) ". "
+         }
+         .lst-kix_a9f2ffenin9w-5>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-5
+         }
+         .lst-kix_a9f2ffenin9w-8>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-8
+         }
+         .lst-kix_nak6ptbbd9vs-2>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-2
+         }
+         ol.lst-kix_vrs0vqw8s8e-8 {
+         list-style-type: none
+         }
+         .lst-kix_vrs0vqw8s8e-2>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-2, lower-roman) ". "
+         }
+         .lst-kix_vrs0vqw8s8e-1>li:before {
+         content: ""counter(lst-ctn-kix_vrs0vqw8s8e-1, lower-latin) ". "
+         }
+         .lst-kix_ddzctujkbgrz-2>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-2
+         }
+         .lst-kix_cokqpxx9w17o-3>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-3
+         }
+         ol.lst-kix_bzyghqbo1yk-2.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-2 0
+         }
+         .lst-kix_cokqpxx9w17o-6>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-6
+         }
+         .lst-kix_ddzctujkbgrz-6>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-6, decimal) ". "
+         }
+         .lst-kix_ddzctujkbgrz-4>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-4, lower-latin) ". "
+         }
+         .lst-kix_ddzctujkbgrz-8>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-8, lower-roman) ". "
+         }
+         .lst-kix_nak6ptbbd9vs-6>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-6
+         }
+         ol.lst-kix_vrs0vqw8s8e-8.start {
+         counter-reset: lst-ctn-kix_vrs0vqw8s8e-8 0
+         }
+         .lst-kix_ddzctujkbgrz-2>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-2, lower-roman) ". "
+         }
+         .lst-kix_vrs0vqw8s8e-2>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-2
+         }
+         ol.lst-kix_ig89u214r8da-7.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-7 0
+         }
+         .lst-kix_ig89u214r8da-6>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-6
+         }
+         .lst-kix_pawu44rb672f-3>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-3
+         }
+         ol.lst-kix_ddzctujkbgrz-6.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-6 0
+         }
+         ol.lst-kix_a9f2ffenin9w-0.start {
+         counter-reset: lst-ctn-kix_a9f2ffenin9w-0 0
+         }
+         .lst-kix_pawu44rb672f-2>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-2
+         }
+         .lst-kix_pc7slt30pvn0-2>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-2
+         }
+         ol.lst-kix_yglygzermm0b-4.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-4 0
+         }
+         .lst-kix_pc7slt30pvn0-8>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-8, decimal) ". "
+         }
+         ol.lst-kix_cokqpxx9w17o-0.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-0 0
+         }
+         .lst-kix_vrs0vqw8s8e-1>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-1
+         }
+         .lst-kix_pc7slt30pvn0-4>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-4, lower-roman) ". "
+         }
+         .lst-kix_a9f2ffenin9w-4>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-4
+         }
+         .lst-kix_ddzctujkbgrz-0>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-0, decimal) ". "
+         }
+         .lst-kix_pc7slt30pvn0-6>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-6, lower-latin) ". "
+         }
+         .lst-kix_ig89u214r8da-7>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-7, lower-roman) ". "
+         }
+         .lst-kix_ig89u214r8da-5>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-5, decimal) ". "
+         }
+         .lst-kix_rrll55e9cnzk-3>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-3
+         }
+         .lst-kix_ig89u214r8da-1>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-1, lower-roman) ". "
+         }
+         ol.lst-kix_h9n7tjd69jcg-0.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-0 0
+         }
+         .lst-kix_ig89u214r8da-3>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-3, lower-latin) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-3>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-3
+         }
+         ol.lst-kix_ddzctujkbgrz-8.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-8 0
+         }
+         .lst-kix_bzyghqbo1yk-8>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-8
+         }
+         ol.lst-kix_bzyghqbo1yk-5.start {
+         counter-reset: lst-ctn-kix_bzyghqbo1yk-5 0
+         }
+         ol.lst-kix_yglygzermm0b-2.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-2 0
+         }
+         ul.lst-kix_1nzil04q451w-0 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-4 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-3 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-2 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-1 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-8 {
+         list-style-type: none
+         }
+         .lst-kix_vrs0vqw8s8e-8>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-8
+         }
+         ul.lst-kix_1nzil04q451w-7 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-6 {
+         list-style-type: none
+         }
+         ul.lst-kix_1nzil04q451w-5 {
+         list-style-type: none
+         }
+         .lst-kix_m6qiogu01eom-6>li:before {
+         content: "+  "
+         }
+         .lst-kix_m6qiogu01eom-5>li:before {
+         content: "+  "
+         }
+         .lst-kix_nak6ptbbd9vs-1>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-1, lower-latin) ". "
+         }
+         .lst-kix_h9n7tjd69jcg-0>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-0
+         }
+         .lst-kix_nak6ptbbd9vs-0>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-0, decimal) ". "
+         }
+         .lst-kix_nak6ptbbd9vs-4>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-4, lower-latin) ". "
+         }
+         .lst-kix_m6qiogu01eom-2>li:before {
+         content: "+  "
+         }
+         ol.lst-kix_nak6ptbbd9vs-5.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-5 0
+         }
+         ol.lst-kix_ig89u214r8da-3.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-3 0
+         }
+         ol.lst-kix_pawu44rb672f-5.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-5 0
+         }
+         .lst-kix_nak6ptbbd9vs-8>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-8, lower-roman) ". "
+         }
+         .lst-kix_pawu44rb672f-2>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-2, lower-roman) ". "
+         }
+         .lst-kix_m6qiogu01eom-1>li:before {
+         content: "+  "
+         }
+         .lst-kix_yjbgudoj8l7g-7>li:before {
+         content: "-  "
+         }
+         .lst-kix_nak6ptbbd9vs-5>li:before {
+         content: ""counter(lst-ctn-kix_nak6ptbbd9vs-5, lower-roman) ". "
+         }
+         ol.lst-kix_rrll55e9cnzk-6.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-6 0
+         }
+         .lst-kix_yjbgudoj8l7g-8>li:before {
+         content: "-  "
+         }
+         .lst-kix_a9f2ffenin9w-1>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-1, lower-roman) ". "
+         }
+         .lst-kix_pc7slt30pvn0-8>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-8
+         }
+         .lst-kix_yjbgudoj8l7g-3>li:before {
+         content: "-  "
+         }
+         ul.lst-kix_m6qiogu01eom-0 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-1 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-2 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-3 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-4 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-5 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-7 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-8 {
+         list-style-type: none
+         }
+         ul.lst-kix_m6qiogu01eom-8 {
+         list-style-type: none
+         }
+         .lst-kix_ddzctujkbgrz-7>li {
+         counter-increment: lst-ctn-kix_ddzctujkbgrz-7
+         }
+         ol.lst-kix_ig89u214r8da-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-6 {
+         list-style-type: none
+         }
+         .lst-kix_yjbgudoj8l7g-4>li:before {
+         content: "-  "
+         }
+         .lst-kix_bzyghqbo1yk-3>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-3
+         }
+         ol.lst-kix_h9n7tjd69jcg-1.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-1 0
+         }
+         ol.lst-kix_yglygzermm0b-0.start {
+         counter-reset: lst-ctn-kix_yglygzermm0b-0 0
+         }
+         .lst-kix_yjbgudoj8l7g-0>li:before {
+         content: "-  "
+         }
+         .lst-kix_1nzil04q451w-6>li:before {
+         content: "-  "
+         }
+         ol.lst-kix_nak6ptbbd9vs-0.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-0 0
+         }
+         .lst-kix_1nzil04q451w-7>li:before {
+         content: "-  "
+         }
+         .lst-kix_bzyghqbo1yk-7>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-7
+         }
+         ol.lst-kix_ig89u214r8da-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-4 {
+         list-style-type: none
+         }
+         .lst-kix_h9n7tjd69jcg-2>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-2
+         }
+         ol.lst-kix_ig89u214r8da-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-0.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-0 0
+         }
+         ol.lst-kix_ig89u214r8da-2 {
+         list-style-type: none
+         }
+         .lst-kix_pc7slt30pvn0-2>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-2, decimal) ". "
+         }
+         ol.lst-kix_ig89u214r8da-0 {
+         list-style-type: none
+         }
+         .lst-kix_pc7slt30pvn0-1>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-1, lower-roman) ". "
+         }
+         .lst-kix_pc7slt30pvn0-1>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-1
+         }
+         ol.lst-kix_ddzctujkbgrz-4.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-4 0
+         }
+         .lst-kix_pawu44rb672f-6>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-6, decimal) ". "
+         }
+         .lst-kix_a9f2ffenin9w-2>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-2, decimal) ". "
+         }
+         .lst-kix_pawu44rb672f-3>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-3, decimal) ". "
+         }
+         .lst-kix_pawu44rb672f-7>li:before {
+         content: ""counter(lst-ctn-kix_pawu44rb672f-7, lower-latin) ". "
+         }
+         .lst-kix_cokqpxx9w17o-2>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-2, lower-roman) ". "
+         }
+         .lst-kix_a9f2ffenin9w-6>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-6, lower-latin) ". "
+         }
+         .lst-kix_a9f2ffenin9w-5>li:before {
+         content: ""counter(lst-ctn-kix_a9f2ffenin9w-5, decimal) ". "
+         }
+         .lst-kix_cokqpxx9w17o-0>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-0
+         }
+         ol.lst-kix_rrll55e9cnzk-5.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-5 0
+         }
+         .lst-kix_1nzil04q451w-2>li:before {
+         content: "-  "
+         }
+         ol.lst-kix_ddzctujkbgrz-5.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-5 0
+         }
+         .lst-kix_yglygzermm0b-4>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-4
+         }
+         ol.lst-kix_ig89u214r8da-4.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-4 0
+         }
+         .lst-kix_1nzil04q451w-3>li:before {
+         content: "-  "
+         }
+         .lst-kix_bzyghqbo1yk-5>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-5, lower-roman) ". "
+         }
+         ol.lst-kix_h9n7tjd69jcg-8.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-8 0
+         }
+         .lst-kix_rrll55e9cnzk-6>li {
+         counter-increment: lst-ctn-kix_rrll55e9cnzk-6
+         }
+         .lst-kix_ddzctujkbgrz-3>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-3, decimal) ". "
+         }
+         ul.lst-kix_yjbgudoj8l7g-6 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-5 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-8 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_h9n7tjd69jcg-5.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-5 0
+         }
+         .lst-kix_a9f2ffenin9w-6>li {
+         counter-increment: lst-ctn-kix_a9f2ffenin9w-6
+         }
+         .lst-kix_bzyghqbo1yk-1>li:before {
+         content: ""counter(lst-ctn-kix_bzyghqbo1yk-1, lower-latin) ". "
+         }
+         ul.lst-kix_yjbgudoj8l7g-0 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-2 {
+         list-style-type: none
+         }
+         .lst-kix_ddzctujkbgrz-7>li:before {
+         content: ""counter(lst-ctn-kix_ddzctujkbgrz-7, lower-latin) ". "
+         }
+         ul.lst-kix_yjbgudoj8l7g-1 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-4 {
+         list-style-type: none
+         }
+         ul.lst-kix_yjbgudoj8l7g-3 {
+         list-style-type: none
+         }
+         .lst-kix_h9n7tjd69jcg-7>li {
+         counter-increment: lst-ctn-kix_h9n7tjd69jcg-7
+         }
+         ol.lst-kix_ddzctujkbgrz-3.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-3 0
+         }
+         .lst-kix_cokqpxx9w17o-6>li:before {
+         content: ""counter(lst-ctn-kix_cokqpxx9w17o-6, decimal) ". "
+         }
+         ol.lst-kix_pawu44rb672f-0 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-2 {
+         list-style-type: none
+         }
+         .lst-kix_cokqpxx9w17o-7>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-7
+         }
+         ol.lst-kix_pawu44rb672f-7 {
+         list-style-type: none
+         }
+         .lst-kix_nak6ptbbd9vs-4>li {
+         counter-increment: lst-ctn-kix_nak6ptbbd9vs-4
+         }
+         ol.lst-kix_pawu44rb672f-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-4 {
+         list-style-type: none
+         }
+         .lst-kix_bzyghqbo1yk-0>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-0
+         }
+         ol.lst-kix_pawu44rb672f-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-6 {
+         list-style-type: none
+         }
+         .lst-kix_pc7slt30pvn0-5>li:before {
+         content: ""counter(lst-ctn-kix_pc7slt30pvn0-5, decimal) ". "
+         }
+         ol.lst-kix_nak6ptbbd9vs-6.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-6 0
+         }
+         ol.lst-kix_cokqpxx9w17o-6.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-6 0
+         }
+         ol.lst-kix_nak6ptbbd9vs-3.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-3 0
+         }
+         ol.lst-kix_rrll55e9cnzk-7.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-7 0
+         }
+         ol.lst-kix_cokqpxx9w17o-3.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-3 0
+         }
+         ol.lst-kix_pawu44rb672f-6.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-6 0
+         }
+         ol.lst-kix_ddzctujkbgrz-0.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-0 0
+         }
+         .lst-kix_ig89u214r8da-8>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-8, decimal) ". "
+         }
+         ol.lst-kix_pawu44rb672f-3.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-3 0
+         }
+         .lst-kix_rrll55e9cnzk-2>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-2, lower-roman) ". "
+         }
+         .lst-kix_yglygzermm0b-2>li:before {
+         content: ""counter(lst-ctn-kix_yglygzermm0b-2, lower-roman) ". "
+         }
+         ol.lst-kix_ig89u214r8da-2.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-2 0
+         }
+         .lst-kix_pawu44rb672f-6>li {
+         counter-increment: lst-ctn-kix_pawu44rb672f-6
+         }
+         .lst-kix_cokqpxx9w17o-2>li {
+         counter-increment: lst-ctn-kix_cokqpxx9w17o-2
+         }
+         .lst-kix_ig89u214r8da-0>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-0, lower-latin) ". "
+         }
+         ol.lst-kix_cokqpxx9w17o-4.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-4 0
+         }
+         .lst-kix_ig89u214r8da-3>li {
+         counter-increment: lst-ctn-kix_ig89u214r8da-3
+         }
+         .lst-kix_rrll55e9cnzk-6>li:before {
+         content: ""counter(lst-ctn-kix_rrll55e9cnzk-6, decimal) ". "
+         }
+         ol.lst-kix_h9n7tjd69jcg-7.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-7 0
+         }
+         .lst-kix_ig89u214r8da-4>li:before {
+         content: ""counter(lst-ctn-kix_ig89u214r8da-4, lower-roman) ". "
+         }
+         .lst-kix_yglygzermm0b-6>li {
+         counter-increment: lst-ctn-kix_yglygzermm0b-6
+         }
+         ol.lst-kix_cokqpxx9w17o-3 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-2 {
+         list-style-type: none
+         }
+         ol.lst-kix_rrll55e9cnzk-8.start {
+         counter-reset: lst-ctn-kix_rrll55e9cnzk-8 0
+         }
+         ol.lst-kix_cokqpxx9w17o-5 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-4 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-7 {
+         list-style-type: none
+         }
+         ol.lst-kix_ig89u214r8da-1.start {
+         counter-reset: lst-ctn-kix_ig89u214r8da-1 0
+         }
+         .lst-kix_bzyghqbo1yk-5>li {
+         counter-increment: lst-ctn-kix_bzyghqbo1yk-5
+         }
+         ol.lst-kix_cokqpxx9w17o-6 {
+         list-style-type: none
+         }
+         ol.lst-kix_ddzctujkbgrz-1.start {
+         counter-reset: lst-ctn-kix_ddzctujkbgrz-1 0
+         }
+         ol.lst-kix_nak6ptbbd9vs-4.start {
+         counter-reset: lst-ctn-kix_nak6ptbbd9vs-4 0
+         }
+         ol.lst-kix_cokqpxx9w17o-8 {
+         list-style-type: none
+         }
+         ol.lst-kix_pawu44rb672f-4.start {
+         counter-reset: lst-ctn-kix_pawu44rb672f-4 0
+         }
+         ol.lst-kix_cokqpxx9w17o-5.start {
+         counter-reset: lst-ctn-kix_cokqpxx9w17o-5 0
+         }
+         li.li-bullet-0:before {
+         margin-left: -18pt;
+         white-space: nowrap;
+         display: inline-block;
+         min-width: 18pt
+         }
+         ol.lst-kix_cokqpxx9w17o-1 {
+         list-style-type: none
+         }
+         ol.lst-kix_cokqpxx9w17o-0 {
+         list-style-type: none
+         }
+         .lst-kix_vrs0vqw8s8e-5>li {
+         counter-increment: lst-ctn-kix_vrs0vqw8s8e-5
+         }
+         .lst-kix_pc7slt30pvn0-6>li {
+         counter-increment: lst-ctn-kix_pc7slt30pvn0-6
+         }
+         ol.lst-kix_h9n7tjd69jcg-6.start {
+         counter-reset: lst-ctn-kix_h9n7tjd69jcg-6 0
+         }
+         ol {
+         margin: 0;
+         padding: 0
+         }
+         table td,
+         table th {
+         padding: 0
+         }
+         .c45 {
+         border-right-style: solid;
+         padding-top: 0pt;
+         border-top-width: 0pt;
+         border-right-width: 0pt;
+         padding-left: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.55;
+         border-left-width: 0pt;
+         border-top-style: solid;
+         border-left-style: solid;
+         border-bottom-width: 0pt;
+         border-bottom-style: solid;
+         orphans: 2;
+         widows: 2;
+         text-align: justify;
+         padding-right: 0pt
+         }
+         .c20 {
+         font-weight: 400;
+         text-decoration: none;
+         vertical-align: baseline;
+         font-size: 11pt;
+         font-family: "Arial";
+         font-style: normal
+         }
+         .c4 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.15;
+         orphans: 2;
+         widows: 2;
+         text-align: left;
+         height: 11pt
+         }
+         .c0 {
+         padding-top: 16pt;
+         padding-bottom: 4pt;
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .c1 {
+         font-weight: 400;
+         text-decoration: none;
+         vertical-align: baseline;
+         font-size: 12pt;
+         font-family: "Roboto";
+         font-style: normal
+         }
+         .c31 {
+         color: #434343;
+         font-weight: 400;
+         text-decoration: none;
+         vertical-align: baseline;
+         font-size: 14pt;
+         font-family: "Roboto";
+         font-style: normal
+         }
+         .c9 {
+         padding-top: 0pt;
+         text-indent: 36pt;
+         padding-bottom: 0pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c29 {
+         padding-top: 18pt;
+         padding-bottom: 6pt;
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c10 {
+         color: #434343;
+         font-weight: 400;
+         text-decoration: none;
+         vertical-align: baseline;
+         font-size: 16px;
+         font-style: normal
+         }
+         .c28 {
+         padding-top: 16pt;
+         padding-bottom: 4pt;
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         font-size: 16px;
+         line-height: 200%;
+         text-align: justify
+         }
+         .c28 {}
+         .c44 {
+         padding-top: 0pt;
+         padding-bottom: 3pt;
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: center
+         }
+         .c14 {
+         font-weight: 400;
+         text-decoration: none;
+         vertical-align: baseline;
+         font-size: 11pt;
+         font-family: "Roboto";
+         font-style: normal
+         }
+         .c37 {
+         padding-top: 20pt;
+         padding-bottom: 6pt;
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .c47 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: center
+         }
+         .c5 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.0;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .c24 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.5;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c17 {
+         padding-top: 16pt;
+         padding-bottom: 4pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c53 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .c11 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c26 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.15;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .c38 {
+         padding-top: 18pt;
+         padding-bottom: 6pt;
+         line-height: 1.7999999999999998;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         .c7 {
+         text-decoration-skip-ink: none;
+         font-size: 10pt;
+         -webkit-text-decoration-skip: none;
+         color: #1155cc;
+         text-decoration: underline
+         }
+         .c25 {
+         text-decoration: none;
+         vertical-align: baseline;
+         font-style: normal
+         }
+         .c42 {
+         text-decoration-skip-ink: none;
+         -webkit-text-decoration-skip: none;
+         color: #1155cc;
+         text-decoration: underline
+         }
+         .c18 {
+         padding-top: 0pt;
+         padding-bottom: 0pt;
+         line-height: 1.0;
+         text-align: left
+         }
+         .c15 {
+         background-color: #ffffff;
+         max-width: 960px;
+         padding: 100px;
+         padding-top: 20px;
+         }
+         .c33 {
+         font-size: 12pt;
+         font-family: "Roboto";
+         font-weight: 700
+         }
+         .c32 {
+         font-weight: 700;
+         font-size: 20pt;
+         font-family: "Inter"
+         }
+         .c6 {
+         font-size: 10pt;
+         font-family: "Inter";
+         font-weight: 400
+         }
+         .c43 {
+         text-decoration: none;
+         vertical-align: baseline;
+         font-style: normal
+         }
+         .c41 {
+         font-weight: 700;
+         font-size: 11pt;
+         font-family: "Inter"
+         }
+         .c23 {
+         font-size: 12pt;
+         font-family: "Roboto";
+         font-weight: 400
+         }
+         .c27 {
+         font-weight: 700;
+         font-size: 16pt;
+         font-family: "Inter"
+         }
+         .c22 {
+         font-size: 12pt;
+         font-family: "Inter";
+         font-weight: 700
+         }
+         .c8 {
+         font-size: 12pt;
+         font-family: "Inter";
+         font-weight: 400
+         }
+         .c2 {
+         color: inherit;
+         text-decoration: inherit
+         }
+         .c16 {
+         margin-left: 36pt;
+         padding-left: 0pt
+         }
+         .c3 {
+         color: #222222;
+         font-size: 12pt
+         }
+         .c34 {
+         font-weight: 400;
+         font-family: "Arial"
+         }
+         .c39 {
+         border: 1px solid black;
+         margin: 5px
+         }
+         .c19 {
+         font-weight: 400;
+         font-family: "Inter"
+         }
+         .navb1 {
+         font-size: 14px;
+         text-decoration: none;
+         font-family: "Inter";
+         color: #fff !important;
+         }
+         .c36 {
+         font-size: 14pt;
+         color: #434343
+         }
+         .c40 {
+         font-weight: 700;
+         font-family: "Roboto"
+         }
+         .c13 {
+         padding: 0;
+         margin: 0
+         }
+         .c46 {
+         width: 33%;
+         height: 1px
+         }
+         .c52 {
+         color: #ff0000
+         }
+         .c50 {
+         font-size: 16pt
+         }
+         .c35 {
+         height: 14pt
+         }
+         .c48 {
+         margin-left: 36pt
+         }
+         .c12 {
+         height: 11pt
+         }
+         .c30 {
+         font-size: 10pt
+         }
+         .c49 {
+         color: #434343
+         }
+         .c51 {
+         font-size: 26pt
+         }
+         .title {
+         padding-top: 0pt;
+         font-size: 26pt;
+         padding-bottom: 3pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         .subtitle {
+         padding-top: 0pt;
+         color: #666666;
+         font-size: 15pt;
+         padding-bottom: 16pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         li {
+         font-size: 11pt;
+         font-family: "Arial"
+         }
+         p {
+         margin: 0;
+         font-size: 11pt;
+         font-family: "Arial"
+         }
+         h1 {
+         padding-top: 20pt;
+         font-weight: 700;
+         font-size: 20pt;
+         padding-bottom: 6pt;
+         font-family: "Inter";
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         h2 {
+         padding-top: 18pt;
+         font-weight: 700;
+         font-size: 16pt;
+         padding-bottom: 6pt;
+         font-family: "Inter";
+         line-height: 1.5;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: justify
+         }
+         h3 {
+         padding-top: 16pt;
+         color: #434343;
+         font-size: 14pt;
+         padding-bottom: 4pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         h4 {
+         padding-top: 14pt;
+         color: #666666;
+         font-size: 12pt;
+         padding-bottom: 4pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         h5 {
+         padding-top: 12pt;
+         color: #666666;
+         font-size: 11pt;
+         padding-bottom: 4pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         h6 {
+         padding-top: 12pt;
+         color: #666666;
+         font-size: 11pt;
+         padding-bottom: 4pt;
+         font-family: "Arial";
+         line-height: 1.15;
+         page-break-after: avoid;
+         font-style: italic;
+         orphans: 2;
+         widows: 2;
+         text-align: left
+         }
+         p {
+         line-height: 200%;
+         font-size: 16px;
+         font-family: 'Inter';
+         color: #A5A4B7 !important;
+         }
+         li.li-bullet-0:before {
+         color: #A5A4B7 !important;
+         }
+         p span,
+         li span {
+         line-height: 200%;
+         font-size: 16px !important;
+         font-family: 'Inter' !important;
+         color: #A5A4B7 !important;
+         font-weight: 400 !important;
+         }
+         .c7 {
+         background-color: transparent;
+         }
+         .c2 .c8 {}
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6,
+         h1 span,
+         h2 span,
+         h3 span,
+         h4 span,
+         h5 span {
+         font-family: 'Work Sans' !important;
+         color: #fff !important;
+         }
+         a {
+         color: black;
+         font-size: 10px;
+         }
+         .c28 span {
+         color: #A5A4B7 !important;
+         }
+         h2 span {
+         font-size: 20px !important;
+         }
+         h1 span {
+         font-size: 36px !important;
+         }
+         body,
+         html,
+         .c15 {
+         background-color: #030C21;
+         }
+         h5 span {
+         color: #fff;
+         font-family: 'Inter';
+         letter-spacing: 0.05em;
+         font-weight: 400 !important;
+         text-transform: uppercase;
+         font-size: 16px !important;
+         }
+         .button-solution {
+         background: #2B395A;
+         border-radius: 4px;
+         color: #A5A4B7 !important;
+         border: none;
+         padding: 2px 10px;
+         margin: 0px;
+         margin-right: 10px;
+         margin-top: 16px;
+         font-family: 'Inter';
+         cursor: pointer;
+         transition: all .25s;
+         display: flex;
+         align-items: center;
+         }
+         .advnver {
+         max-width: 960px;
+         padding: 0px 100px;
+         max-width: 1060px;
+         width: calc(100% - 200px);
+         padding-top: 150px;
+         margin-bottom: 20px;
+         }
+         .advnver p {
+         font-size: 14px;
+         width: 100%;
+         }
+         .zoom {
+         width: calc(100% - 40px);
+         position: relative;
+         background-size: 0 0;
+         max-width: 1240px;
+         margin-top: -20px;
+         }
+         .zoom img {
+         display: block;
+         width: 100%;
+         }
+         .button-solution p {
+         margin: 0px;
+         padding: 0px;
+         margin-left: 4px;
+         width: 0px;
+         opacity: 0;
+         transition: .25s;
+         }
+         .button-solution:hover {
+         background-color: rgba(44, 101, 212, 0.4);
+         color: #4AA4FF !important;
+         }
+         .button-solution:hover p {
+         width: 20px;
+         opacity: 1;
+         color: #4AA4FF !important;
+         }
+         .button-solution span {
+         font-family: 'Inter';
+         }
+         .roundblue {
+         background-color: #2B395A;
+         color: #A5A4B7;
+         border-radius: 10px;
+         font-family: 'Inter';
+         font-size: 16px;
+         line-height: 200%;
+         padding: 20px 0px;
+         max-width: 960px;
+         padding: 20px 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         }
+         .roundblue img {
+         margin-left: -34px;
+         margin-bottom: -5px;
+         margin-right: 10px;
+         }
+         .roundblue p {
+         max-width: 960px;
+         width: 100%;
+         }
+         ol.lst-kix_nak6ptbbd9vs-0.start {
+         display: flex;
+         flex-wrap: wrap;
+         max-width: 700px;
+         margin-top: -16px;
+         justify-content: flex-start;
+         }
+         .tag {
+         display: flex;
+         align-items: center;
+         }
+         .tag img {
+         cursor: pointer;
+         width: 166px;
+         margin-top: 5px;
+         height: auto;
+         }
+         .tag h1 {
+         font-family: 'Inter' !important;
+         padding: 0px;
+         font-weight: 400;
+         opacity: 0.4;
+         margin: 0px;
+         font-size: 30px;
+         display: flex;
+         align-items: center;
+         letter-spacing: 0.07em;
+         }
+         .h6lasd {
+         font-size: 16px;
+         text-decoration: none;
+         font-style: normal !important;
+         display: flex;
+         align-items: center;
+         }
+         .h6lasd img {
+         width: 28px;
+         margin-right: 24px;
+         }
+         #open-form {
+         background: #fff;
+         border-radius: 4px;
+         padding: 10px 20px;
+         color: #030C21;
+         border: none;
+         font-family: 'Inter' !important;
+         cursor: pointer;
+         }
+         .formla #closed {
+         width: 18px;
+         height: 18px;
+         }
+         #closed {
+         cursor: pointer;
+         height: 18px;
+         width: 18px;
+         }
+         .form-top {
+         align-items: center;
+         }
+         h1 p span {
+         font-size: 20px;
+         font-family: "Gilroy";
+         }
+         .b {
+         position: relative;
+         margin-bottom: 20px;
+         }
+         .b p {
+         position: absolute;
+         top: 22px;
+         right: 40px;
+         font-family: "Work Sans";
+         opacity: 0.6;
+         font-weight: 400;
+         top: 50% !important;
+         transform: translateY(-50%);
+         }
+         .vmhubimg {
+         width: 100%;
+         margin-bottom: -80px;
+         }
+         .b input {
+         margin-bottom: 0px !important;
+         }
+         body {
+         overflow-x: hidden;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         }
+         .nav-container {
+         max-width: 1240px;
+         width: 100%;
+         }
+         nav {
+         z-index: 2;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-top: 12px;
+         position: fixed;
+         width: calc(100vw);
+         background-color: #030C21;
+         top: 0px;
+         left: 50%;
+         transform: translate(-50%, 0);
+         padding-bottom: 20px;
+         }
+         .tag h1 p {
+         font-family: 'Inter' !important;
+         font-size: 17px;
+         margin: 0px 14px;
+         margin-left: 20px;
+         }
+         a {
+         color: #A5A4B7 !important;
+         }
+         .top {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .nav {
+         display: flex;
+         color: #fff !important;
+         margin-top: 20px;
+         }
+         .nav p:first-child {
+         margin-left: -2px;
+         }
+         .nav p {
+         cursor: pointer;
+         }
+         .nav p {
+         transition: all .25s;
+         padding: 0px 2px;
+         color: #CECECF !important;
+         border-bottom: 2px solid transparent;
+         margin-right: 16px;
+         }
+         .nav p.selected {
+         color: #fff !important;
+         border-bottom: 2px solid #fff;
+         }
+         .nav p:Hover {
+         border-bottom: 2px solid white;
+         color: #fff !important;
+         }
+         body {}
+         .c15 {
+         padding-top: 100px !important;
+         }
+         .start-thing {
+         max-width: 960px;
+         width: 100%;
+         padding-top: 150px !important;
+         }
+         h1 {
+         scroll-margin: 100px;
+         }
+         h5 {
+         scroll-margin: 140px;
+         }
+         .sources a {
+         font-size: 13px !important;
+         text-decoration: none;
+         word-break: break-all;
+         }
+         .sources123 {
+         margin-top: 40px;
+         }
+         .start1231 {
+         padding-top: 80px;
+         }
+         .ima12 {
+         width: 100%;
+         margin-top: 40px;
+         }
+         @media(max-width: 1240px) {
+         .nav-container {
+         padding: 0px 20px;
+         max-width: 960px;
+         width: calc(100% - 80px);
+         }
+         nav {
+         left: 0px;
+         transform: none;
+         }
+         }
+         .imgsds123a {
+         display: none;
+         }
+         .advnver {
+         font-size: 14px;
+         }
+         @media(max-width: 960px) {
+         .navb1 {
+         font-size: 12px;
+         }
+         .zoom {
+         margin-top: 20px !important;
+         }
+         .advnver {
+         font-size: 13px;
+         }
+         .advnver {
+         max-width: 960px;
+         padding: 0px 20px;
+         max-width: 1060px;
+         width: calc(100% - 40px);
+         padding-top: 150px;
+         margin-bottom: 20px;
+         }
+         .imgsdsa {
+         display: none;
+         }
+         .imgsds123a {
+         display: flex;
+         margin-left: 0px;
+         }
+         .roundblue img {
+         margin: 0px;
+         margin-bottom: 20px;
+         }
+         .c15 {
+         padding: 20px;
+         }
+         .roundblue {
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         padding: 30px 20px;
+         margin-bottom: 40px;
+         }
+         .roundblue p {
+         font-size: 15px;
+         }
+         }
+         @media(max-width: 768px) {
+         .nav {}
+         .nav p {
+         font-size: 14px !important;
+         }
+         .button-solution {
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         max-width: 500px;
+         margin-right: 0px;
+         }
+         ol.lst-kix_nak6ptbbd9vs-0.start {}
+         .start1231 {
+         padding-top: 40px;
+         }
+         h1 {
+         font-size: 28px !important;
+         }
+         .c15 {
+         padding: 20px;
+         }
+         nav {
+         padding-left: 20px;
+         width: calc(100vw - 40px);
+         }
+         }
+         button {
+         letter-spacing: 0.03em;
+         }
+         form button {
+         background: linear-gradient(86.43deg, #2D41F9 -1.62%, #0BDCEA 150.68%);
+         border: none;
+         min-height: 50px;
+         }
+         .bottomsection {
+         display: none;
+         }
+         .mob-tag {
+         display: none;
+         }
+         .select-nav-cont {
+         display: none;
+         }
+         .mobile-eye {
+         display: none;
+         }
+         @media (max-width: 600px) {
+         .navb1 {
+         display: none;
+         }
+         .vmhubimg {
+         width: 140%;
+         margin-left: -20%;
+         }
+         .roundblue {}
+         .zoom {
+         display: none;
+         }
+         .mobile-eye {
+         margin-top: -80px;
+         width: calc(100% - 40px);
+         display: flex;
+         flex-direction: column;
+         }
+         .mobile-eye img {
+         margin-top: 20px;
+         width: 100%;
+         height: auto;
+         }
+         .zoom img {
+         width: 100%;
+         }
+         .roundblue {
+         margin-bottom: 0px;
+         border-radius: 0px;
+         }
+         .roundblue p {
+         text-align: justify;
+         }
+         body {
+         margin: 0px;
+         }
+         .nav-selector {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         text-indent: 1px;
+         text-overflow: '';
+         }
+         .arrow-down {
+         width: 0;
+         height: 0;
+         border-left: 4px solid transparent;
+         border-right: 4px solid transparent;
+         bottom: 15px;
+         left: 12px;
+         border-top: 4px solid #A5A4B7;
+         position: absolute;
+         }
+         .select-nav-cont {
+         display: flex;
+         position: relative;
+         }
+         .nav-selector:focus {
+         box-shadow: none;
+         }
+         .nav-selector {
+         border-radius: 4px;
+         border: 1px solid rgba(165, 164, 183, 0.2);
+         background-color: transparent !important;
+         margin-bottom: 0px;
+         width: calc(100% - 20px);
+         height: 35px;
+         font-family: 'Inter' !important;
+         font-weight: 400;
+         margin-top: 20px;
+         padding-left: 25px;
+         }
+         h1 {
+         scroll-margin: 100px;
+         }
+         h5 {
+         scroll-margin: 80px;
+         }
+         .nav-container {
+         padding: 0px 10px;
+         }
+         .tag {
+         display: none;
+         }
+         .mob-tag {
+         display: flex;
+         width: 150px;
+         margin-top: 10px;
+         }
+         .homereturn {
+         position: absolute;
+         width: 50%;
+         height: 50px;
+         }
+         nav #open-form {
+         display: none;
+         }
+         .bottomsection {
+         display: flex;
+         position: fixed;
+         backdrop-filter: blur(2.2px);
+         bottom: 0px;
+         background-color: rgba(0, 0, 0, 0.5);
+         width: calc(100% - 40px);
+         left: 0px;
+         padding: 0px 20px;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .bottomsection button {
+         width: 100%;
+         height: 50px;
+         font-size: 16px;
+         padding: 0px !important;
+         height: 36px;
+         font-size: 14px;
+         }
+         .nav {
+         display: none;
+         }
+         .tag img {
+         width: 110px;
+         margin-top: 5px;
+         }
+         .tag h1 {
+         font-size: 18px !important;
+         }
+         .tag h1 p {
+         font-size: 10px !important;
+         margin-right: 10px;
+         margin-left: 14px;
+         margin-top: 4px;
+         }
+         nav {
+         width: calc(100% - 20px);
+         }
+         .c38 {
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+         }
+         .c15 {
+         padding-bottom: 100px;
+         padding-top: 50px !important;
+         }
+         .vmhubimg {
+         margin-bottom: -40px;
+         }
+         }
+         html {
+         width: 100vw;
+         overflow-x: hidden;
+         }
+         .entire-xp-network {
+         width: 100%;
+         margin-top: 40px;
+         margin-bottom: 40px;
+         }
+         #navmenu {
+         display: none;
+         }
+         #menu {
+         display: none
+         }
+         @media (max-width: 768px) {
+         nav {
+         width: calc(100% - 20px);
+         }
+         #navmenu {}
+         #open-form {
+         display: none;
+         }
+         .navb1 {
+         display: none
+         }
+         #menu {
+         display: flex;
+         width: 20px;
+         height: 20px;
+         margin-right: 20px;
+         }
+         #navmenu {
+         height: 100vh;
+         width: calc(100vw - 40px);
+         padding: 0px 20px;
+         position: fixed;
+         top: 0px;
+         right: -800px;
+         transition: all .3s;
+         background-color: #030C21;
+         z-index: 5000;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         }
+         #navmenu a {
+         text-align: center;
+         font-family: 'Inter';
+         font-weight: 500;
+         font-size: 18px;
+         text-align: center;
+         color: #FFFFFF;
+         }
+         .topnavmen {
+         position: absolute;
+         top: 20px;
+         width: calc(100% - 40px);
+         justify-content: space-between;
+         align-items: center;
+         display: flex;
+         }
+         #open-formi {
+         width: 100%;
+         height: 42px;
+         font-size: 16px;
+         border-radius: 6px;
+         min-height: auto;
+         background: #fff;
+         font-size: 16px;
+         border: none;
+         font-weight: 600;
+         width: 200px;
+         color: #111111;
+         margin-top: 30px;
+         }
+         #navmenu .footer-socials a {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-left: 0px;
+         width: fit-content;
+         margin: 0px 10px;
+         }
+         .navblogo {
+         width: 160px;
+         }
+         .topnavmen {
+         position: absolute;
+         top: 20px;
+         width: calc(100% - 40px);
+         justify-content: space-between;
+         align-items: center;
+         display: flex;
+         }
+         #navmenu a {
+         height: 50px;
+         color: #fff !important;
+         text-decoration: none !important;
+         }
+         .footer-socials {
+         display: flex;
+         margin-top: 40px;
+         }
+         }
+         .navi121 {
+         display: flex;
+         align-items: center;
+         }
+         .navi121 a {
+         margin-left: 60px;
+         font-weight: 300;
+         }
+         @media(max-width:600px) {
+         #open-form {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .nav-container {
+         width: calc(100% - 0px);
+         }
+         }
+         .footert {
+         width: calc(100% - 40px);
+         height: 300px;
+         margin-top: 80px;
+         }
+         .footer-first {
+         display: flex;
+         height: fit-content;
+         justify-content: space-between;
+         align-items: flex-start;
+         }
+         .footer-links {
+         display: flex;
+         width: 70%;
+         justify-content: space-between;
+         }
+         .footer-menu {
+         display: flex;
+         flex-direction: column;
+         }
+         .footer-menu p {
+         color: #fff;
+         font-weight: 700;
+         font-family: 'Inter';
+         font-size: 16px;
+         }
+         .footer-menu a {
+         margin-top: 30px;
+         font-family: 'Inter';
+         color: #FFFFFF;
+         text-decoration: none;
+         opacity: 0.7;
+         font-size: 16px;
+         }
+         a {
+         text-decoration: none;
+         font-family: 'Inter';
+         }
+         .footer-line {
+         width: 100%;
+         }
+         .footerbot {
+         display: flex;
+         width: 300px;
+         justify-content: space-between;
+         }
+         .footer-socials {
+         display: flex;
+         z-index: 3;
+         align-items: center;
+         }
+         .footerbottext {
+         font-family: 'Inter';
+         line-height: 139.4%;
+         font-size: 14px;
+         max-width: 400px;
+         color: #FFFFFF;
+         margin-top: 40px;
+         opacity: 0.8;
+         }
+         .footer-socials a {
+         margin-left: 40px;
+         }
+         .footer-line {
+         margin-top: 70px;
+         margin-bottom: 25px;
+         }
+         .footerbot a {
+         font-family: 'Inter';
+         color: #fff;
+         opacity: 0.8;
+         font-size: 14px;
+         }
+         .footert {
+         padding: 40px;
+         width: calc(100% - 80px);
+         }
+         .footer-logo {
+         width: 166px;
+         }
+         .footerloadsa {
+         max-width: 1300px;
+         }
+         @media(max-width: 1240px) {
+         .footerloadsa {
+         max-width: 1000px;
+         width: calc(100%)
+         }
+         @media(max-width: 768px) {
+         .footer-line {
+         display: none;
+         }
+         footer {}
+         .footer-logo {
+         margin-bottom: 0px;
+         }
+         .footer-socials {
+         margin-bottom: 40px;
+         }
+         .footer-first {
+         flex-direction: column-reverse;
+         }
+         }
+         @media(max-width: 340px) {
+         .footer-socials a {
+         margin-left: 24px;
+         }
+         }
+         @media(max-width: 560px) {
+         .footer-socials a {
+         margin-left: 8vw;
+         }
+         }
+         }
+      </style>
+      <link rel="stylesheet" href="confirm.css">
+      <style>
+         .hidden {
+         opacity: 0;
+         }
+      </style>
+      <script src="scrollfill.js"></script>
+      <script src="whitepaper.js"></script>
+      <script>
+         const remove = () => {
+             const c = Array.prototype.slice.call(document.getElementsByClassName('blocked121'), 0)
+             const cpopup = Array.prototype.slice.call(document.getElementsByClassName('confirm'), 0)
+             const cb = Array.prototype.slice.call(document.getElementsByClassName('blurred'), 0)
+         
+             cb.map(n => n.classList.remove('blurred'))
+             cpopup.map(n => n.remove())
+             c.map(n => n.classList.remove('blocked121'))
+             setCookie('approved', 'TRUE', 120)
+         }
+         
+         
+         if (getCookie('approved') === 'TRUE') remove()
+         
+         window.addEventListener('DOMContentLoaded', () => {
+             console.log(getCookie('approved'))
+             if (getCookie('approved') === 'TRUE') remove()
+             else {
+             const hiddeenn = Array.prototype.slice.call(document.getElementsByClassName('hidden'), 0)[0]
+             console.log('elo', hiddeenn, document.getElementsByClassName('hidden'))
+             hiddeenn.classList.remove('hidden')
+         }
+             const button = document.getElementById('lda1agree')
+             if (button) {
+                 button.addEventListener('click', () => remove())
+             }
+         })
+         function setCookie(name, value, days) {
+             var expires = "";
+             if (days) {
+                 var date = new Date();
+                 date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                 expires = "; expires=" + date.toUTCString();
+             }
+             document.cookie = name + "=" + (value || "") + expires + "; path=/";
+         }
+         function getCookie(name) {
+             var nameEQ = name + "=";
+             var ca = document.cookie.split(';');
+             for (var i = 0; i < ca.length; i++) {
+                 var c = ca[i];
+                 while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                 if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+             }
+             return null;
+         }
+         function eraseCookie(name) {
+             document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+         }
+      </script>
+   </head>
+   <body class="blocked121">
+      <div class="confirm hidden">
+         <div class="popupconfi">
+            <p>
+               I hereby confirm that by accessing the whitepaper and other informational materials, I will be deemed
+               to have reviewed and accepted certain terms therein, including confirmations that I am not based in a
+               jurisdiction where such access would be prohibited or restricted in any manner.
+            </p>
+            <div class="bottomactipop">
+               <a class="privcaska1dsa" href="/privacy-policy">Read Privacy Policy</a>
+               <div class="abuatob">
+                  <a href="/">Cancel</a>
+                  <a id="lda1agree">Confirm</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="navmenu">
+         <div class="topnavmen">
+            <img src="https://xp.network/xp-network.png" class="navblogo" />
+            <img src="https://xp.network/closenav.svg" id="closenav">
+         </div>
+         <a href="/token-metrics">Token Metrics</a>
+         <a href="/roadmap">Roadmap</a>
+         <a href="/whitepaper">Whitepaper</a>
+         <a href="/team">Team</a>
+         <div class="footer-socials">
+            <a target="_blank" href="https://t.me/xp_network"><img src='/greytele.svg' /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/xp-network/"><img src='/greylin.svg' /></a>
+            <a target="_blank" href="https://xpnetwork.medium.com/"><img src='/mediumocin.svg' /></a>
+            <a target="_blank" href="https://twitter.com/xpnetwork_"><img src='/greytwit.svg' /></a>
+            <a target="_blank" href="https://github.com/xp-network"><img src='/greygit.svg' /></a>
+         </div>
+      </div>
+
+      <div class="c24 advnver">
+         <p class=" ">
+            This is an advanced version of XP.network design paper. It is still a subject to minor changes.
+         </p>
+      </div>
+      <div class="roundblue">
+         <img class="imgsds123a" src="https://xp.network/notice.svg">
+         <p>
+            <img class="imgsdsa" src="https://xp.network/notice.svg">
+            Please read this section carefully. The below does not constitute legal, financial, business, or tax
+            advice.<br> You must consult your own legal, financial, tax, or other relevant professional advisors prior
+            to engaging in any activity in connection with XP.network.
+         </p>
+      </div>
+      <div style="padding-top: 0px !important;" class="c15">
+         <h1 id="abstract" class="c37" id="h.764uwjjvln5c"><span>Abstract</span></h1>
+         <p class="c24"><span class="c25 c8">XP.network is a Polkadot parachain able to deploy NFT products and services
+            to
+            any supported blockchain including Facebook&rsquo;s upcoming Diem. </span>
+         </p>
+         <p class="c24 c12"><span class="c25 c8"></span></p>
+         <p class="c24"><span class="c8">Through its pioneer application editor, XP.network removes entry barriers for
+            entrepreneurs, developers, product makers and projects by allowing the creation of NFT DApps using
+            no-code
+            tools.</span>
+         </p>
+         <h1 id="nfts-title" class="c37" id="h.sd6iy6b9nvkp"><span class="c25 c32">NFTs</span></h1>
+         <p class="c24"><span class="c22">NFTs </span><span class="c25 c8">are tokens used to represent ownership of
+            unique
+            digital assets. Every NFT is linked to its owner&rsquo;s account and is secured by being saved in a
+            blockchain.</span>
+         </p>
+         <p class="c24 c12 c48"><span class="c25 c8"></span></p>
+         <p class="c24"><span class="c22">NF (Non-Fungible)</span><span class="c8">&nbsp;</span><span class="c8">stands
+            for
+            &ldquo;non-interchangeable&rdquo;</span><span class="c25 c8">&nbsp;for items or pieces of art,
+            collectibles,
+            fashion, sports, gaming, and others with unique attributes.</span>
+         </p>
+         <p class="c24 c12"><span class="c25 c8"></span></p>
+         <ul class="c13 lst-kix_m6qiogu01eom-0 start">
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">They exist in a single copy or are very scarce.</span></li>
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">They belonged to or were crafted by a famous
+               person.</span>
+            </li>
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">A digital asset (music, video, image) in demand,
+               who&rsquo;s owner or the owner&rsquo;s heiris alive and has the right for royalty for displaying /
+               reselling an instance of the asset.</span>
+            </li>
+         </ul>
+         <p class="c24 c12"><span class="c25 c8"></span></p>
+         <p class="c24"><span class="c8">The &ldquo;Non&rdquo; in NFTs opposes it with </span><span class="c22">fungible
+            resources, </span><span class="c8">which is a legal or financial term for identical, mutually
+            replaceable
+            items</span><span class="c22">.</span><span class="c25 c8">&nbsp; For example, any fiat currency (like
+            USD,
+            EUR, Pounds, etc.) where $1 is completely interchangeable with another $1 are examples of fungible
+            resources.</span>
+         </p>
+         <h2 class="c29" id="h.y0nljrpspio3"><span class="c25 c27">NFTs Allow Asset Owners to Earn More</span></h2>
+         <p class="c24"><span class="c8">Some online platforms, who earn money from subscription plans or advertisements,
+            do
+            not pay the content providers at all</span><sup class="c8"><a href="#ftnt1" id="ftnt_ref1">[1]</a></sup><span class="c8">. Other platforms, who earn from sales, charge 60-85%
+            leaving the authors only 15-40%</span><sup class="c8"><a href="#ftnt2" id="ftnt_ref2">[2]</a></sup><span class="c25 c8">&nbsp;earnings on their work. On the other hand, NFT blockchains charge only the
+            transaction
+            fee.</span>
+         </p>
+         <h2 class="c29" id="h.1jqssmutt99u"><span class="c25 c27">NFTs Against Piracy</span></h2>
+         <p class="c24"><span class="c25 c8">Copyrights have become increasingly vulnerable in the ever digitizing world.
+            A
+            copy of an MP3 or a PSD file is indistinguishable from the original crafted by an artist. Digital piracy
+            reduces legal sales and causes significant harm to the creators and their sales networks. Painters,
+            photographers, designers or illustrators often become victims of piracy. Their artworks can be copied,
+            sold
+            or displayed without notifying the author. The process of tracking such activity can be tedious and
+            still
+            does not guarantee the 100% result. It&rsquo;s as simple as copy and paste. NFTs are designed to
+            seal ownership in unique tokens, saved irreversibly in a distributed blockchain, making a digital item
+            trackble, and linked to its original creator no matter where in the digital sea.</span>
+         </p>
+         <h1 id="the-rise-of-nfts" class="c37" id="h.nqm7x8et5x3x"><span class="c25 c32">The Rise of NFTs</span></h1>
+         <p class="c21 c45"><span class="c3">In the last year, NFTs have exploded in mainstream popularity. Beeple sold a
+            digital art collection collage for no less than $ 69,000,000 through a Christie&rsquo;s auction -
+            &nbsp;the
+            third most expensive work from a living artist ever to be sold on auction. SOCKS, a digital
+            &ldquo;socks&rdquo; token, trades for more than $89,000 and the co-founder and CEO of Twitter, Jack
+            Dorsey
+            sold his first tweet for $2,900,000. Mark Cuban, Gary Vaynerchuk, Lindsey Lohan, Pamela Andreson. 3LAU,
+            Shawn Mendes, The Kings of Leon, Grimes, Paris Hilton and even Snoop Dog are all talking about
+            (</span><span class="c3">and some of them even mintin</span><sup><a href="#cmnt1" id="cmnt_ref1">[a]</a></sup><span class="c3">g) NFTs. Recently, a partnership between the NBA and
+            Dapper Labs focused on selling NBA
+            &ldquo;highlight videos&rdquo;, backed by NFTs. Demand for these videos exploded, with hundreds of
+            thousands
+            of users owning at least one NFT, some of which are selling for no less than a quarter million
+            dollars.</span>
+         </p>
+         <h1 id="facebook-diem" class="c37" id="h.1gp4yre1zrt8"><span class="c25 c32">Facebook&rsquo;s Diem</span></h1>
+         <p class="c24"><span class="c8">&ldquo;1.7 billion adults globally remain outside of the financial system with
+            no
+            access to a traditional bank, even though one billion have a mobile phone and nearly half a billion have
+            internet access.&rdquo;</span><sup class="c8"><a href="#ftnt3" id="ftnt_ref3">[3]</a></sup><span class="c25 c8">&nbsp;</span>
+         </p>
+         <p class="c24 c12"><span class="c25 c8"></span></p>
+         <p class="c24"><span class="c8">The idea behind Diem blockchain is an international online peer-to-peer payment
+            system embedded in Facebook products</span><sup class="c8"><a href="#ftnt4" id="ftnt_ref4">[4]</a></sup><span class="c8">. Facebook has reached 3.14 billion active users
+            combined
+            in its main products: Facebook, Instagram, WhatsApp and Messenger</span><sup class="c8"><a href="#ftnt5" id="ftnt_ref5">[5]</a></sup><span class="c8">. This means that out of &nbsp;7.9 billion world
+            population</span><sup class="c8"><a href="#ftnt6" id="ftnt_ref6">[6]</a></sup><span class="c25 c8">, 40%
+            have a Facebook related account that could potentially include a Diem wallet making Diem Association the
+            most influential financial institution in the world.</span>
+         </p>
+         <h2 class="c29" id="h.wrp2iyyufzpr"><span class="c25 c27">Backing The Currency</span></h2>
+         <p class="c24"><span class="c8">A significant advantage is that by contrast with Bitcoin</span><sup class="c8"><a href="#ftnt7" id="ftnt_ref7">[7]</a></sup><span class="c8">&nbsp;or Ethereum</span><sup class="c8"><a href="#ftnt8" id="ftnt_ref8">[8]</a></sup><span class="c8">, the world&rsquo;s most
+            expensive
+            cryptocurrencies, Diem currency is backed by a reserve which will consist of cash or cash equivalents
+            and
+            short-term government securities denominated in that currency.</span><sup class="c8"><a href="#ftnt9" id="ftnt_ref9">[9]</a></sup>
+         </p>
+         <h1 id="challenge" class="c37" id="h.6qirjfvk22j9"><span class="c25 c32">Challenge</span></h1>
+         <h2 class="c29" id="h.ieh3tn5aajqu"><span class="c25 c27">Market Barriers</span></h2>
+         <p class="c28" id="h.mcmsis6dbql9"><span class="c19">On one hand, the c</span><span class="c19">reation of NFT
+            applications is limited to developers or the technically-initiated. While NFTs are becoming mainstream,
+            more
+            non-developers are taking an interest in the market, however, acquiring the required tools and knowledge
+            is
+            a significant time and resource-demanding process. Most non-technical product managers and entrepreneurs
+            would give up the effort before being able to successfully create an NFT-powered product or service.
+            </span><span class="c19 c36">On the other hand, accessing NFT solutions also requires at the very least a
+            basic
+            understanding on how cryptographic assets work. These limitations are crippling not only creativity, but
+            also adoption.</span>
+         </p>
+         <h2 class="c29" id="h.w31up8pym5k0"><span>Limited Abilities</span></h2>
+         <p class="c28" id="h.eeozf8freob3"><span class="c19">NFT applications are limited to the blockchain
+            they&rsquo;re
+            built for. Most applications have no built-in value transfer with other chains (they lack the ability to
+            receive or send assets to or from another blockchain). At the same time, most projects lack the ability
+            to
+            deploy sister-products on separate chains.</span><span class="c19">&nbsp;</span><span class="c19">While
+            there&rsquo;s an abundance of NFT-oriented solutions and products, the market still lacks NFT surgical
+            precision tools.</span><span class="c19">&nbsp;</span><sup><a href="#cmnt2" id="cmnt_ref2">[b]</a></sup>
+         </p>
+         <hr style="page-break-before:always;display:none;">
+         <h2 class="c29" id="h.53x5qx99il5q"><span class="c25 c27">Dynamic Ecosystem </span></h2>
+         <p class="c28" id="h.tjorxsmskh6n"><span class="c10">Blockchain technology is still in its infancy. The software
+            changes quickly which results in a constant requirement to maintain and update DApp libraries and code,
+            which comes with a high financial cost, sometimes too high, such as in cases where the DApp does not
+            have a
+            significant clear income stream or business model. </span>
+         </p>
+         <h2 class="c29" id="h.11dinu4l1ooj"><span class="c25 c27">Regulation</span></h2>
+         <p class="c28" id="h.vpmmmlilhqz9"><span class="c19">While Diem Association collaborates with central
+            banks</span><sup class="c19"><a href="#ftnt10" id="ftnt_ref10">[10]</a></sup><span class="c10">&nbsp;and
+            financial authorities to marry Diem with the existing financial system, it becomes clear how strict and
+            regulated Diem related application market will be. Developers will have a hard time approving their
+            applications to the Diem live environment. It could be weeks or potentially months before their
+            applications
+            will get approval from the governing scrutineers due to a &ldquo;congestion&rdquo;. There will simply be
+            many times more applicants than the approvers.</span>
+         </p>
+         <h3 class="c0" id="h.m4cgrxpxn2ay"><span style="font-size: 20px !important; font-weight: 700;" class="c10">Apple
+            Store - a vivid example </span>
+         </h3>
+         <p class="c28" id="h.9rmf8tg2t70e"><span class="c19 c36">We could take Apple&rsquo;s App Store as a close
+            approximation of what we are to expect. Developers complain that out of 100,000 apps reviewed weekly 40%
+            are
+            rejected</span><sup class="c19 c36"><a href="#ftnt11" id="ftnt_ref11">[11]</a></sup><span class="c19 c36">&nbsp;for not being compliant with the strict security, source code or UI design
+            guidelines.
+            Remarkably, but one version of an app being approved does not guarantee automatic approval of the
+            consecutive ones. Each version is treated as a new instance and can be rejected again and
+            again</span><sup class="c19 c36"><a href="#ftnt12" id="ftnt_ref12">[12]</a></sup><span class="c10">.
+            </span>
+         </p>
+         <h1 id="solution" class="c37" id="h.d0rw0ktyzjlw"><span class="c25 c32">Solution</span></h1>
+         <p class="c11"><span class="c1">XP.network platform consists of:</span></p>
+         <p class="c4"><span class="c14"></span></p>
+         <ol class="c13 lst-kix_nak6ptbbd9vs-0 start" start="1">
+            <button id="sc" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">Smart Contract Editor</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="mm" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">Migration-Module</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="cv" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">Compliance Validator</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="ae" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">Application Editor</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="pvh" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">Polkadot VM Hub</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="xnt" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">XP.network Testnet</span>
+               <p>&rarr;</p>
+            </button>
+            <button id="xpntutil" class="c26 c16 li-bullet-0 button-solution">
+               <span class="c1">XPNET Token
+               Utility</span>
+               <p>&rarr;</p>
+            </button>
+         </ol>
+         <h2 class="c38" id="h.tvhvzleb6hw7"><span class="c25 c40 c50">Architecture</span></h2>
+         <h5 id="smart-contract-editor" class="c17" id="h.pi1ac6vdiag4"><span class="c40">1. Smart Contract Editor
+            </span>
+         </h5>
+         <p class="c11"><span class="c1">A codeless UI tool which allows users to generate valid human readable code in
+            Move,
+            Solidity and Rust, resulting in &nbsp;smart contracts that can be launched &nbsp;on Diem, Polkadot,
+            Ethereum, BSC and countless other blockchains. </span>
+         </p>
+         <p class="c11"><span class="c1">Users select an NFT use case, business specific details and blockchains.</span></p>
+         <p class="c11"><span class="c1">When all the steps are completed, the following occurs: </span></p>
+         <ol class="c13 lst-kix_vrs0vqw8s8e-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">A JSON request is sent to the server. </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">The request is sanitized and validated.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">A JSON &ldquo;intention&rdquo; object is generated. </span></li>
+         </ol>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">The &ldquo;intention&rdquo; object contains:</span></p>
+         <ol class="c13 lst-kix_bzyghqbo1yk-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">The chosen blockchains&rsquo; smart contract programming
+               languages.</span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">The NFT use case is translated to smart contracts. </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">The business specific details are inputted as rules,
+               functions, and variables.</span>
+            </li>
+         </ol>
+         <p class="c11"><span class="c1">The &ldquo;intention&rdquo; object is sent to the next platform tool called the
+            Migration-Module.</span>
+         </p>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">The Migration-Module generates human readable code which can be read and edited
+            by
+            the user in the code tab on the UI. </span>
+         </p>
+         <p class="c11"><span class="c23">This allows more experienced users to read and edit the code. The window in the
+            code tab is listening to the user generated events. Should a user edit and save a new version of code, a
+            request is sent to the backend and the Compliance Validator</span><span class="c23 c52">&nbsp;</span><span class="c1">to modify the previously generated code with the new one
+            and ensure the code is still error free.
+            </span>
+         </p>
+         <p class="c4"><span class="c14"></span></p>
+         <p class="c11"><span class="c1">Since user-edited code can contain errors or may contradict some chosen
+            blockchain
+            policies, the code is tested by the XP.network Compliance Validator tool. The code tab includes a
+            Validation
+            Panel which displays the results of the Code Validator&rsquo;s checks and either confirms that the code
+            is
+            free from errors and is regulations compliant, or indicates the lines in code that contain errors
+            alongside
+            with suggestions of improvement.</span>
+         </p>
+         <p class="c4"><span class="c14"></span></p>
+         <p class="c11"><span class="c23">In order to interact with the Polkadot pallet for XP.network, a user&rsquo;s
+            application must register </span><span class="c23 c21">one&rsquo;s account</span><span class="c1">. To
+            ensure confidentiality and integrity, it can be done from the &ldquo;Polkadot Interaction&rdquo; tab of
+            this
+            tool. </span>
+         </p>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">All the data connected to this module is persisted in a database, be it user
+            choices, errors or smart contract edited code.</span>
+         </p>
+         <img src="https://xp.network/1@4.png" alt="" class="ima12">
+         <h5 id="migration-module" class="c0" id="h.ubt31iq6vxae"><span class="c43 c36 c40">2. Migration Module</span></h5>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">The Migration-Module contains:</span></p>
+         <ol class="c13 lst-kix_vrs0vqw8s8e-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">Pre-programmed audited code templates which are populated
+               by data from the “intention” object. </span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Decision tree responsible for building the structure of the
+               selected NFT use case. </span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Human readable code generator. </span>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Bytecode compiler. </span></li>
+         </ol>
+         <p class="c11"><span class="c1">Since Move does not have a standard library for working with NFTs, XP
+            Network&rsquo;s NFT library for Move is an extension of the original standard library. Potentially other
+            libraries and protocols could be added in the future.</span>
+         </p>
+         <img src="https://xp.network/2@4.png" alt="" class="ima12">
+         <h5 id="compliance-validator" class="c17" id="h.igizbinz47d4"><span class="c40">3. Compliance Validator</span></h5>
+         <p class="c11"><span class="c1">The Compliance Validator is an automated QA tool for the generated code. It also
+            enforces the latest regulations issued by the designated blockchains.</span>
+         </p>
+         <p class="c4"><span class="c14"></span></p>
+         <p class="c11"><span class="c1">By default, the Migration-Module&rsquo;s output is error free and regulations
+            compliant. However, since the option to manually modify the resulting code exists, this tool is
+            invaluable
+            in validating and reporting errors. The Compliance Validator results can be found in the
+            &ldquo;Validation
+            Panel&rdquo; of the code tab. </span>
+         </p>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1 c21">For example, if a user tries to copy resources inside a smart contract in
+            Move
+            (which is prohibited according to the Diem policy) a regulation compliance error will pop up.</span>
+         </p>
+         <img src="https://xp.network/3@4.png" alt="" class="ima12">
+         <h5 id="application-editor" class="c17" id="h.l7xfv2s26zpb"><span class="c40">4. Application Editor </span></h5>
+         <p class="c11"><span class="c1">The Application Editor &nbsp;generates the UI and backend of the resulting
+            application.</span>
+         </p>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">Here a user can define:</span></p>
+         <ol class="c13 lst-kix_yglygzermm0b-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">How the resulting application&rsquo;s users and privileges
+               will
+               be managed.</span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">What themes and styles will be used.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Select which components will be used.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">How will the components be placed on the pages.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Connecting the components to smart contract
+               functions.</span>
+            </li>
+         </ol>
+         <p class="c11"><span class="c1">The module builds the resulting application&rsquo;s frontend, backend and
+            database.
+            Automated QA tools will check the resulting application&rsquo;s functionality.</span>
+         </p>
+         <p class="c4"><span class="c14"></span></p>
+         <p class="c11"><span class="c1">The resulting application will be connected to the XP.network Substrate pallet
+            and
+            the chosen blockchains. It will be fast, search engine optimized and secure.</span>
+         </p>
+         <img src="https://xp.network/4@4.png" class="ima12" />
+         <h5 id="polkadot-vm-hub" class="c17" id="h.ze3sgfmk0eeo"><span class="c43 c36 c40">5. Polkadot VM Hub</span></h5>
+         <p class="c4"><span class="c14"></span></p>
+         <p class="c11"><span class="c1">The VM Hub Layer is a Substrate pallet which allows different Virtual Machines
+            to
+            interact with each other. The Layer implements serialization and deserialization of data formats and
+            shared
+            storage between different VMs, making requests between them possible. For example, one could call a
+            smart
+            contract written in Solidity from a smart contract written in Move or Ink! and vice versa.</span>
+         </p>
+         <p class="c11"><span class="c1">A user can choose between the following blockchains: Avalanche, Binance,
+            Cardano,
+            Diem, Elrond, Ethereum, Heco, Polkadot and Solana. Depending on the user&rsquo;s blockchain choice, a
+            smart
+            contract programming language will be chosen. For example, if a user wants to interact with Ethereum,
+            Solidity will be chosen as a target language.</span>
+         </p>
+         <p class="c11"><span class="c1">This module consists of:</span></p>
+         <p class="c11"><span class="c23">1. </span><span class="c33">Bytecode Deserializer -</span><span class="c1">&nbsp;it
+            receives hexadecimal input and returns a human readable code in assembly. </span>
+         </p>
+         <p class="c11"><span class="c23">2. </span><span class="c33">Assembly Code Converter</span><span class="c1">&nbsp;-
+            it &nbsp;creates the following key - value pairs:</span>
+         </p>
+         <ul class="c13 lst-kix_yjbgudoj8l7g-0 start">
+            <li class="c11 c16 li-bullet-0"><span class="c1">The chosen smart contract programming language.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Template number.</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">Data to populate the smart contract with.</span></li>
+         </ul>
+         <p class="c11"><span class="c23">3. </span><span class="c33">Bytecode Compiler -</span><span class="c1">&nbsp;it
+            takes the key - value pairs generated at the previous stage as an input and generates the chosen smart
+            contract language bytecode as its output.</span>
+         </p>
+         <p class="c11"><span class="c23 c21">4. </span><span class="c33 c21">Polkadot parathread</span><span class="c1 c21">&nbsp;- it uses the Relay Chain callback mechanism to communicate with the other
+            parachains
+            and parathreads using XP.network protocol. Since the existing mechanism is connectionless and stateless
+            there&rsquo;s no way to automatically be notified whether a message or a transaction succeeded. This is
+            why
+            every transaction is marked with a unique token. While waiting for the results of the transaction or to
+            identify the incoming messages as related to the transaction the token is stored together with the
+            transaction info.</span>
+         </p>
+         <p class="c11 c12"><span class="c14"></span></p>
+         <p class="c11"><span class="c1">A set of pre-programmed audited code templates are ready to be populated by the
+            arbitrary data. Once a request is received, the templates are populated with the incoming data and are
+            instantly compiled into transaction ready bytecode. Initially there will be a limited set of ready code
+            templates for each platform. However, new templates will be added on a permanent regular basis.
+            Eventually
+            most possible use cases will be available for each bridged platform. Finally, the original smart
+            contract
+            bytecode will be translated directly into the target language bytecode, removing all limitations.</span>
+         </p>
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">Since the architecture is designed for an injectable interface, we are not
+            limited
+            to Solidity, Move, Rust and Ink! programming languages. Any other language can implement this adapter,
+            should its requests comply with the adaptable interface.</span>
+         </p>
+         <img class="vmhubimg" src="https://xp.network/vmhub.png" />
+         <h5 id="xp-network-testnet" class="c17" id="h.yuffexdmr8py"><span class="c40">6. XP.network Testnet</span></h5>
+         <p class="c11"><span class="c23 c21">A small network of computers with running Substrate </span><span class="c23 c21">parachains</span><span class="c1 c21">&nbsp;allows our users to test the resulting
+            applications with zero costs before connecting them to the live mainnets . Other blockchain&rsquo;s
+            testnets
+            will also become available in the near future.</span>
+         </p>
+         <p class="c12 c53"><span class="c1"></span></p>
+         <p class="c47"><span class="c1">Bird Eye view of the XP.network Platform</span></p>
+      </div>
+      <div style="" class="zoom" onmousemove="zoom(event)">
+         <img class="zoom" id="birdeye" class="entire-xp-network" src="https://xp.network/xpnetall.png" />
+      </div>
+      <div class="mobile-eye">
+         <img src="https://xp.network/1@4x.png" />
+         <img src="https://xp.network/2@4x.png" />
+         <img src="https://xp.network/3@4x.png" />
+         <img src="https://xp.network/4@4x.png" />
+         <img src="https://xp.network/5@4x.png" />
+         <img src="https://xp.network/6@4x.png" />
+      </div>
+      <div style="padding-top: 40px !important;" class="c15">
+         <p class="c11 c12"><span class="c1"></span></p>
+         <p class="c11"><span class="c1">Notes:</span></p>
+         <ol class="c13 lst-kix_pc7slt30pvn0-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">The UI consists of tabs, each responsible for a certain
+               feature
+               setup.</span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">The frontend and the backend of the Smart Contract Editor
+               and
+               the Application Editor are in fact one UI with multiple tabs. They are divided in the scheme to
+               emphasize their different functionality and different outputs.</span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c23">Account settings in the Smart Contract Editor creates and
+               manages the account for the user who builds the application. Account settings of the Application
+               Editor
+               define how users will be managed in the resulting application.</span>
+            </li>
+         </ol>
+         <h5 id="xpnet-token-utility" class="c17" id="h.ze3sgfmk0eeo"><span class="c43 c36 c40">7. XPNET Token
+            Utility</span>
+         </h5>
+         <h6 class="h6lasd"><img src="https://xp.network/validation icon.svg" />PoS validation</h6>
+         <p>
+            PoS is a mechanism for choosing the best suitable validators for the validator pool. The more XPNET tokens a
+            validator stakes, the higher the chances are to be appointed for the validator pool. Validators can be
+            backed by the nominator's stakes. A nominator can back up to 12 validators at a time.
+            <br>
+            <br>
+            This mechanism allows locking more tokens and makes the system more resistant to takeover attacks. A
+            selection based on the maximum total stake mechanism will rotate the stake among the validator pool, leaving
+            one active validator per era (24 hours). Only the active validator gets to sign blocks and gets the
+            transaction fee. If a validator is not interested in nominators, the validator will set commission to 100%.
+            This indicates that the nominator will get 0%.
+            <br>
+            <br>
+            The choice of validators must be careful. If an active validator is offline, it signs the same blocks
+            multiple times (equivocates) or makes other mistakes.This validator and nominator's stakes can be slashed
+            (fined for breaking the protocol). A fairly small percentage of the stake is slashed for the downtimes,
+            however, equivocating or alternative signatures of finalized blocks can lead to 100% slashing.
+            <br>
+            <br>
+            To avoid the system takeover by advisories or centralization, the number of equivocating nodes is
+            proportional to the slashing percentage. If > 33% of the nodes equivocate 100% of their stakes will be
+            slashed. There will be 100 independent validator nodes at Genesis.
+            <br>
+            <br>
+            This number will gradually grow to thousands together with the growth of the XP.network ecosystem welcoming
+            the fresh members with new opportunities for collaboration and profit.
+         </p>
+         <h6 class="h6lasd"><img src="https://xp.network/transactions icon.svg" />Transactions</h6>
+         <p>
+            Every transaction is meticulously inspected by a pool of independent decentralized validators. Both internal
+            and the bridge relay validators are awarded for their benevolent work.
+            The transaction fee is paid by the account holders submitting the transactions.
+            <br>
+            <br>
+            Validator's errors, long response times, downtime or deliberate fraudulent activities are discouraged by
+            slashing the stakes. Apart from providing income to the validators, the transaction fee ensures security and
+            availability.
+            <br>
+            <br>
+            Without the fee, anyone could flood the network with useless transactions or could set up a DDoS attack. The
+            fee makes such behavior unreasonably expensive, freeing the network for well-thought legitimate
+            transactions. The transaction fee is paid before the transaction.
+            <br>
+            <br>
+            XP.network is planning to allocate up to 10% of the total token supply to stimulate the validators by
+            subsidizing an additional 100% of the transaction fee from the treasury.
+            <br>
+            <br>
+            The transaction fee is currently calculated by the formula: m * size(TX) + b, where
+            <br>
+            m (multiplier) equals 0.0005 XPNET.
+            <br>
+            size(TX) is the weight of the transaction bytecode.
+            <br>
+            b is the bias set at 0.001 XPNET.
+            <br>
+            <br>
+            The weight of the transaction correlates with the complexity of execution and storage. The bias prevents
+            flooding attacks.
+            <br>
+            Transaction initiators can add an optional tip to get a higher priority in the transaction queue, thus
+            raising the transaction fee. In the future, the formula and the rates of the transaction fee will be decided
+            by token holders through a public referendum.
+         </p>
+         <h6 class="h6lasd"> <img src="https://xp.network/staking icon.svg" />Staking</h6>
+         <p>
+            Nominators and validators are the two types of major stake makers in XP.network. A nominator is either a
+            non-technical XPNET token holder, who cannot set up a validator node or someone, who does not have enough
+            tokens to become a validator. Nominators can earn a part of transaction fees by appointing their stakes to
+            validators they trust.
+            <br>
+            <br>
+            Validators run a full node of the blockchain and take an active part in block signing and production.
+            Validators are awarded the transaction fees, but bear the responsibility for their stakes as well as the
+            stakes of the nominators that back them. If a validator makes mistakes or deliberately signs fraudulent
+            transactions, it ruins one's reputation and both the validator and the nominator's stakes will be
+            automatically slashed for doing so.
+            <br>
+            <br>
+            Slashing is a punitive measure for malicious, erroneous or incomplete work of the validators by withdrawing
+            a percentage of the stake. The validators should make sure their nodes don't experience downtimes.
+         </p>
+         <h6 class="h6lasd"><img src="https://xp.network/cross-chain icon.svg" />Cross-chain value transfer</h6>
+         <p>
+            Thanks to numerous cross-chain bridges XP.network is developing, token holders will be able to seamlessly
+            transfer their assets to and from the bridged blockchains. The bridges are designed to be decentralized. A
+            pool of independent relay validators ensures the integrity of assets between the blockchains so that nothing
+            is lost or duplicated.
+            <br>
+            <br>
+            XPNET tokens will be available in Polkadot, Elrond, HECO, Cardano, DFINITY and many other blockchains. Once
+            an account holder submits a request for transmitting tokens to a bridged blockchain. The bridge locks the
+            requested amount in the smart contract in the original blockchain and broadcasts an event.
+            <br>
+            <br>
+            The bridge relay validators catch the event and sign the transaction. The smart contract in the target
+            blockchain collects the signatures of the validators. Once the 2/3*n+1 signatures arrive, it releases the
+            same amount of wrapped tokens to the designated account.
+            <br>
+            <br>
+            The tokens of the bridged blockchains can be transferred to XP.network the same way. XPNET can be used for
+            buying and selling other assets (e.g. NFTs), for lending and borrowing, for saving or as collateral.
+         </p>
+         <h6 class="h6lasd"> <img src="https://xp.network/governance icon.svg" />Governance</h6>
+         <p>
+            XP.network will gradually introduce a decentralized governance mechanism that will allow the XPNET token
+            holders to make executive decisions on further network development. Once a ruling proposal is made by the
+            council, elected by the token holders from the enthusiastic token holders, a referendum will begin.
+            <br>
+            <br>
+            A sophisticated stake-weighted voting system will ensure transparency and fairness of decision-making. The
+            more tokens or a longer period the tokens are locked, the more votes will be provided to the voter. After
+            the locking period expires, the locked tokens will be returned to the original wallets regardless of the
+            outcome of the referendum.
+            <br>
+            <br>
+            If the council members voted unanimously for the necessity of the change proposal a negative turnout bias
+            will be applied. This means, that even if less than 50% of the voters show up, the simple majority (n% * 3 /
+            5 + 1) will be required for passing or declining a proposal. Where n% is the percentage of winning votes.
+            <br>
+            <br>
+            If the council supported the voting proposal but not unanimously, over 51% of the total token holders must
+            vote "yes" for a proposal to be accepted to guarantee the interests of all the community. If an improvement
+            decision has been accepted during a referendum the technical committee, which was elected by the council,
+            will upload the code implementing the changes.
+         </p>
+         <h4 class="sources123">References</h4>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref1" id="ftnt1">1. </a><span class="c30"></span><span class="c7"><a class="c2" href="https://www.flickr.com/help/terms">https://www.flickr.com/help/terms</a></span><span class="c25 c30 c34">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref2" id="ftnt2">2. </a><span class="c30"></span><span class="c7"><a class="c2" href="https://submit.shutterstock.com/payouts?language=en">https://submit.shutterstock.com/payouts?language=en</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref3" id="ftnt3">3. </a><span class="c7"><a class="c2" href="https://www.diem.com/en-us/white-paper/#introduction">https://www.diem.com/en-us/white-paper/#introduction</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref4" id="ftnt4">4. </a><span class="c7 c19"><a class="c2" href="https://www.novi.com">https://www.novi.com</a></span><span class="c25 c6">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref5" id="ftnt5">5. </a><span class="c6">&nbsp;</span><span class="c7 c19"><a class="c2" href="https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide">https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/</a></span><span class="c6 c25">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref6" id="ftnt6">6. </a><span class="c7 c19"><a class="c2" href="https://www.worldometers.info/world-population/#:~:text=The%20current%20world%20population%20is,currently%20living)%20of%20the%20world">https://www.worldometers.info/world-population/#:~:text=The%20current%20world%20population%20is,currently%20living)%20of%20the%20world.</a></span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref7" id="ftnt7">7. </a><span class="c42"><a class="c2" href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a></span><span class="c20">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref8" id="ftnt8">8. </a><span class="c7"><a class="c2" href="https://ethereum.github.io/yellowpaper/paper.pdf">https://ethereum.github.io/yellowpaper/paper.pdf</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref9" id="ftnt9">9. </a><span class="c7"><a class="c2" href="https://www.diem.com/en-us/white-paper/#the-economic-and-the-libra-reserve">https://www.diem.com/en-us/white-paper/#the-economic-and-the-libra-reserve</a></span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref10" id="ftnt10">10. </a><span class="c7"><a class="c2" href="https://www.bloomberg.com/news/articles/2021-04-07/sweden-s-central-bank-reveals-first-study-of-digital-currenc">https://www.bloomberg.com/news/articles/2021-04-07/sweden-s-central-bank-reveals-first-study-of-digital-currency</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref11" id="ftnt11">11. </a><span class="c7"><a class="c2" href="https://www.accc.gov.au/system/files/Apple%20Pty%20Limited%20%282%20October%202020%29.pdf">https://www.accc.gov.au/system/files/Apple%20Pty%20Limited%20%282%20October%202020%29.pdf</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+         <div class="sources">
+            <p class="c5"><a href="#ftnt_ref12" id="ftnt12">12. </a><span class="c7"><a class="c2" href="https://developer.apple.com/app-store/review/guidelines/#after-you-submit">https://developer.apple.com/app-store/review/guidelines/#after-you-submit</a></span><span class="c30">; </span><span class="c7"><a class="c2" href="https://developer.apple.com/forums/thread/114668">https://developer.apple.com/forums/thread/114668</a></span><span class="c25 c34 c30">&nbsp;</span></p>
+         </div>
+      </div>
+      <form style="pointer-events: none;" id="f">
+         <div class="form-top">
+            <h2>Presale Signup</h2>
+            <img id="closed" src="closed.svg" />
+         </div>
+         <div>
+            <input id="name" name="name" placeholder="Name" />
+         </div>
+         <div>
+            <select id="type" name="type">
+               <option selected disabled>Entity Type</option>
+               <option>Private</option>
+               <option>Institutional</option>
+            </select>
+         </div>
+         <div>
+            <select id="investor" name="investor">
+               <option selected disabled>US Investor</option>
+               <option>Yes</option>
+               <option>No</option>
+            </select>
+         </div>
+         <div>
+            <input type="email" id="email" name="email" placeholder="E-mail" />
+         </div>
+         <div>
+            <input id="telegram" name="telegram" placeholder="Telegram" />
+         </div>
+         <div class="b">
+            <input id="interest" name="interest" placeholder="Indication of interest" type="number" />
+            <p class="pofb">amount in USD</p>
+         </div>
+         <textarea id="support" name="support" placeholder="How can you help XP.network?"></textarea>
+         <button id="button">Send</button>
+         <div style="opacity: 0;" id="success" class="success-wind">
+            <img src="https://xp.network/success.svg">
+            <p>
+               Thank you for your interest. Our team will be in touch with you soon.
+            </p>
+         </div>
+      </form>
+      <div style="pointer-events: none;" id="overlay"></div>
+      <div class="footerloadsa">
+         <footer class="footert">
+            <img style="cursor: pointer;" onclick="window.location.href = '/'" class="footer-logo" src="https://xp.network/xp-network.png" />
+            <img src="https://xp.network/footerline.svg" alt="" class="footer-line">
+            <div class="footer-first">
+               <div class="footerbottom">
+                  <div class="footerbot">
+                     <a href="/privacy-policy">Privacy Policy</a>
+                  </div>
+                  <p class="footerbottext">
+                     A blockchain-agnostic network for building NFT dApps
+                  </p>
+                  <p class="footerbottext allrightsres">© 2021 XP.network Ltd. All Rights Reserved</p>
+               </div>
+               <div class="footer-socials">
+                  <a target="_blank" href="https://t.me/xp_network"><img src='/greytele.svg' /></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/xp-network/"><img src='/greylin.svg' /></a>
+                  <a target="_blank" href="https://xpnetwork.medium.com/"><img src='/mediumocin.svg' /></a>
+                  <a target="_blank" href="https://twitter.com/xpnetwork_"><img src='/greytwit.svg' /></a>
+                  <a target="_blank" href="https://github.com/xp-network"><img src='/greygit.svg' /></a>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+   <script src="index.js"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4CFEFHHPV"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      
+      gtag('config', 'G-N4CFEFHHPV');
+   </script>
+</html>

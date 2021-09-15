@@ -1,0 +1,4437 @@
+<html class="blocked121">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="twitter:image" content="https://xp.network/wpog.png" />
+    <meta name="twitter:image:src" content="https://xp.network/wpog.png">
+    <meta content="打破区块链之间的壁垒- XP.network (XPNET)" property="twitter:title">
+      <meta name="description" content="为铸造的NFT提供即时多链支持：与XP.network连接，在10+区块链之间实现NFT和资金的无缝转移">
+    <meta content="summary_large_image" name="twitter:card">
+    <title>打破区块链之间的壁垒- XP.network (XPNET)</title>
+    <meta content="为铸造的NFT提供即时多链支持：与XP.network连接，在10+区块链之间实现NFT和资金的无缝转移" property="twitter:description">
+
+      <link rel="shortcut icon" href="/favicon.svg">
+      <!-- OwlCarosel CSS -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.v4.5.3.min.css" >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
+
+        form {
+            font-family: "Work Sans";
+            z-index: 100;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(3, 12, 33, .95);
+            padding: 50px;
+            position: absolute;
+            top: 0px;
+            padding-top: 40px;
+            width: 600px;
+            opacity: 0px;
+            right: -715px;
+            z-index: 300;
+            transition: 0.3s;
+            height: calc(100vh - 112px);
+            overflow-y: auto;
+        }
+
+        .mobile2 {
+            display: none;
+        }
+
+        .clofomra {
+            width: 50px;
+            background-color: transparent;
+            margin-top: 0px;
+        }
+
+        input,
+        select,
+        textarea {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid transparent;
+            font-family: "Work Sans";
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .form-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .success-wind {
+            z-index: 300;
+            position: absolute;
+            bottom: 0px;
+            width: calc(100% - 40px);
+            left: 0px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            background: rgba(47, 51, 48, 0.9);
+            backdrop-filter: blur(4px);
+            padding: 0px 20px;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+
+        .success-wind p {
+            max-width: 300px;
+            line-height: 150%;
+            height: fit-content;
+            margin-top: 32px;
+        }
+
+        .success-wind img {
+            margin-right: 30px;
+            width: 30px;
+            height: 30px;
+            margin-top: 38px;
+        }
+
+        .second {
+            width: calc(100% - 60px);
+            min-height: 100vh;
+            background: linear-gradient(113.72deg, #512adb 21.55%, #4d29cd 78.72%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            padding: 0px 30px;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            position: relative;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.25);
+        }
+
+        form button {
+            color: #030c21 !important;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: inter;
+            background: #fff !important;
+            border: 2px solid #7868d1;
+            margin-top: 20px;
+            color: #fff;
+            height: 60px;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 6px;
+            min-height: 40px;
+        }
+
+        input {
+            width: calc(100%);
+            padding-left: 10px;
+        }
+
+        select {
+            width: calc(100%);
+            padding-left: 10px;
+        }
+
+        select {
+            height: 52px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            padding-top: 10px;
+            height: 100px;
+            height: 10vh;
+            min-height: 50px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+
+        #overlay {
+            width: 100vw;
+            height: 100%;
+
+            z-index: 200;
+            opacity: 0;
+            transition: 0.3s;
+            background-color: #090909;
+            position: absolute;
+            top: 0px;
+        }
+
+        .formla {
+            width: calc(100% - 20px);
+            min-height: calc(100vh - 40px);
+            position: static !important;
+            opacity: 1 !important;
+            padding-bottom: 0px !important;
+            padding-top: 20px !important;
+        }
+
+        .formla textarea {
+            height: 10vh !important;
+            min-height: auto !important;
+        }
+
+        .formla input,
+        .formla select {
+            height: 5vh !important;
+            min-height: auto !important;
+        }
+
+        .formla button {
+            height: 8vh !important;
+        }
+
+        .formla .form-top h2 {
+            font-size: 25px;
+        }
+
+        input::placeholder,
+        select,
+        textarea::placeholder {
+            color: #fff;
+            font-size: 16px;
+            font-family: "Work Sans";
+        }
+
+        ol.lst-kix_ddzctujkbgrz-2.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-2 0
+        }
+
+        ol.lst-kix_bzyghqbo1yk-1.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-1 0
+        }
+
+        ol.lst-kix_yglygzermm0b-3.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-3 0
+        }
+
+        ol.lst-kix_pawu44rb672f-8.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-8 0
+        }
+
+        .lst-kix_vrs0vqw8s8e-7>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-7
+        }
+
+        .lst-kix_nak6ptbbd9vs-0>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-6.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-6 0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_pawu44rb672f-8>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-8
+        }
+
+        .lst-kix_yglygzermm0b-5>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-5
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-4.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-4 0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_ddzctujkbgrz-4>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-4
+        }
+
+        ol.lst-kix_a9f2ffenin9w-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_a9f2ffenin9w-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_a9f2ffenin9w-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_a9f2ffenin9w-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_rrll55e9cnzk-1>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-1
+        }
+
+        ol.lst-kix_bzyghqbo1yk-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_h9n7tjd69jcg-0>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-0, decimal) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-2>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-2, lower-roman) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-3>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-3, decimal) ". "
+        }
+
+        ol.lst-kix_a9f2ffenin9w-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_bzyghqbo1yk-6>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-6
+        }
+
+        ol.lst-kix_a9f2ffenin9w-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_yglygzermm0b-3>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-3, decimal) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-1>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-1
+        }
+
+        .lst-kix_yglygzermm0b-4>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-4, lower-latin) ". "
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-7.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-7 0
+        }
+
+        .lst-kix_h9n7tjd69jcg-1>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-1, lower-latin) ". "
+        }
+
+        .lst-kix_yglygzermm0b-5>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_cokqpxx9w17o-1.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-1 0
+        }
+
+        .lst-kix_h9n7tjd69jcg-8>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-8, lower-roman) ". "
+        }
+
+        .lst-kix_yglygzermm0b-6>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-6, decimal) ". "
+        }
+
+        .lst-kix_ig89u214r8da-8>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-8
+        }
+
+        .lst-kix_h9n7tjd69jcg-7>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_cokqpxx9w17o-8.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-8 0
+        }
+
+        .lst-kix_pawu44rb672f-1>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-1
+        }
+
+        .lst-kix_yglygzermm0b-8>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-4.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-4 0
+        }
+
+        .lst-kix_h9n7tjd69jcg-4>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-4, lower-latin) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-6>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-6, decimal) ". "
+        }
+
+        .lst-kix_yglygzermm0b-7>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-7, lower-latin) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-5>li:before {
+            content: ""counter(lst-ctn-kix_h9n7tjd69jcg-5, lower-roman) ". "
+        }
+
+        .lst-kix_rrll55e9cnzk-8>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-8
+        }
+
+        .lst-kix_pc7slt30pvn0-7>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-7
+        }
+
+        .lst-kix_vrs0vqw8s8e-0>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-0
+        }
+
+        .lst-kix_ig89u214r8da-1>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-1
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_h9n7tjd69jcg-5>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-5
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-1.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-1 0
+        }
+
+        .lst-kix_h9n7tjd69jcg-8>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-8
+        }
+
+        .lst-kix_ddzctujkbgrz-8>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-8
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-8.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-8 0
+        }
+
+        ol.lst-kix_pawu44rb672f-1.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-1 0
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_a9f2ffenin9w-4.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-4 0
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_yglygzermm0b-1>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-1
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_bzyghqbo1yk-6>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-6, decimal) ". "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-2.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-2 0
+        }
+
+        .lst-kix_cokqpxx9w17o-5>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-5
+        }
+
+        .lst-kix_bzyghqbo1yk-4>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-4, lower-latin) ". "
+        }
+
+        .lst-kix_bzyghqbo1yk-8>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-8, lower-roman) ". "
+        }
+
+        .lst-kix_ddzctujkbgrz-0>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-0
+        }
+
+        ol.lst-kix_bzyghqbo1yk-8.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-8 0
+        }
+
+        .lst-kix_pawu44rb672f-4>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-4
+        }
+
+        .lst-kix_nak6ptbbd9vs-7>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-7
+        }
+
+        .lst-kix_bzyghqbo1yk-0>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-0, decimal) ". "
+        }
+
+        .lst-kix_bzyghqbo1yk-2>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-2.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-2 0
+        }
+
+        .lst-kix_pc7slt30pvn0-4>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-4
+        }
+
+        .lst-kix_vrs0vqw8s8e-3>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-3
+        }
+
+        .lst-kix_cokqpxx9w17o-3>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-3, decimal) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-5>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-5, lower-roman) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-4>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-4
+        }
+
+        .lst-kix_rrll55e9cnzk-4>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-4
+        }
+
+        .lst-kix_yglygzermm0b-8>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-8
+        }
+
+        .lst-kix_cokqpxx9w17o-4>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-4
+        }
+
+        .lst-kix_cokqpxx9w17o-7>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-7, lower-latin) ". "
+        }
+
+        .lst-kix_ig89u214r8da-5>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-5
+        }
+
+        .lst-kix_ddzctujkbgrz-1>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-1
+        }
+
+        ol.lst-kix_bzyghqbo1yk-6.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-6 0
+        }
+
+        .lst-kix_rrll55e9cnzk-1>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-1, lower-latin) ". "
+        }
+
+        .lst-kix_yglygzermm0b-1>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_ddzctujkbgrz-7.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-7 0
+        }
+
+        .lst-kix_rrll55e9cnzk-3>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-3, decimal) ". "
+        }
+
+        .lst-kix_rrll55e9cnzk-5>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_yglygzermm0b-1.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-1 0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-2.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-2 0
+        }
+
+        .lst-kix_rrll55e9cnzk-7>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_ig89u214r8da-8.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-8 0
+        }
+
+        .lst-kix_a9f2ffenin9w-3>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-3
+        }
+
+        .lst-kix_bzyghqbo1yk-2>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-2
+        }
+
+        .lst-kix_pc7slt30pvn0-3>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-3
+        }
+
+        ol.lst-kix_a9f2ffenin9w-1.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-1 0
+        }
+
+        .lst-kix_m6qiogu01eom-7>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_rrll55e9cnzk-0>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-2.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-2 0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rrll55e9cnzk-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_m6qiogu01eom-3>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_nak6ptbbd9vs-3>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-3, decimal) ". "
+        }
+
+        ol.lst-kix_bzyghqbo1yk-4.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-4 0
+        }
+
+        .lst-kix_m6qiogu01eom-4>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_nak6ptbbd9vs-2>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rrll55e9cnzk-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_nak6ptbbd9vs-7>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rrll55e9cnzk-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_ig89u214r8da-0>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rrll55e9cnzk-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_a9f2ffenin9w-0>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_a9f2ffenin9w-0>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-0, lower-latin) ". "
+        }
+
+        .lst-kix_pawu44rb672f-0>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-0, decimal) ". "
+        }
+
+        .lst-kix_m6qiogu01eom-0>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_pawu44rb672f-1>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-1, lower-latin) ". "
+        }
+
+        .lst-kix_nak6ptbbd9vs-6>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-6, decimal) ". "
+        }
+
+        .lst-kix_yjbgudoj8l7g-5>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_vrs0vqw8s8e-6>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-6
+        }
+
+        .lst-kix_yjbgudoj8l7g-2>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_yjbgudoj8l7g-6>li:before {
+            content: "-  "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-1.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-1 0
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-4.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-4 0
+        }
+
+        ol.lst-kix_yglygzermm0b-6.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-6 0
+        }
+
+        .lst-kix_yglygzermm0b-2>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-2
+        }
+
+        .lst-kix_nak6ptbbd9vs-1>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-1
+        }
+
+        .lst-kix_yjbgudoj8l7g-1>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_m6qiogu01eom-8>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_ig89u214r8da-2>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-2
+        }
+
+        .lst-kix_1nzil04q451w-8>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_1nzil04q451w-5>li:before {
+            content: "-  "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-0.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-0 0
+        }
+
+        .lst-kix_rrll55e9cnzk-2>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-2
+        }
+
+        ol.lst-kix_bzyghqbo1yk-3.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-3 0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_bzyghqbo1yk-1>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-1
+        }
+
+        ol.lst-kix_pc7slt30pvn0-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_pawu44rb672f-7>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-7
+        }
+
+        ol.lst-kix_pc7slt30pvn0-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_pc7slt30pvn0-0>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-0, lower-latin) ". "
+        }
+
+        ol.lst-kix_pc7slt30pvn0-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-7.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-7 0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-1.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-1 0
+        }
+
+        .lst-kix_a9f2ffenin9w-4>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-4, lower-roman) ". "
+        }
+
+        .lst-kix_ig89u214r8da-7>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-7
+        }
+
+        ol.lst-kix_pc7slt30pvn0-8.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-8 0
+        }
+
+        .lst-kix_ig89u214r8da-4>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-4
+        }
+
+        .lst-kix_nak6ptbbd9vs-5>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-5
+        }
+
+        .lst-kix_a9f2ffenin9w-3>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-3, lower-latin) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-1>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-1, lower-latin) ". "
+        }
+
+        .lst-kix_pawu44rb672f-4>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-4, lower-latin) ". "
+        }
+
+        .lst-kix_pawu44rb672f-5>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-5, lower-roman) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-0>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-0, decimal) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-2>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-2
+        }
+
+        .lst-kix_1nzil04q451w-1>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_ddzctujkbgrz-5>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-5
+        }
+
+        .lst-kix_1nzil04q451w-0>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_1nzil04q451w-4>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_a9f2ffenin9w-7>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-7, lower-roman) ". "
+        }
+
+        .lst-kix_nak6ptbbd9vs-8>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-8
+        }
+
+        .lst-kix_a9f2ffenin9w-8>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-8, decimal) ". "
+        }
+
+        .lst-kix_pawu44rb672f-8>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_yglygzermm0b-5.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-5 0
+        }
+
+        .lst-kix_ddzctujkbgrz-5>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-5, lower-roman) ". "
+        }
+
+        .lst-kix_bzyghqbo1yk-7>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-7, lower-latin) ". "
+        }
+
+        .lst-kix_ddzctujkbgrz-1>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-5.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-5 0
+        }
+
+        ol.lst-kix_yglygzermm0b-7.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-7 0
+        }
+
+        .lst-kix_rrll55e9cnzk-5>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-5
+        }
+
+        ol.lst-kix_a9f2ffenin9w-8.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-8 0
+        }
+
+        .lst-kix_h9n7tjd69jcg-6>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-6
+        }
+
+        .lst-kix_bzyghqbo1yk-3>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-3, decimal) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-4>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-4, lower-latin) ". "
+        }
+
+        .lst-kix_pawu44rb672f-5>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-5
+        }
+
+        ol.lst-kix_a9f2ffenin9w-5.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-5 0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-6.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-6 0
+        }
+
+        .lst-kix_cokqpxx9w17o-8>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-0.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-0 0
+        }
+
+        ol.lst-kix_bzyghqbo1yk-0.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-0 0
+        }
+
+        .lst-kix_pc7slt30pvn0-3>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-3, lower-latin) ". "
+        }
+
+        .lst-kix_pc7slt30pvn0-5>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-5
+        }
+
+        .lst-kix_vrs0vqw8s8e-4>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-4
+        }
+
+        .lst-kix_a9f2ffenin9w-7>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-7
+        }
+
+        ol.lst-kix_pc7slt30pvn0-3.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-3 0
+        }
+
+        .lst-kix_rrll55e9cnzk-7>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-7
+        }
+
+        .lst-kix_pc7slt30pvn0-7>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-7, lower-roman) ". "
+        }
+
+        .lst-kix_rrll55e9cnzk-0>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-0, decimal) ". "
+        }
+
+        ol.lst-kix_a9f2ffenin9w-6.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-6 0
+        }
+
+        .lst-kix_cokqpxx9w17o-8>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-8
+        }
+
+        .lst-kix_rrll55e9cnzk-4>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-4, lower-latin) ". "
+        }
+
+        .lst-kix_ig89u214r8da-6>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-6, lower-latin) ". "
+        }
+
+        .lst-kix_yglygzermm0b-0>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-0, decimal) ". "
+        }
+
+        .lst-kix_yglygzermm0b-0>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-0
+        }
+
+        .lst-kix_rrll55e9cnzk-8>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-8, lower-roman) ". "
+        }
+
+        .lst-kix_pawu44rb672f-0>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-4.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-4 0
+        }
+
+        .lst-kix_ddzctujkbgrz-3>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-3
+        }
+
+        .lst-kix_cokqpxx9w17o-1>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-1
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-3.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-3 0
+        }
+
+        .lst-kix_ig89u214r8da-2>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-2, decimal) ". "
+        }
+
+        .lst-kix_nak6ptbbd9vs-3>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-3
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-2.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-2 0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-7.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-7 0
+        }
+
+        .lst-kix_pc7slt30pvn0-0>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-0
+        }
+
+        ol.lst-kix_yglygzermm0b-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-8.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-8 0
+        }
+
+        ol.lst-kix_yglygzermm0b-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_yglygzermm0b-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-0.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-0 0
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-1.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-1 0
+        }
+
+        ol.lst-kix_pc7slt30pvn0-5.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-5 0
+        }
+
+        .lst-kix_yglygzermm0b-3>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-3
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-2.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-2 0
+        }
+
+        .lst-kix_bzyghqbo1yk-4>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-4
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_ddzctujkbgrz-6>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-6
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-2.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-2 0
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-7.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-7 0
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-2.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-2 0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-3.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-3 0
+        }
+
+        ol.lst-kix_ddzctujkbgrz-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_a9f2ffenin9w-1>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-1
+        }
+
+        ol.lst-kix_ddzctujkbgrz-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_bzyghqbo1yk-7.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-7 0
+        }
+
+        ol.lst-kix_ddzctujkbgrz-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-3.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-3 0
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pc7slt30pvn0-0.start {
+            counter-reset: lst-ctn-kix_pc7slt30pvn0-0 0
+        }
+
+        .lst-kix_yglygzermm0b-7>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-7
+        }
+
+        .lst-kix_vrs0vqw8s8e-8>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-8, lower-roman) ". "
+        }
+
+        .lst-kix_vrs0vqw8s8e-6>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-6, decimal) ". "
+        }
+
+        .lst-kix_vrs0vqw8s8e-7>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_a9f2ffenin9w-3.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-3 0
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-7.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-7 0
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-6.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-6 0
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_vrs0vqw8s8e-3>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-3, decimal) ". "
+        }
+
+        ol.lst-kix_ig89u214r8da-5.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-5 0
+        }
+
+        .lst-kix_vrs0vqw8s8e-4>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-4, lower-latin) ". "
+        }
+
+        .lst-kix_vrs0vqw8s8e-5>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-7.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-7 0
+        }
+
+        .lst-kix_vrs0vqw8s8e-0>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-0, decimal) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-5>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-5
+        }
+
+        .lst-kix_a9f2ffenin9w-8>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-8
+        }
+
+        .lst-kix_nak6ptbbd9vs-2>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-2
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_vrs0vqw8s8e-2>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-2, lower-roman) ". "
+        }
+
+        .lst-kix_vrs0vqw8s8e-1>li:before {
+            content: ""counter(lst-ctn-kix_vrs0vqw8s8e-1, lower-latin) ". "
+        }
+
+        .lst-kix_ddzctujkbgrz-2>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-2
+        }
+
+        .lst-kix_cokqpxx9w17o-3>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-3
+        }
+
+        ol.lst-kix_bzyghqbo1yk-2.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-2 0
+        }
+
+        .lst-kix_cokqpxx9w17o-6>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-6
+        }
+
+        .lst-kix_ddzctujkbgrz-6>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-6, decimal) ". "
+        }
+
+        .lst-kix_ddzctujkbgrz-4>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-4, lower-latin) ". "
+        }
+
+        .lst-kix_ddzctujkbgrz-8>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-8, lower-roman) ". "
+        }
+
+        .lst-kix_nak6ptbbd9vs-6>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-6
+        }
+
+        ol.lst-kix_vrs0vqw8s8e-8.start {
+            counter-reset: lst-ctn-kix_vrs0vqw8s8e-8 0
+        }
+
+        .lst-kix_ddzctujkbgrz-2>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-2, lower-roman) ". "
+        }
+
+        .lst-kix_vrs0vqw8s8e-2>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-2
+        }
+
+        ol.lst-kix_ig89u214r8da-7.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-7 0
+        }
+
+        .lst-kix_ig89u214r8da-6>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-6
+        }
+
+        .lst-kix_pawu44rb672f-3>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-3
+        }
+
+        ol.lst-kix_ddzctujkbgrz-6.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-6 0
+        }
+
+        ol.lst-kix_a9f2ffenin9w-0.start {
+            counter-reset: lst-ctn-kix_a9f2ffenin9w-0 0
+        }
+
+        .lst-kix_pawu44rb672f-2>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-2
+        }
+
+        .lst-kix_pc7slt30pvn0-2>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-2
+        }
+
+        ol.lst-kix_yglygzermm0b-4.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-4 0
+        }
+
+        .lst-kix_pc7slt30pvn0-8>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-8, decimal) ". "
+        }
+
+        ol.lst-kix_cokqpxx9w17o-0.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-0 0
+        }
+
+        .lst-kix_vrs0vqw8s8e-1>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-1
+        }
+
+        .lst-kix_pc7slt30pvn0-4>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-4, lower-roman) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-4>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-4
+        }
+
+        .lst-kix_ddzctujkbgrz-0>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-0, decimal) ". "
+        }
+
+        .lst-kix_pc7slt30pvn0-6>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-6, lower-latin) ". "
+        }
+
+        .lst-kix_ig89u214r8da-7>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-7, lower-roman) ". "
+        }
+
+        .lst-kix_ig89u214r8da-5>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-5, decimal) ". "
+        }
+
+        .lst-kix_rrll55e9cnzk-3>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-3
+        }
+
+        .lst-kix_ig89u214r8da-1>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-1, lower-roman) ". "
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-0.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-0 0
+        }
+
+        .lst-kix_ig89u214r8da-3>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-3, lower-latin) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-3>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-3
+        }
+
+        ol.lst-kix_ddzctujkbgrz-8.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-8 0
+        }
+
+        .lst-kix_bzyghqbo1yk-8>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-8
+        }
+
+        ol.lst-kix_bzyghqbo1yk-5.start {
+            counter-reset: lst-ctn-kix_bzyghqbo1yk-5 0
+        }
+
+        ol.lst-kix_yglygzermm0b-2.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-2 0
+        }
+
+        ul.lst-kix_1nzil04q451w-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_vrs0vqw8s8e-8>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-8
+        }
+
+        ul.lst-kix_1nzil04q451w-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_1nzil04q451w-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_m6qiogu01eom-6>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_m6qiogu01eom-5>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_nak6ptbbd9vs-1>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-1, lower-latin) ". "
+        }
+
+        .lst-kix_h9n7tjd69jcg-0>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-0
+        }
+
+        .lst-kix_nak6ptbbd9vs-0>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-0, decimal) ". "
+        }
+
+        .lst-kix_nak6ptbbd9vs-4>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-4, lower-latin) ". "
+        }
+
+        .lst-kix_m6qiogu01eom-2>li:before {
+            content: "+  "
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-5.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-5 0
+        }
+
+        ol.lst-kix_ig89u214r8da-3.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-3 0
+        }
+
+        ol.lst-kix_pawu44rb672f-5.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-5 0
+        }
+
+        .lst-kix_nak6ptbbd9vs-8>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-8, lower-roman) ". "
+        }
+
+        .lst-kix_pawu44rb672f-2>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-2, lower-roman) ". "
+        }
+
+        .lst-kix_m6qiogu01eom-1>li:before {
+            content: "+  "
+        }
+
+        .lst-kix_yjbgudoj8l7g-7>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_nak6ptbbd9vs-5>li:before {
+            content: ""counter(lst-ctn-kix_nak6ptbbd9vs-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_rrll55e9cnzk-6.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-6 0
+        }
+
+        .lst-kix_yjbgudoj8l7g-8>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_a9f2ffenin9w-1>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-1, lower-roman) ". "
+        }
+
+        .lst-kix_pc7slt30pvn0-8>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-8
+        }
+
+        .lst-kix_yjbgudoj8l7g-3>li:before {
+            content: "-  "
+        }
+
+        ul.lst-kix_m6qiogu01eom-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_m6qiogu01eom-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_ddzctujkbgrz-7>li {
+            counter-increment: lst-ctn-kix_ddzctujkbgrz-7
+        }
+
+        ol.lst-kix_ig89u214r8da-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_yjbgudoj8l7g-4>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_bzyghqbo1yk-3>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-3
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-1.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-1 0
+        }
+
+        ol.lst-kix_yglygzermm0b-0.start {
+            counter-reset: lst-ctn-kix_yglygzermm0b-0 0
+        }
+
+        .lst-kix_yjbgudoj8l7g-0>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_1nzil04q451w-6>li:before {
+            content: "-  "
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-0.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-0 0
+        }
+
+        .lst-kix_1nzil04q451w-7>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_bzyghqbo1yk-7>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-7
+        }
+
+        ol.lst-kix_ig89u214r8da-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_h9n7tjd69jcg-2>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-2
+        }
+
+        ol.lst-kix_ig89u214r8da-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-0.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-0 0
+        }
+
+        ol.lst-kix_ig89u214r8da-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_pc7slt30pvn0-2>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-2, decimal) ". "
+        }
+
+        ol.lst-kix_ig89u214r8da-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_pc7slt30pvn0-1>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-1, lower-roman) ". "
+        }
+
+        .lst-kix_pc7slt30pvn0-1>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-1
+        }
+
+        ol.lst-kix_ddzctujkbgrz-4.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-4 0
+        }
+
+        .lst-kix_pawu44rb672f-6>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-6, decimal) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-2>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-2, decimal) ". "
+        }
+
+        .lst-kix_pawu44rb672f-3>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-3, decimal) ". "
+        }
+
+        .lst-kix_pawu44rb672f-7>li:before {
+            content: ""counter(lst-ctn-kix_pawu44rb672f-7, lower-latin) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-2>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-2, lower-roman) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-6>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-6, lower-latin) ". "
+        }
+
+        .lst-kix_a9f2ffenin9w-5>li:before {
+            content: ""counter(lst-ctn-kix_a9f2ffenin9w-5, decimal) ". "
+        }
+
+        .lst-kix_cokqpxx9w17o-0>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-5.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-5 0
+        }
+
+        .lst-kix_1nzil04q451w-2>li:before {
+            content: "-  "
+        }
+
+        ol.lst-kix_ddzctujkbgrz-5.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-5 0
+        }
+
+        .lst-kix_yglygzermm0b-4>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-4
+        }
+
+        ol.lst-kix_ig89u214r8da-4.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-4 0
+        }
+
+        .lst-kix_1nzil04q451w-3>li:before {
+            content: "-  "
+        }
+
+        .lst-kix_bzyghqbo1yk-5>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-8.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-8 0
+        }
+
+        .lst-kix_rrll55e9cnzk-6>li {
+            counter-increment: lst-ctn-kix_rrll55e9cnzk-6
+        }
+
+        .lst-kix_ddzctujkbgrz-3>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-3, decimal) ". "
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-5.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-5 0
+        }
+
+        .lst-kix_a9f2ffenin9w-6>li {
+            counter-increment: lst-ctn-kix_a9f2ffenin9w-6
+        }
+
+        .lst-kix_bzyghqbo1yk-1>li:before {
+            content: ""counter(lst-ctn-kix_bzyghqbo1yk-1, lower-latin) ". "
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_ddzctujkbgrz-7>li:before {
+            content: ""counter(lst-ctn-kix_ddzctujkbgrz-7, lower-latin) ". "
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_yjbgudoj8l7g-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_h9n7tjd69jcg-7>li {
+            counter-increment: lst-ctn-kix_h9n7tjd69jcg-7
+        }
+
+        ol.lst-kix_ddzctujkbgrz-3.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-3 0
+        }
+
+        .lst-kix_cokqpxx9w17o-6>li:before {
+            content: ""counter(lst-ctn-kix_cokqpxx9w17o-6, decimal) ". "
+        }
+
+        ol.lst-kix_pawu44rb672f-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_cokqpxx9w17o-7>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-7
+        }
+
+        ol.lst-kix_pawu44rb672f-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_nak6ptbbd9vs-4>li {
+            counter-increment: lst-ctn-kix_nak6ptbbd9vs-4
+        }
+
+        ol.lst-kix_pawu44rb672f-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_bzyghqbo1yk-0>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-0
+        }
+
+        ol.lst-kix_pawu44rb672f-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_pc7slt30pvn0-5>li:before {
+            content: ""counter(lst-ctn-kix_pc7slt30pvn0-5, decimal) ". "
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-6.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-6 0
+        }
+
+        ol.lst-kix_cokqpxx9w17o-6.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-6 0
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-3.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-3 0
+        }
+
+        ol.lst-kix_rrll55e9cnzk-7.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-7 0
+        }
+
+        ol.lst-kix_cokqpxx9w17o-3.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-3 0
+        }
+
+        ol.lst-kix_pawu44rb672f-6.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-6 0
+        }
+
+        ol.lst-kix_ddzctujkbgrz-0.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-0 0
+        }
+
+        .lst-kix_ig89u214r8da-8>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-8, decimal) ". "
+        }
+
+        ol.lst-kix_pawu44rb672f-3.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-3 0
+        }
+
+        .lst-kix_rrll55e9cnzk-2>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-2, lower-roman) ". "
+        }
+
+        .lst-kix_yglygzermm0b-2>li:before {
+            content: ""counter(lst-ctn-kix_yglygzermm0b-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_ig89u214r8da-2.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-2 0
+        }
+
+        .lst-kix_pawu44rb672f-6>li {
+            counter-increment: lst-ctn-kix_pawu44rb672f-6
+        }
+
+        .lst-kix_cokqpxx9w17o-2>li {
+            counter-increment: lst-ctn-kix_cokqpxx9w17o-2
+        }
+
+        .lst-kix_ig89u214r8da-0>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-0, lower-latin) ". "
+        }
+
+        ol.lst-kix_cokqpxx9w17o-4.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-4 0
+        }
+
+        .lst-kix_ig89u214r8da-3>li {
+            counter-increment: lst-ctn-kix_ig89u214r8da-3
+        }
+
+        .lst-kix_rrll55e9cnzk-6>li:before {
+            content: ""counter(lst-ctn-kix_rrll55e9cnzk-6, decimal) ". "
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-7.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-7 0
+        }
+
+        .lst-kix_ig89u214r8da-4>li:before {
+            content: ""counter(lst-ctn-kix_ig89u214r8da-4, lower-roman) ". "
+        }
+
+        .lst-kix_yglygzermm0b-6>li {
+            counter-increment: lst-ctn-kix_yglygzermm0b-6
+        }
+
+        ol.lst-kix_cokqpxx9w17o-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rrll55e9cnzk-8.start {
+            counter-reset: lst-ctn-kix_rrll55e9cnzk-8 0
+        }
+
+        ol.lst-kix_cokqpxx9w17o-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ig89u214r8da-1.start {
+            counter-reset: lst-ctn-kix_ig89u214r8da-1 0
+        }
+
+        .lst-kix_bzyghqbo1yk-5>li {
+            counter-increment: lst-ctn-kix_bzyghqbo1yk-5
+        }
+
+        ol.lst-kix_cokqpxx9w17o-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ddzctujkbgrz-1.start {
+            counter-reset: lst-ctn-kix_ddzctujkbgrz-1 0
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-4.start {
+            counter-reset: lst-ctn-kix_nak6ptbbd9vs-4 0
+        }
+
+        ol.lst-kix_cokqpxx9w17o-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_pawu44rb672f-4.start {
+            counter-reset: lst-ctn-kix_pawu44rb672f-4 0
+        }
+
+        ol.lst-kix_cokqpxx9w17o-5.start {
+            counter-reset: lst-ctn-kix_cokqpxx9w17o-5 0
+        }
+
+        li.li-bullet-0:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        ol.lst-kix_cokqpxx9w17o-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_cokqpxx9w17o-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_vrs0vqw8s8e-5>li {
+            counter-increment: lst-ctn-kix_vrs0vqw8s8e-5
+        }
+
+        .lst-kix_pc7slt30pvn0-6>li {
+            counter-increment: lst-ctn-kix_pc7slt30pvn0-6
+        }
+
+        ol.lst-kix_h9n7tjd69jcg-6.start {
+            counter-reset: lst-ctn-kix_h9n7tjd69jcg-6 0
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c45 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.55;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: justify;
+            padding-right: 0pt
+        }
+
+        .c20 {
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c4 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c0 {
+            padding-top: 16pt;
+            padding-bottom: 4pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c1 {
+
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Roboto";
+            font-style: normal
+        }
+
+        .c31 {
+            color: #434343;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 14pt;
+            font-family: "Roboto";
+            font-style: normal
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            text-indent: 36pt;
+            padding-bottom: 0pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c29 {
+            padding-top: 18pt;
+            padding-bottom: 6pt;
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c10 {
+            color: #434343;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 16px;
+            font-style: normal
+        }
+
+        .c28 {
+            padding-top: 16pt;
+            padding-bottom: 4pt;
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            font-size: 16px;
+            line-height: 200%;
+            text-align: justify
+        }
+
+        .c28 {}
+
+        .c44 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c14 {
+
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Roboto";
+            font-style: normal
+        }
+
+        .c37 {
+            padding-top: 20pt;
+            padding-bottom: 6pt;
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c47 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c5 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c24 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c17 {
+            padding-top: 16pt;
+            padding-bottom: 4pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c53 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c26 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c38 {
+            padding-top: 18pt;
+            padding-bottom: 6pt;
+            line-height: 1.7999999999999998;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c7 {
+            text-decoration-skip-ink: none;
+            font-size: 10pt;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c25 {
+
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c42 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c18 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0;
+            text-align: left
+        }
+
+        .c15 {
+            background-color: #ffffff;
+            max-width: 960px;
+            padding: 100px;
+            padding-top: 20px;
+        }
+
+        .c33 {
+            font-size: 12pt;
+            font-family: "Roboto";
+            font-weight: 700
+        }
+
+        .c32 {
+            font-weight: 700;
+            font-size: 20pt;
+            font-family: "Inter"
+        }
+
+        .c6 {
+            font-size: 10pt;
+            font-family: "Inter";
+            font-weight: 400
+        }
+
+        .c43 {
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c41 {
+            font-weight: 700;
+            font-size: 11pt;
+            font-family: "Inter"
+        }
+
+        .c23 {
+            font-size: 12pt;
+            font-family: "Roboto";
+            font-weight: 400
+        }
+
+        .c27 {
+            font-weight: 700;
+            font-size: 16pt;
+            font-family: "Inter"
+        }
+
+        .c22 {
+            font-size: 12pt;
+            font-family: "Inter";
+            font-weight: 700
+        }
+
+        .c8 {
+            font-size: 12pt;
+            font-family: "Inter";
+            font-weight: 400
+        }
+
+        .c2 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c16 {
+            margin-left: 36pt;
+            padding-left: 0pt
+        }
+
+        .c3 {
+            color: #222222;
+            font-size: 12pt
+        }
+
+        .c34 {
+            font-weight: 400;
+            font-family: "Arial"
+        }
+
+        .c39 {
+            border: 1px solid black;
+            margin: 5px
+        }
+
+        .c19 {
+            font-weight: 400;
+            font-family: "Inter"
+        }
+
+        .navb1 {
+            font-size: 14px;
+            text-decoration: none;
+            font-family: "Inter";
+            color: #fff !important;
+        }
+
+        .c36 {
+            font-size: 14pt;
+            color: #434343
+        }
+
+        .c40 {
+            font-weight: 700;
+            font-family: "Roboto"
+        }
+
+        .c13 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c46 {
+            width: 33%;
+            height: 1px
+        }
+
+        .c52 {
+            color: #ff0000
+        }
+
+        .c50 {
+            font-size: 16pt
+        }
+
+        .c35 {
+            height: 14pt
+        }
+
+        .c48 {
+            margin-left: 36pt
+        }
+
+        .c12 {
+            height: 11pt
+        }
+
+        .c30 {
+            font-size: 10pt
+        }
+
+        .c49 {
+            color: #434343
+        }
+
+
+
+        .c51 {
+            font-size: 26pt
+        }
+
+        .title {
+            padding-top: 0pt;
+
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+
+            font-weight: 700;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Inter";
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+
+            font-weight: 700;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Inter";
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        p {
+            line-height: 200%;
+            font-size: 16px;
+            font-family: 'Inter';
+            color: #A5A4B7 !important;
+        }
+
+        li.li-bullet-0:before {
+            color: #A5A4B7 !important;
+
+        }
+
+        p span,
+        li span {
+            line-height: 200%;
+            font-size: 16px !important;
+            font-family: 'Inter' !important;
+            color: #A5A4B7 !important;
+            font-weight: 400 !important;
+        }
+
+        .c7 {
+            background-color: transparent;
+        }
+
+        .c2 .c8 {}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        h1 span,
+        h2 span,
+        h3 span,
+        h4 span,
+        h5 span {
+            font-family: 'Work Sans' !important;
+            color: #fff !important;
+        }
+
+        a {
+            color: black;
+            font-size: 10px;
+        }
+
+        .c28 span {
+            color: #A5A4B7 !important;
+        }
+
+        h2 span {
+            font-size: 20px !important;
+        }
+
+        h1 span {
+            font-size: 36px !important;
+        }
+
+        body,
+        html,
+        .c15 {
+            background-color: #030C21;
+        }
+
+        h5 span {
+            color: #fff;
+            font-family: 'Inter';
+            letter-spacing: 0.05em;
+            font-weight: 400 !important;
+            text-transform: uppercase;
+            font-size: 16px !important;
+        }
+
+        .button-solution {
+            background: #2B395A;
+            border-radius: 4px;
+            color: #A5A4B7 !important;
+            border: none;
+            padding: 2px 10px;
+            margin: 0px;
+            margin-right: 10px;
+            margin-top: 16px;
+            font-family: 'Inter';
+            cursor: pointer;
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+        }
+
+        .advnver {
+            max-width: 960px;
+            padding: 0px 100px;
+            max-width: 1060px;
+            width: calc(100% - 200px);
+            padding-top: 150px;
+            margin-bottom: 20px;
+        }
+
+        .advnver p {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .zoom {
+            width: calc(100% - 40px);
+            position: relative;
+            background-size: 0 0;
+            max-width: 1240px;
+            margin-top: -20px;
+        }
+
+
+        .zoom img {
+            display: block;
+            width: 100%;
+        }
+
+        .button-solution p {
+            margin: 0px;
+            padding: 0px;
+            margin-left: 4px;
+            width: 0px;
+            opacity: 0;
+            transition: .25s;
+        }
+
+        .button-solution:hover {
+            background-color: rgba(44, 101, 212, 0.4);
+            color: #4AA4FF !important;
+        }
+
+        .button-solution:hover p {
+            width: 20px;
+            opacity: 1;
+            color: #4AA4FF !important;
+
+        }
+
+        .button-solution span {
+            font-family: 'Inter';
+
+        }
+
+        .roundblue {
+            background-color: #2B395A;
+            color: #A5A4B7;
+            border-radius: 10px;
+            font-family: 'Inter';
+            font-size: 16px;
+            line-height: 200%;
+            padding: 20px 0px;
+            max-width: 960px;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .roundblue img {
+            margin-left: -34px;
+            margin-bottom: -5px;
+            margin-right: 10px;
+        }
+
+        .roundblue p {
+            max-width: 960px;
+            width: 100%;
+        }
+
+        ol.lst-kix_nak6ptbbd9vs-0.start {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin-top: -16px;
+            justify-content: flex-start;
+        }
+
+        .tag {
+            display: flex;
+            align-items: center;
+        }
+
+        .tag img {
+            cursor: pointer;
+            width: 166px;
+            margin-top: 5px;
+            height: auto;
+        }
+
+        .tag h1 {
+            font-family: 'Inter' !important;
+            padding: 0px;
+            font-weight: 400;
+            opacity: 0.4;
+            margin: 0px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.07em;
+        }
+
+        .h6lasd {
+            font-size: 16px;
+            text-decoration: none;
+            font-style: normal !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .h6lasd img {
+            width: 28px;
+            margin-right: 24px;
+        }
+
+        #open-form {
+            background: #fff;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: #030C21;
+            border: none;
+            font-family: 'Inter' !important;
+            cursor: pointer;
+        }
+
+        .formla #closed {
+            width: 18px;
+            height: 18px;
+        }
+
+        #closed {
+            cursor: pointer;
+            height: 18px;
+            width: 18px;
+        }
+
+        .form-top {
+            align-items: center;
+        }
+
+        h1 p span {
+            font-size: 20px;
+            font-family: "Gilroy";
+        }
+
+        .b {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .b p {
+            position: absolute;
+            top: 22px;
+            right: 40px;
+            font-family: "Work Sans";
+            opacity: 0.6;
+            font-weight: 400;
+            top: 50% !important;
+            transform: translateY(-50%);
+        }
+
+        .vmhubimg {
+            width: 100%;
+            margin-bottom: -80px;
+        }
+
+        .b input {
+            margin-bottom: 0px !important;
+        }
+
+        body {
+            overflow-x: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            width: 100%;
+        }
+
+        nav {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12px;
+            position: fixed;
+            width: calc(100vw);
+            background-color: #030C21;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding-bottom: 20px;
+        }
+
+        .tag h1 p {
+            font-family: 'Inter' !important;
+            font-size: 17px;
+            margin: 0px 14px;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #A5A4B7 !important;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .nav {
+            display: flex;
+            color: #fff !important;
+            margin-top: 20px;
+        }
+
+        .nav p:first-child {
+            margin-left: -2px;
+        }
+
+        .nav p {
+            cursor: pointer;
+
+        }
+
+        .nav p {
+            transition: all .25s;
+            padding: 0px 2px;
+            color: #CECECF !important;
+            border-bottom: 2px solid transparent;
+            margin-right: 16px;
+        }
+
+        .nav p.selected {
+            color: #fff !important;
+            border-bottom: 2px solid #fff;
+        }
+
+        .nav p:Hover {
+            border-bottom: 2px solid white;
+            color: #fff !important;
+        }
+
+        body {}
+
+        .c15 {
+            padding-top: 100px !important;
+        }
+
+        .start-thing {
+            max-width: 960px;
+            width: 100%;
+            padding-top: 150px !important;
+
+        }
+
+        h1 {
+            scroll-margin: 100px;
+        }
+
+        h5 {
+            scroll-margin: 140px;
+        }
+
+        .sources a {
+            font-size: 13px !important;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .sources123 {
+            margin-top: 40px;
+        }
+
+        .start1231 {
+            padding-top: 80px;
+        }
+
+        .ima12 {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 1240px) {
+            .nav-container {
+                padding: 0px 20px;
+                max-width: 960px;
+                width: calc(100% - 80px);
+            }
+
+            nav {
+                left: 0px;
+                transform: none;
+            }
+        }
+
+        .imgsds123a {
+            display: none;
+        }
+
+        .advnver {
+            font-size: 14px;
+        }
+
+        @media(max-width: 960px) {
+            .navb1 {
+                font-size: 12px;
+            }
+
+            .zoom {
+                margin-top: 20px !important;
+            }
+
+            .advnver {
+                font-size: 13px;
+            }
+
+            .advnver {
+                max-width: 960px;
+                padding: 0px 20px;
+                max-width: 1060px;
+                width: calc(100% - 40px);
+                padding-top: 150px;
+                margin-bottom: 20px;
+            }
+
+            .imgsdsa {
+                display: none;
+            }
+
+            .imgsds123a {
+                display: flex;
+                margin-left: 0px;
+            }
+
+            .roundblue img {
+                margin: 0px;
+                margin-bottom: 20px;
+
+            }
+
+            .c15 {
+                padding: 20px;
+            }
+
+            .roundblue {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 20px;
+                margin-bottom: 40px;
+            }
+
+            .roundblue p {
+                font-size: 15px;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .nav {}
+
+            .nav p {
+                font-size: 14px !important;
+
+            }
+
+            .button-solution {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 500px;
+                margin-right: 0px;
+            }
+
+            ol.lst-kix_nak6ptbbd9vs-0.start {}
+
+            .start1231 {
+                padding-top: 40px;
+            }
+
+            h1 {
+                font-size: 28px !important;
+            }
+
+            .c15 {
+                padding: 20px;
+            }
+
+            nav {
+                padding-left: 20px;
+                width: calc(100vw - 40px);
+            }
+        }
+
+        button {
+            letter-spacing: 0.03em;
+        }
+
+        form button {
+            background: linear-gradient(86.43deg, #2D41F9 -1.62%, #0BDCEA 150.68%);
+            border: none;
+            min-height: 50px;
+        }
+
+        .bottomsection {
+            display: none;
+        }
+
+        .mob-tag {
+            display: none;
+        }
+
+        .select-nav-cont {
+            display: none;
+        }
+
+        .mobile-eye {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .navb1 {
+                display: none;
+            }
+
+            .vmhubimg {
+                width: 140%;
+                margin-left: -20%;
+            }
+
+            .roundblue {}
+
+            .zoom {
+                display: none;
+            }
+
+            .mobile-eye {
+                margin-top: -80px;
+                width: calc(100% - 40px);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mobile-eye img {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            .zoom img {
+                width: 100%;
+            }
+
+            .roundblue {
+                margin-bottom: 0px;
+                border-radius: 0px;
+            }
+
+            .roundblue p {
+                text-align: justify;
+            }
+
+            body {
+                margin: 0px;
+            }
+
+            .nav-selector {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-indent: 1px;
+                text-overflow: '';
+            }
+
+            .arrow-down {
+                width: 0;
+                height: 0;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                bottom: 15px;
+                right: 29px;
+                border-top: 4px solid #A5A4B7;
+                position: absolute;
+            }
+
+            .select-nav-cont {
+                display: flex;
+                position: relative;
+            }
+
+            .nav-selector:focus {
+                box-shadow: none;
+            }
+
+            .nav-selector {
+                border-bottom: 1px solid rgba(165, 164, 183, 0.2);
+                border-top: none;
+                background-color: #0E1220 !important;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                width: calc(100% - 0px);
+                height: 35px;
+                font-family: 'Inter' !important;
+                font-weight: 400;
+                padding-left: 15px;
+            }
+
+            h1 {
+                scroll-margin: 100px;
+            }
+
+            h5 {
+                scroll-margin: 80px;
+            }
+
+            .nav-container {
+                padding: 0px 10px;
+            }
+
+            .tag {
+                display: none;
+            }
+
+            .mob-tag {
+                display: flex;
+                width: 150px;
+                margin-top: 10px;
+            }
+
+            .homereturn {
+                position: absolute;
+                width: 50%;
+                height: 50px;
+            }
+
+            nav #open-form {
+                display: none;
+            }
+
+            .bottomsection {
+                display: flex;
+                position: fixed;
+                backdrop-filter: blur(2.2px);
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: calc(100% - 40px);
+                left: 0px;
+                padding: 0px 20px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bottomsection button {
+                width: 100%;
+                height: 50px;
+                font-size: 16px;
+                padding: 0px !important;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .tag img {
+                width: 110px;
+                margin-top: 5px;
+            }
+
+            .tag h1 {
+                font-size: 18px !important;
+            }
+
+            .tag h1 p {
+                font-size: 10px !important;
+                margin-right: 10px;
+                margin-left: 14px;
+                margin-top: 4px;
+            }
+
+            nav {
+                width: calc(100% - 20px);
+            }
+
+            .c38 {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+
+            .c15 {
+                padding-bottom: 100px;
+                padding-top: 50px !important;
+            }
+
+            .vmhubimg {
+                margin-bottom: -40px;
+            }
+        }
+
+        html {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .entire-xp-network {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #navmenu {
+            display: none;
+        }
+
+        #menu {
+            display: none
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: calc(100% - 20px);
+            }
+
+            #navmenu {}
+
+            #open-form {
+                display: none;
+            }
+
+            .navb1 {
+                display: none
+            }
+
+            #menu {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                margin-right: 20px;
+            }
+
+            #navmenu {
+                height: 100vh;
+                width: calc(100vw - 40px);
+                padding: 0px 20px;
+                position: fixed;
+                top: 0px;
+                right: -800px;
+                transition: all .3s;
+                background-color: #030C21;
+                z-index: 5000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #navmenu a {
+                text-align: center;
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            .topnavmen {
+                position: absolute;
+                top: 20px;
+                width: calc(100% - 40px);
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            #open-formi {
+                width: 100%;
+                height: 42px;
+                font-size: 16px;
+                border-radius: 6px;
+                min-height: auto;
+                background: #fff;
+                font-size: 16px;
+                border: none;
+                font-weight: 600;
+                width: 200px;
+                color: #111111;
+                margin-top: 30px;
+            }
+
+            #navmenu .footer-socials a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0px;
+                width: fit-content;
+                margin: 0px 10px;
+            }
+
+            .navblogo {
+                width: 160px;
+            }
+
+            .topnavmen {
+                position: absolute;
+                top: 20px;
+                width: calc(100% - 40px);
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+
+            #navmenu a {
+                height: 50px;
+                color: #fff !important;
+                text-decoration: none !important;
+
+            }
+
+            .footer-socials {
+                display: flex;
+                margin-top: 40px;
+            }
+
+        }
+
+        .navi121 {
+            display: flex;
+            align-items: center;
+        }
+
+        .navi121 a {
+            margin-left: 60px;
+            font-weight: 300;
+        }
+
+        @media(max-width:600px) {
+            #open-form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav-container {
+                width: calc(100% - 0px);
+            }
+        }
+
+        .footert {
+            width: calc(100% - 40px);
+            height: 300px;
+            margin-top: 80px;
+        }
+
+        .footer-first {
+            display: flex;
+            height: fit-content;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-links {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+        }
+
+        .footer-menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-menu p {
+            color: #fff;
+            font-weight: 700;
+            font-family: 'Inter';
+            font-size: 16px;
+        }
+
+        .footer-menu a {
+            margin-top: 30px;
+            font-family: 'Inter';
+            color: #FFFFFF;
+            text-decoration: none;
+            opacity: 0.7;
+            font-size: 16px;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Inter';
+        }
+
+        .footer-line {
+            width: 100%;
+        }
+
+        .footerbot {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+        }
+
+        .footer-socials {
+            display: flex;
+            z-index: 3;
+            align-items: center;
+        }
+
+        .footerbottext {
+            font-family: 'Inter';
+            line-height: 139.4%;
+            font-size: 14px;
+            max-width: 400px;
+            color: #FFFFFF;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        .footer-socials a {
+            margin-left: 40px;
+        }
+
+        .footer-line {
+            margin-top: 70px;
+            margin-bottom: 25px;
+        }
+
+        .footerbot a {
+            font-family: 'Inter';
+            color: #fff;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        .footert {
+            padding: 40px;
+            width: calc(100% - 80px);
+        }
+
+        .footer-logo {
+            width: 166px;
+        }
+
+        .footerloadsa {
+            max-width: 1300px;
+        }
+
+        @media(max-width: 1240px) {
+            .footerloadsa {
+                max-width: 1000px;
+                width: calc(100%)
+            }
+
+            @media(max-width: 768px) {
+                .footer-line {
+                    display: none;
+                }
+
+                footer {}
+
+                .footer-logo {
+                    margin-bottom: 0px;
+                }
+
+                .footer-socials {
+                    margin-bottom: 40px;
+                }
+
+                .footer-first {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            @media(max-width: 340px) {
+                .footer-socials a {
+                    margin-left: 24px;
+                }
+            }
+
+            @media(max-width: 560px) {
+                .footer-socials a {
+                    margin-left: 8vw;
+                }
+            }
+            .closecont p{
+                color: #fff;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/archive/confirm.css">
+    <style>
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+
+    <style>
+        .bottomactipop {
+            margin-top: 15px;
+        }
+
+        .subscribForm {
+            position: unset !important;
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+
+        nav.whitepaperNav header#mainHeader {
+            position: unset;
+        }
+
+        nav.whitepaperNav .nav-container {
+            max-width: 100%;
+        }
+
+        nav.whitepaperNav {
+            padding: 0;
+        }
+
+        nav.whitepaperNav .nav {
+            max-width: 970px;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+
+        .widget_links li a {
+            font-size: 15px !important;
+        }
+
+        .privacy_terms a {
+            font-size: 15px !important;
+        }
+
+        .nav-selector option {
+            color: #000 !important;
+        }
+
+        nav.whitepaperNav, nav.whitepaperNav .nav-container {
+            width: 100% !important;
+            min-width: 100vw !important;
+            max-width: 100vw !important;
+        }
+
+        nav.whitepaperNav .nav-container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .xtramargin {
+            margin-top: 60px;
+        }
+        @media(max-width: 600px) {
+            .xtramargin {
+            margin-top: 100px !important;
+        }
+        }
+    </style>
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="/archive/scrollfill.js"></script>
+
+    <script src="/archive/whitepaper.js"></script>
+    <script>
+        const remove = (doNotSet) => {
+            const c = Array.prototype.slice.call(document.getElementsByClassName('blocked121'), 0)
+            const cpopup = Array.prototype.slice.call(document.getElementsByClassName('confirm'), 0)
+            const cb = Array.prototype.slice.call(document.getElementsByClassName('blurred'), 0)
+
+            cb.map(n => n.classList.remove('blurred'))
+            cpopup.map(n => n.remove())
+            c.map(n => n.classList.remove('blocked121'))
+            console.log(doNotSet)
+            if(!doNotSet) setCookie('approved', 'TRUE', 120)
+        }
+
+        
+        if (getCookie('approved') === 'TRUE') remove()
+
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log(getCookie('approved'))
+            if(!getCookie('choseLang')) {      
+                remove(true)
+                setTimeout(() => {
+                    
+            },1)
+
+            }
+            else if (getCookie('approved') === 'TRUE') remove()
+            else {
+            const hiddeenn = Array.prototype.slice.call(document.getElementsByClassName('hidden'), 0)[0]
+            console.log('elo', hiddeenn, document.getElementsByClassName('hidden'))
+            hiddeenn.classList.remove('hidden')
+        }
+        setTimeout(() => {
+                const button = document.getElementById('lda1agree')
+            console.log(button)
+            if (button) {
+                button.addEventListener('click', () => {
+                    console.log('hlsdkjads')
+                    remove()
+                })
+            }
+            },2)
+        })
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+    </script>
+</head>
+
+<body class="blocked121 chinese">
+    <div class="confirm hidden">
+        <div class="popupconfi">
+            <!-- <h3><img src="privacyconfirm.svg"> Privacy information</h3> -->
+            <p>
+                我特此确认，本人对白皮书和其他信息材料的访问，
+                即代表我已审核并接受了其中特定条款
+                ，包括因某些司法管辖区的要求而无法或被禁止访问的信息材料。
+            </p>
+            <div class="bottomactipop">
+                <a class="privcaska1dsa" href="privacy-policy.html">阅读隐私政策</a>
+                <div class="abuatob">
+                    <a href="/">取消</a>
+                    <a id="lda1agree">确认</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navmenu">
+        <div class="topnavmen">
+            <img src="/archive/xp-network.png" class="navblogo" />
+            <img src="/archive/closenav.svg" id="closenav">
+        </div>
+        <a href="/xpnet">Token Metrics</a>
+        <a href="technology">Roadmap</a>
+        <a href="whitepaper">Whitepaper</a>
+        <a href="team">Team</a>
+        <div class="footer-socials">
+            <a target="_blank" href="https://t.me/xp_network"><img src='archive/greytele.svg' /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/xp-network/"><img src='archive/greylin.svg' /></a>
+            <a target="_blank" href="https://xpnetwork.medium.com/"><img src='archive/mediumocin.svg' /></a>
+            <a target="_blank" href="https://twitter.com/xpnetwork_"><img src='archive/greytwit.svg' /></a>
+            <a target="_blank" href="https://github.com/xp-network"><img src='archive/greygit.svg' /></a>
+        </div>
+    </div>
+    <nav class="whitepaperNav">
+        <div class="nav-container ">
+
+            <header class="header_area" id="mainHeader">
+            </header>
+
+
+            <div class="nav blurred">
+                <p id="abs" class="selected">摘要</p>
+                <p id="nfts">NFTs</p>
+                <p id="rise">NFT反盗版
+</p>
+                <p id="diem">Facebook推出的Diem</p>
+                <p id="chal">挑战
+</p>
+                <p id="sol">解决方案
+</p>
+            </div>
+            <div class="select-nav-cont">
+                <div class="arrow-down blurred"></div>
+                <select id="navselect" class="nav-selector blurred">
+                    <option  value="Abstract" class="selectnavopt">摘要</option>
+                    <option value="NFTs" class="selectnavopt">NFTs</option>
+                    <option value="The Rise of NFTs" class="selectnavopt">NFT反盗版
+</option>
+                    <option value="Facebook's Diem" class="selectnavopt">Facebook推出的Diem</option>
+                    <option  value="Challenge" class="selectnavopt">挑战
+</option>
+                    <option value="Solution" class="selectnavopt">解决方案
+</option>
+                </select>
+            </div>
+        </div>
+
+    </nav>
+    <div class="c24 advnver">
+        <p class="xtramargin">
+            此为XP.network设计白皮书的最新版本。可能会需要小的改动。
+        </p>
+    </div>
+
+    <div class="roundblue">
+        <img class="imgsds123a" src="/archive/notice.svg">
+        <p>
+            <img class="imgsdsa" src="/archive/notice.svg">
+            请仔细阅读本节内容。以下内容不构成任何法律、财务、商业或税务建议。
+在从事与XP.network相关的任何活动之前，您必须咨询相关的法律、财务、税务或其他专业顾问。
+        </p>
+
+    </div>
+    <div style="padding-top: 0px !important;" class="c15">
+
+        <h1 id="abstract" class="c37" id="h.764uwjjvln5c"><span>摘要</span></h1>
+        <p class="c24"><span class="c25 c8">作为一个Polkadot平行链，XP.network能够将NFT产品和服务部署到任何适用的区块链上，包括Facebook即将推出的Diem。
+
+            XP.network利用其开创的应用程序编辑器，让企业家、开发人员、产品制造商和相关项目可以使用无代码工具来创建NFT DApps，消除行业壁垒。</span></p>
+        <h1 id="nfts-title" class="c37" id="h.sd6iy6b9nvkp"><span class="c25 c32">NFTs</span></h1>
+        <p class="c24"><span class="c22">NFTs </span><span class="c25 c8">NFT代币代表着独特的数字资产所有权。每个NFT都与其所有者的帐户相关联，存储在区块链中，安全性高。</span></p>
+        <p class="c24 c12 c48"><span class="c25 c8"></span></p>
+        <p class="c24"><span class="c22">NF（非同质化）代表着“不可替代”的物品或艺术品、收藏品、时尚、体育、游戏以及其他具有独特属性的品目。</span></p>
+        <p class="c24 c12"><span class="c25 c8"></span></p>
+        <ul class="c13 lst-kix_m6qiogu01eom-0 start">
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">它们只存在于单个副本中，数量稀少。</span>
+            </li>
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">它们为名人所有或由名人制作。</span>
+            </li>
+            <li class="c24 c16 li-bullet-0"><span class="c25 c8">是有着市场需求的数字资产（音乐、视频、图像），仅为其所有者或所有者的继承人进行展示/转售其全部或部分。.</span></li>
+        </ul>
+        <p class="c24 c12"><span class="c25 c8"></span></p>
+        <p class="c24"><span class="c8">NFT中的“非”代表着可替代资源的对立面。同质化代币是相同的、互相可以替代的法律或金融术语。例如，任何一种法定货币（如美元、欧元、英镑等）的单价面额都能替代1美元，这里的1美元就是同质化代币。</span></p>
+        <h2 class="c29" id="h.y0nljrpspio3"><span class="c25 c27">NFT为资产所有者赚取更多利润</span></h2>
+        <p class="c24"><span class="c8">一些线上平台从订阅计划或广告中盈利，却从不支付内容提供者任何费用<a href="#ftnt1"
+            style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref1">[1]</a>。而其他一些从销售中盈利的平台则会收取60-85%的费用，只向作者支付15-40%的报酬<a href="#ftnt2" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref2">[2]</a>。此外，NFT区块链只收取交易费用。</span></p>
+        <h2 class="c29" id="h.1jqssmutt99u"><span class="c25 c27">NFT反盗版
+        </span></h2>
+        <p class="c24"><span class="c25 c8">在全球数字化的背景下，版权的概念变得越来越模糊。层出不穷的MP3或PSD副本常常与艺术家的原版资产难分真假。盗版数字资产会削减原版的合法销售，并对创作者及其销售网络造成重大损害。画家、摄影师、设计师或插画家不断沦为盗版的受害者。他们的作品在其不知晓的情况下被复制、出售或展示。盗版的追查繁琐拖沓，且并不总是能得到好的结果。盗版的衍生就像复制粘贴一样简单。NFT旨在将所有权存储在有着独特属性的代币中，并将其不可逆转地保存在分布式区块链中。这样的数字资产有着可追踪性，且始终与其原始创建者相关联。</span></p>
+        <h1 id="the-rise-of-nfts" class="c37" id="h.nqm7x8et5x3x"><span class="c25 c32">NFT的兴起
+        </span></h1>
+        <p class="c21 c45"><span class="c3">NFT在去年收获了主流大受的青睐。Beeple以不低于69,000,000美元的价格在佳士得拍卖行售出一幅数字艺术拼贴作品 — 其拍卖价格名列拍卖史上第三名。SOCKS，数字化“袜子”代币，交易金额超过89,000美元；与此同时，Twitter的联合创始人兼首席执行官Jack Dorsey以2,900,000美元的价格出售了他的第一条推文。Mark Cuban、Gary Vaynerchuk、Lindsey Lohan、Pamela Andreson、3LAU、Shawn Mendes、The Kings of Leon、Grimes、 Paris Hilton，甚至连Snoop Dog都在纷纷议论（有些还创建了）NFT。今日，NBA与Dapper Labs合作，主要销售由NFT支持的NBA“精彩视频”。这些视频的市场需求激增，得到了数十万用户的争抢，而每个用户至少拥有一个NFT，使得某些视频的售价甚至高于25万美元。</span></p>
+        <h1 id="facebook-diem" class="c37" id="h.1gp4yre1zrt8"><span class="c25 c32">Facebook推出的Diem
+        </span></h1>
+        <p class="c24"><span class="c8">“全球有10亿人拥有手机，近5亿人拥有网络连接，但仍有17亿成年人无法访问金融系统，与传统银行隔绝。”</span><sup class="c8"><a href="#ftnt3" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref3">[3]</a></sup><span
+                class="c25 c8">&nbsp;</span></p>
+        <p class="c24 c12"><span class="c25 c8"></span></p>
+        <p class="c24"><span class="c8">Diem区块链背后的理念，是为了创建嵌入Facebook产品中的全球线上点对点支付系统<a href="#ftnt4"
+            style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref4">[4]</a>。Facebook及其旗下产品已收获31.4亿活跃用户，包括Facebook、Instagram、WhatsApp 和Messenger<a href="#ftnt5"
+            style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref5">[5]</a>的线上用户。这意味着全球79亿人口<a href="#ftnt6" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref6">[6]</a>
+            
+            中，有40%的人在使用Facebook及其可能包含Diem钱包的关联帐户。Diem协会也因此成为全球最具影响力的金融机构。
+        
+            <h2 class="c29" id="h.wrp2iyyufzpr"><span class="c25 c27">货币支持
+            </span></h2>
+            <p class="c24">与比特币<a href="#ftnt7" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref7">[7]</a>或以太坊<a href="#ftnt8" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref8">[8]</a>这些世界上最昂贵的加密货币相比，Diem币的优势在于其由货币储备支持，储备的促成包括现金或现金等价物，及以相同货币计价的短期政府证券。<a href="#ftnt9"
+                style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref9">[9]</a></p>
+        
+        </span><sup class="c8"><a href="#ftnt9"
+                    style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref9">[9]</a></sup></p>
+        <h1 id="challenge" class="c37" id="h.6qirjfvk22j9"><span class="c25 c32">挑战
+</span></h1>
+        <h2 class="c29" id="h.ieh3tn5aajqu"><span class="c25 c27">市场壁垒</span></h2>
+        <p class="c28" id="h.mcmsis6dbql9"><span class="c19">NFT应用程序仅由开发人员或技术人员创建。随着NFT的流行，越来越多的非开发人员也想在市场分一杯羹，但创建NFT所需的工具和技能需要一般人付出大量的时间和资源。创建NFT驱动产品或服务所需的努力，往往让许多非技术型产品经理和企业家半途而废。另外，NFT解决方案的使用也需要用户了解加密资产的基本工作原理。这些限制条件不仅削弱了产品的创造力，也降低了NFT的应用。</span></p>
+        <h2 class="c29" id="h.w31up8pym5k0"><span>能力有限
+        </span></h2>
+        <p class="c28" id="h.eeozf8freob3"><span class="c19">NFT应用程序仅适用于与其匹配的区块链。大多数应用程序无法实现与其他区块链的内置价值转移（不具备接收或发送数字资产到另一个区块链的能力）。另一方面，大多数项目也缺乏在不同链上部署姊妹产品的能力。市场上虽然有很多以NFT为导向的解决方案和产品，却鲜有NFT解析工具。</span><span class="c19">&nbsp;</span><sup><a href="#cmnt2" id="cmnt_ref2">[b]</a></sup>
+        </p>
+        <hr style="page-break-before:always;display:none;">
+        <h2 class="c29" id="h.53x5qx99il5q"><span class="c25 c27">动态的生态系统
+        </span></h2>
+        <p class="c28" id="h.tjorxsmskh6n"><span class="c10">区块链技术仍处于起步阶段。软件的快速变化，导致DApp库和代码需要不断进行维护和更新，随之而来的是高昂的财务成本，尤其在DApp还未具备明显的收入流或商业模式时。</span></p>
+        <h2 class="c29" id="h.11dinu4l1ooj"><span class="c25 c27">法规</span></h2>
+        <p class="c28" id="h.vpmmmlilhqz9"><span class="c19">虽然Diem协会已与中央银行[
+                banks</span><sup class="c19"><a href="#ftnt10" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref10">[10]</a></sup><span class="c10">和金融机构合作，将Diem与现有的金融体系结合起来，但Diem的相关应用市场必然会受到严格监管。开发人员将很难在Diem线上环境中推行他们的应用程序。线上的“拥堵”，可能会让他们的申请搁浅几周甚至几个月。申请者的数量将远远超过批准者。</span></p>
+        <h3 class="c0" id="h.m4cgrxpxn2ay"><span style="font-size: 20px !important; font-weight: 700;" class="c10">Apple
+            示例代表 — 苹果商店
+        </span></h3>
+        <p class="c28" id="h.9rmf8tg2t70e"><span class="c19 c36">我们就拿苹果商店举例。开发人员表示，每周有100,000个应用程序接受审查，其中有40%都会被拒绝</span><sup class="c19 c36"><a href="#ftnt11" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref11">[11]</a></sup><span
+                class="c19 c36">例如不符合安全性、源代码或UI设计准则。此外，应用程序的一个版本被批准，并不代表其后续版本也会被自动批准。每个版本都被视为一个新的应用程序，因此可以被多次拒绝</span><sup class="c19 c36"><a href="#ftnt12" style="padding-top: 100px; margin-top: -100px;" id="ftnt_ref12">[12]</a></sup><span class="c10">.
+            </span></p>
+        <h1 id="solution" class="c37" id="h.d0rw0ktyzjlw"><span class="c25 c32">解决方案
+</span></h1>
+        <p class="c11"><span class="c1">XP.network平台包括：</span></p>
+        <p class="c4"><span class="c14"></span></p>
+        <ol class="c13 lst-kix_nak6ptbbd9vs-0 start" start="1">
+            <button id="sc" class="c26 c16 li-bullet-0 button-solution"><span class="c1">智能合约编辑器</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="mm" class="c26 c16 li-bullet-0 button-solution"><span class="c1">迁移模块</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="cv" class="c26 c16 li-bullet-0 button-solution"><span class="c1">合规验证者</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="ae" class="c26 c16 li-bullet-0 button-solution"><span class="c1">应用编辑器</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="pvh" class="c26 c16 li-bullet-0 button-solution"><span class="c1">POLKADOT VM HUB</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="xnt" class="c26 c16 li-bullet-0 button-solution"><span class="c1">XP.NETWORK测试网</span>
+                <p>&rarr;</p>
+            </button>
+            <button id="xpntutil" class="c26 c16 li-bullet-0 button-solution"><span class="c1">XPNET功能令牌
+                    Utility</span>
+                <p>&rarr;</p>
+            </button>
+        </ol>
+        <h2 class="c38" id="h.tvhvzleb6hw7"><span class="c25 c40 c50">架构</span></h2>
+        <h5 id="smart-contract-editor" class="c17" id="h.pi1ac6vdiag4"><span class="c40">1. 智能合约编辑器/Smart Contract Editor
+            </span></h5>
+        <p class="c11"><span class="c1">一种无代码UI工具，允许用户在Move、Solidity和Rust中生成有效的可读代码，进而构建可在Diem、Polkadot、以太坊、BSC和其他区块链上运行的智能合约。
+
+            用户选择NFT用例、具体业务信息和区块链。
+            
+            完成所有步骤后，流程如下： </span></p>
+        <ol class="c13 lst-kix_vrs0vqw8s8e-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">JSON请求被发送到服务器。. </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">经过清理和验证。</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">最后生成一个 JSON“意图”对象。 </span>
+            </li>
+        </ol>
+        <p class="c11 c12"><span class="c1"></span></p>
+        <p class="c11"><span class="c1">“意图”对象包含：
+        </span></p>
+        <ol class="c13 lst-kix_bzyghqbo1yk-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">所选区块链的智能合约编程语言。</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">NFT用例被转换为智能合约。</span>
+            </li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">具体业务信息作为规则、函数和变量输入。</span></li>
+        </ol>
+        <p class="c11"><span class="c1">“意图”对象被发送到下一个平台工具 — 迁移模块。
+        </span></p>
+        <p class="c11 c12"><span class="c1"></span></p>
+        <p class="c11"><span class="c1">迁移模块生成可读代码，可供用户在UI的代码选项卡中读取和编辑。
+        </span></p>
+        <p class="c11"><span class="c23">更有经验的用户得以阅读和编辑这些代码。代码选项卡窗口会侦听用户生成的事件。当用户编辑并保存新版本的代码时，后端和合规验证者会受到一个请求，来对先前生成的代码进行修改，并确保新代码没有错误。
+            </span></p>
+        <p class="c4"><span class="c14"></span></p>
+        <p class="c11"><span class="c1">由于用户编辑的代码可能有误或与某些区块链政策相悖，因此XP.network合规验证者将对代码进行测试。代码选项卡中包含验证面板，用来显示验证结果，确认代码无误且符合法规，或指出代码的错误并提供修改建议。
+        </span></p>
+        <p class="c4"><span class="c14"></span></p>
+        <p class="c11"><span class="c23">为了让XP.network实现与Polkadot pallet的交互，用户的应用程序必须注册一个帐户。为了确保过程的保密和连续，该步骤可从该工具的“Polkadot交互”选项卡中完成。
+
+            与该模块关联的所有数据将存储在数据库中，包括用户选项、错误代码以及智能合约编辑代码。
+            </span></p>
+        <img src="/archive/1@4.png" alt="" class="ima12">
+
+        <h5 id="migration-module" class="c0" id="h.ubt31iq6vxae"><span class="c43 c36 c40">2. 迁移模块/MIGRATION MODULE</span>
+        </h5>
+        <p class="c11 c12"><span class="c1"></span></p>
+
+        <p class="c11"><span class="c1">迁移模块包括：
+        </span></p>
+        <ol class="c13 lst-kix_vrs0vqw8s8e-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">预编程的审计代码模板，由“意图”对象的数据生成。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">决策树负责构建所选NFT用例的结构。</span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">可读代码生成器。
+            </span>
+            <li class="c11 c16 li-bullet-0"><span class="c1">字节码编译器。
+            </span>
+            </li>
+        </ol>
+
+        <p class="c11"><span class="c1">由于Move没有用来处理NFT的标准库，XP Network针对Move的NFT库是原始标准库的扩展。未来可能会添加其他库和协议。</span></p>
+        <img src="/archive/2@4.png" alt="" class="ima12">
+
+        <h5 id="compliance-validator" class="c17" id="h.igizbinz47d4"><span class="c40">3. 合规验证者/COMPLIANCE VALIDATOR
+        </span>
+        </h5>
+
+        <p class="c11"><span class="c1">合规性验证者是代码的自动QA工具。同样受约于区块链的最新相关法规。</span></p>
+        <p class="c4"><span class="c14"></span></p>
+        <p class="c11"><span class="c1">迁移模块的输出通常无误且符合法规。但由于结果代码可被手动修改，因此该工具可用来验证并报告错误。合规验证者的结果会在代码选项卡的“验证面板”中显示。 </span></p>
+        <p class="c11 c12"><span class="c1"></span></p>
+        <p class="c11"><span class="c1 c21">例如，如果用户尝试在Move的智能合约内复制资源（Diem政策明令禁止），那么提醒合规错误的窗口就会自动弹出。
+        </span></p>
+        <img src="/archive/3@4.png" alt="" class="ima12">
+        <h5 id="application-editor" class="c17" id="h.l7xfv2s26zpb"><span class="c40">4. 应用编辑器/APPLICATION EDITOR
+        </span></h5>
+        <p class="c11"><span class="c1">应用程序编辑器可生成结果应用程序的UI和后端。
+        </span></p>
+        <p class="c11 c12"><span class="c1"></span></p>
+        <p class="c11"><span class="c1">用户可以定义：
+        </span></p>
+        <ol class="c13 lst-kix_yglygzermm0b-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">如何管理结果应用程序的用户和权限。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">使用哪些主题和样式。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">使用哪些组件。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">如何在页面上放置组件。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">将组件与智能合约功能相连接。
+            </span>
+            </li>
+        </ol>
+        <p class="c11"><span class="c1">该模块可构建结果应用程序的前端、后端和数据库。自动QA工具将检查结果应用程序的功能。
+        </span></p>
+        <p class="c4"><span class="c14"></span></p>
+        <p class="c11"><span class="c1">结果应用程序将连接到XP.network Substrate pallet和选定的区块链上。快速安全且可达到搜索引擎优化。
+        </span></p>
+        <img src="/archive/4@4.png" class="ima12" />
+        <h5 id="polkadot-vm-hub" class="c17" id="h.ze3sgfmk0eeo"><span class="c43 c36 c40">5. POLKADOT VM HUB
+        </span>
+        </h5>
+        <p class="c4"><span class="c14"></span></p>
+        <p class="c11"><span class="c1">VM Hub Layer是一个Substrate pallet，允许不同的虚拟机进行交互。Layer实现了数据格式的序列化和反序列化，并与其他VM共享存储，使其可以互相发送请求。例如，用户可以通过Move或Ink内的智能合约调用Solidity内的智能合约！反之亦然。
+        </span></p>
+
+        <p class="c11"><span class="c1">用户可以选择以下区块链：Avalanche、Binance、Cardano、Diem、Elrond、Ethereum、Heco、Polkadot 和 Solana。不同的区块链对应着不同的智能合约编程语言。例如，如果用户想实现与以太坊的交互，则Solidity将被选为目标语言。
+        </span></p>
+
+        <p class="c11"><span class="c1">该模块包括：
+        </span></p>
+        <p class="c11"><span class="c23">1. </span><span class="c33">字节码解串器 — 接收十六进制输入，并在汇编中返还可读代码。
+        </span></p>
+        <p class="c11"><span class="c23">2. </span><span class="c33">汇编代码转换器 — 创建以下键值对：
+        </span></p>
+        <ul class="c13 lst-kix_yjbgudoj8l7g-0 start">
+            <li class="c11 c16 li-bullet-0"><span class="c1">已选智能合约编程语言。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">模板编号。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">用于填充智能合约的数据。
+            </span></li>
+        </ul>
+        <p class="c11"><span class="c23">3. </span><span class="c33">字节码编译器 — 以前一阶段生成的键值对作为输入值，生成的智能合约语言字节码作为输出值。
+        </span></p>
+        <p class="c11"><span class="c23 c21">4. </span><span class="c33 c21">Polkadot平行线程 — 通过XP.network协议，使用中继链回调机制与其他平行链和平行线程进行交流。由于现有机制是无连接和无状态的，因此无法自动发出消息或交易成功的通知。这就是为什么每笔交易都被唯一的令牌标记。在等待交易结果或识别与交易相关的传入消息时，令牌将与交易信息存储在一起。
+        </span></p>
+        <p class="c11 c12"><span class="c14"></span></p>
+        <p class="c11"><span class="c1">一组预编程的审计代码模板已准备好被任意数据填充。收到请求后，模板将被传入数据填充，并立即编译为交易准备字节码。每个平台在一开始都有一组有限的准备代码模板。新模板会在之后定期加入进来。大多数用例将可适用于每个桥接平台。最后，原始智能合约字节码将被直接翻译成目标语言字节码，至此限制消除。
+        </span>
+        </p>
+        <p class="c11 c12"><span class="c1"></span></p>
+        <p class="c11"><span class="c1">由于该架构是为可注入接口设计的，因此不仅限于使用Solidity、Move、Rust 和Ink！编程语言。其他语言也可以实施该适配器，只要其请求符合可适应接口。
+        </span></p>
+        <img class="vmhubimg" src="/archive/vmhub.png" />
+        <h5 id="xp-network-testnet" class="c17" id="h.yuffexdmr8py"><span class="c40">6. XP.NETWORK测试网
+        </span></h5>
+
+        <p class="c11"><span class="c23 c21">运行Substrate平行链的小型计算机网络，能让我们的用户以零成本测试生成的应用程序，然后再连接到主网上。其他区块链的测试网也会在不久的将来推出。
+        </span></p>
+        <p class="c12 c53"><span class="c1"></span></p>
+        <p class="c47"><span class="c1">XP.network平台鸟瞰图
+            /span></p>
+    </div>
+    <div style="" class="zoom" onmousemove="zoom(event)">
+        <img class="zoom" id="birdeye" class="entire-xp-network" src="/archive/xpnetall.png" />
+
+    </div>
+    <div class="mobile-eye">
+        <img src="/archive/1@4x.png" />
+        <img src="/archive/2@4x.png" />
+        <img src="/archive/3@4x.png" />
+        <img src="/archive/4@4x.png" />
+        <img src="/archive/5@4x.png" />
+        <img src="/archive/6@4x.png" />
+    </div>
+
+    <div style="padding-top: 40px !important;" class="c15">
+        <p class="c11 c12"><span class="c1"></span></p>
+
+        <p class="c11"><span class="c1">注：
+        </span></p>
+        <ol class="c13 lst-kix_pc7slt30pvn0-0 start" start="1">
+            <li class="c11 c16 li-bullet-0"><span class="c1">UI由选项卡组成，每个选项卡负责特定的功能设置。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c1">智能合约编辑器和应用程序编辑器的前端和后端，实际上是一个带有多个选项卡的UI。它们的划分是为了突出各自的功能和输出。
+            </span></li>
+            <li class="c11 c16 li-bullet-0"><span class="c23">智能合约编辑器中的帐户设置，旨在为构建应用程序的用户创建和管理帐户。应用程序编辑器的帐户设置，定义了在应用程序中管理用户的方式。
+            </span></li>
+        </ol>
+
+
+        <h5 id="xpnet-token-utility" class="c17" id="h.ze3sgfmk0eeo"><span class="c43 c36 c40">7.XPNET功能令牌</span>
+        </h5>
+
+        <h6 class="h6lasd"><img src="/archive/validation icon.svg" />PoS验证
+        </h6>
+        <p>
+            PoS是一种为验证者池选择最佳验证者的机制。验证者持有的XPNET令牌越多，被验证者池指定的机会就越大。验证者可以获取提名人的份额支持。一个提名人一次最多可支持12个验证者。
+            <br>
+            <br>
+            这种机制可以锁定更多令牌，让系统更能抵抗接管攻击。基于最大权益总额机制的筛选将在验证者池中轮换权益，确保每个时代（24 小时）保留一个活跃验证者。只有活跃的验证者才能签署区块并获得交易费用。如果验证者对提名者不感兴趣，验证者会将佣金设置为 100%。这表示提名者将获得佣金的0%。
+
+            <br>
+            <br>
+            用户须谨慎选择验证者。如果一个活跃验证者离线，它会多次签署相同的区块（模棱两可）或出现其他错误。该验证者和提名者的权益可能会被削减（因违反协议而产生罚款）。离线会导致一小部分权益被削减，但最终区块的模棱两可或替代签署可能会导致权益的100%削减。
+            <br>
+            <br>
+
+            为避免系统接管被报告或中心化，模棱两可的节点数量与削减份额成正比。如果有超过 33％的节点为模棱两可，则100％的权益将被削减。Genesis将存在100个独立的验证者节点。
+            <br>
+            <br>
+
+            
+随着XP.network生态系统的发展，节点数量将逐渐增加到几千，来迎接新的合作和盈利机会。
+
+        </p>
+        <h6 class="h6lasd"><img src="/archive/transactions icon.svg" />交易</h6>
+        <p>
+            每笔交易都由独立的去中心化验证者进行仔细检查。内部和桥接中继验证者都能得到努力工作的褒奖。交易费用由提交交易的账户持有人支付。
+            <br>
+            <br>
+            通过削减权益来减少验证者的失误、降低响应时间、离线频率或恶意欺诈活动。交易费不仅为验证者提供收入，还确保了交易过程的安全可用。
+            <br>
+            <br>
+
+         
+如果交易费用不存在，交易网络会因没有限制而造成拥堵，或受到DDoS攻击。高昂的交易费用可以为合法交易释放网络空间。交易费用需在交易前支付。
+            <br>
+            <br>
+
+            XP.network计划分配高达总代币供应量的10%，通过补贴100%的额外交易费用来刺激验证者。
+            <br>
+
+            <br>
+
+
+            目前交易手续费的计算公式为：m * size(TX) + b，其中
+
+            <br>
+            m（乘数）等于0.0005 XPNET。
+            <br>
+            size(TX) 是交易字节码的权重。
+            <br>
+            b是设为0.001 XPNET的偏差。
+            <br>
+            <br>
+
+            交易的权重与执行和存储的复杂性相关。偏差可以防止泛洪攻击。
+            交易发起者可以添加一个tip，以在交易队列中获得更高的优先级，从而提高交易费用。交易费用的公式和费率未来将由代币持有者通过公投决定。
+
+        </p>
+        <h6 class="h6lasd"> <img src="/archive/staking icon.svg" />权益</h6>
+        <p>
+            提名者和验证者是XP.network中的两种主要权益制造者。提名者要么是非技术型XPNET 代币持有者，无法设置验证者节点，要么不具备足够的代币来成为验证者。提名者可以通过将其权益分配给信任的验证者来赚取部分交易费用。
+            <br>
+            <br>
+            验证者运行区块链的完整节点，并积极参与区块的签署和生产。验证者被授予交易费用，但对其以及提名者的权益负责。如果验证者出错或故意签署欺诈交易，验证者的声誉不保并且验证者和提名者的权益也会被自动削减。
+
+            <br>
+            <br>
+            权益削减通过撤回一定比例的权益，对验证者恶意、错误或不完整的工作进行惩罚。验证者应确保他们的节点不会离线。
+
+
+        </p>
+        <h6 class="h6lasd"><img src="/archive/cross-chain icon.svg" />跨链价值转移
+        </h6>
+        <p>
+            得益于XP.network正在开发的众多跨链桥，代币持有者将能够在桥接区块链之间无缝转移其数字资产。跨链桥也是去中心化的。独立的中继验证者可以确保区块链之间资产的完整性，防止任何内容的丢失或复制。
+            <br>
+            <br>
+
+            XPNET代币将存在于Polkadot、Elrond、HECO、Cardano、DFINITY和许多其他区块链中。一旦帐户持有人提交将令牌传输到桥接区块链的请求，桥将锁定原始区块链智能合约中的请求金额，并广播该事件。
+            <br>
+            <br>
+
+            桥接中继验证者捕捉事件并签署交易。目标区块链中的智能合约采集验证者的签名。在收到第2/3*n+1个签名时，它就会将相同数量的包装令牌释放到指定帐户。
+            <br>
+            <br>
+            桥接区块链的代币能以同样的方式转移到XP.network。XPNET可用于买卖其他资产（例如 NFT）、借贷、储蓄或作为抵押品使用。
+
+        </p>
+        <h6 class="h6lasd"> <img src="/archive/governance icon.svg" />治理</h6>
+        <p>
+            XP.network将逐步引入去中心化的治理机制，允许XPNET代币持有者对进一步的网络发展做出执行决策。一旦理事会提出裁决提案，并从代币持有者中选取，公投就将开始。
+            <br>
+            <br>
+
+            一个复杂的权益加权投票系统，可以确保决策的透明度和公平性。代币越多或被锁定的时间越长，提供给选民的选票就越多。锁定期结束后，无论公投结果如何，锁定的代币都将归还到原始钱包。
+            <br>
+            <br>
+
+            如果理事会成员一致投票赞成变更提案，则将应用负面投票率偏差。这意味着，即使选民数量不到50%，提案的通过或拒绝仍需占多数（n% * 3 / 5 + 1）。其中n%是得票率。
+            <br>
+            <br>
+
+            如果理事会支持投票提案但未获得一致通过，则必须有超过51%的代币持有者投票“赞同”，提案才能被接受，以便保证整个社区的利益。如果在公投期间改进决定被接受，由理事会选举的技术委员会将负责上传更改代码。
+
+        </p>
+        <h4 class="sources123">参考资源：
+        </h4>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref1" style="padding-top: 200px; margin-top: -200px;" id="ftnt1">1. </a><span class="c30"></span><span class="c7"><a class="c2"
+                        href="https://www.flickr.com/help/terms">https://www.flickr.com/help/terms</a></span><span
+                    class="c25 c30 c34">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref2" style="padding-top: 200px; margin-top: -200px;" id="ftnt2">2. </a><span class="c30"></span><span class="c7"><a class="c2"
+                        href="https://submit.shutterstock.com/payouts?language=en">https://submit.shutterstock.com/payouts?language=en</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref3" style="padding-top: 200px; margin-top: -200px;" id="ftnt3">3. </a><span class="c7"><a class="c2"
+                        href="https://www.diem.com/en-us/white-paper/#introduction">https://www.diem.com/en-us/white-paper/#introduction</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref4" style="padding-top: 200px; margin-top: -200px;" id="ftnt4">4. </a><span class="c7 c19"><a class="c2"
+                        href="https://www.novi.com">https://www.novi.com</a></span><span class="c25 c6">&nbsp;</span>
+            </p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref5" style="padding-top: 200px; margin-top: -200px;" id="ftnt5">5. </a><span class="c6">&nbsp;</span><span class="c7 c19"><a
+                        class="c2"
+                        href="https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide">https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/</a></span><span
+                    class="c6 c25">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref6" style="padding-top: 200px; margin-top: -200px;" id="ftnt6">6. </a><span class="c7 c19"><a class="c2"
+                        href="https://www.worldometers.info/world-population/#:~:text=The%20current%20world%20population%20is,currently%20living)%20of%20the%20world">https://www.worldometers.info/world-population/#:~:text=The%20current%20world%20population%20is,currently%20living)%20of%20the%20world.</a></span>
+            </p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref7" style="padding-top: 200px; margin-top: -200px;" id="ftnt7">7. </a><span class="c42"><a class="c2"
+                        href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a></span><span
+                    class="c20">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref8" style="padding-top: 200px; margin-top: -200px;" id="ftnt8">8. </a><span class="c7"><a class="c2"
+                        href="https://ethereum.github.io/yellowpaper/paper.pdf">https://ethereum.github.io/yellowpaper/paper.pdf</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref9" style="padding-top: 200px; margin-top: -200px;" id="ftnt9">9. </a><span class="c7"><a class="c2"
+                        href="https://www.diem.com/en-us/white-paper/#the-economic-and-the-libra-reserve">https://www.diem.com/en-us/white-paper/#the-economic-and-the-libra-reserve</a></span>
+            </p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref10" style="padding-top: 200px; margin-top: -200px;" id="ftnt10">10. </a><span class="c7"><a class="c2"
+                        href="https://www.bloomberg.com/news/articles/2021-04-07/sweden-s-central-bank-reveals-first-study-of-digital-currenc">https://www.bloomberg.com/news/articles/2021-04-07/sweden-s-central-bank-reveals-first-study-of-digital-currency</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref11" style="padding-top: 200px; margin-top: -200px;" id="ftnt11">11. </a><span class="c7"><a class="c2"
+                        href="https://www.accc.gov.au/system/files/Apple%20Pty%20Limited%20%282%20October%202020%29.pdf">https://www.accc.gov.au/system/files/Apple%20Pty%20Limited%20%282%20October%202020%29.pdf</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+        <div class="sources">
+            <p class="c5"><a href="#ftnt_ref12" style="padding-top: 200px; margin-top: -200px;" id="ftnt12">12. </a><span class="c7"><a class="c2"
+                        href="https://developer.apple.com/app-store/review/guidelines/#after-you-submit">https://developer.apple.com/app-store/review/guidelines/#after-you-submit</a></span><span
+                    class="c30">; </span><span class="c7"><a class="c2"
+                        href="https://developer.apple.com/forums/thread/114668">https://developer.apple.com/forums/thread/114668</a></span><span
+                    class="c25 c34 c30">&nbsp;</span></p>
+        </div>
+
+    </div>
+    <form style="pointer-events: none;" id="f">
+        <div class="form-top">
+            <h2>Presale Signup</h2>
+            <img id="closed" src="/archive/closed.svg" />
+        </div>
+        <div>
+            <input id="name" name="name" placeholder="Name" />
+        </div>
+        <div>
+            <select id="type" name="type">
+                <option selected disabled>Entity Type
+                </option>
+                <option>Private</option>
+                <option>Institutional</option>
+            </select>
+        </div>
+        <div>
+            <select id="investor" name="investor">
+                <option selected disabled>US Investor
+                </option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="E-mail" />
+        </div>
+        <div>
+            <input id="telegram" name="telegram" placeholder="Telegram" />
+
+        </div>
+        <div class="b">
+            <input id="interest" name="interest" placeholder="Indication of interest" type="number" />
+            <p class="pofb">amount in USD</p>
+        </div>
+        <textarea id="support" name="support" placeholder="How can you help XP.network?"></textarea>
+        <button id="button">Send</button>
+        <div style="opacity: 0;" id="success" class="success-wind">
+            <img src="/archive/success.svg">
+            <p>
+                Thank you for your interest. Our team will be in touch with you soon.
+            </p>
+        </div>
+    </form>
+    <div style="pointer-events: none;" id="overlay"></div>
+
+     <footer class="footer_area" id="footer_area_section">
+     </footer>
+
+<script src="/archive/index.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4CFEFHHPV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N4CFEFHHPV');
+</script>
+
+<!-- JQuery -->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="../header.js"></script>
+<script src="../footer.js"></script>
+<script src="/assets/js/active.js"></script>
+
+</body> 
+</html>

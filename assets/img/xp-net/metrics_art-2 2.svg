@@ -1,0 +1,20 @@
+<svg width="852" height="2185" viewBox="0 0 852 2185" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.1" filter="url(#filter0_f)">
+<ellipse cx="815.426" cy="749.44" rx="344" ry="411.922" transform="rotate(91.6103 815.426 749.44)" fill="#1C32FF" fill-opacity="0.5"/>
+</g>
+<g opacity="0.1" filter="url(#filter1_f)">
+<ellipse cx="815.426" cy="1489.44" rx="344" ry="411.922" transform="rotate(91.6103 815.426 1489.44)" fill="#1C32FF" fill-opacity="0.5"/>
+</g>
+<defs>
+<filter id="filter0_f" x="0" y="0" width="1630.85" height="1498.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="197" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="0" y="740" width="1630.85" height="1498.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="197" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,1834 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.png">
+    <script>
+        window.addEventListener('DOMContentLoaded', e => {
+            nav()
+        })
+        const nav = () => {
+        const n = document.getElementById('menu')
+        if(n) {
+            n.addEventListener('click', () => {
+            const e = document.getElementById('navmenu')
+            console.log('helloas', e)
+            e.style.right = '0px'
+            })
+        }
+        
+        const y = document.getElementById('closenav')
+        if(y) {
+            y.addEventListener('click', () => {
+            const e = document.getElementById('navmenu')
+            e.style.right = '-800px'
+            })
+        }
+
+        }
+    </script>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap');
+
+        ol.lst-kix_list_7-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-1>li {
+            counter-increment: lst-ctn-kix_list_2-1
+        }
+
+        .lst-kix_list_6-1>li {
+            counter-increment: lst-ctn-kix_list_6-1
+        }
+
+        ol.lst-kix_list_3-1.start {
+            counter-reset: lst-ctn-kix_list_3-1 0
+        }
+
+        ol.lst-kix_list_6-6.start {
+            counter-reset: lst-ctn-kix_list_6-6 0
+        }
+
+        ol.lst-kix_list_7-4.start {
+            counter-reset: lst-ctn-kix_list_7-4 0
+        }
+
+        .lst-kix_list_5-0>li {
+            counter-increment: lst-ctn-kix_list_5-0
+        }
+
+        .lst-kix_list_7-0>li {
+            counter-increment: lst-ctn-kix_list_7-0
+        }
+
+        ol.lst-kix_list_2-3.start {
+            counter-reset: lst-ctn-kix_list_2-3 0
+        }
+
+        ol.lst-kix_list_7-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-5.start {
+            counter-reset: lst-ctn-kix_list_1-5 0
+        }
+
+        ol.lst-kix_list_7-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-3.start {
+            counter-reset: lst-ctn-kix_list_5-3 0
+        }
+
+        .lst-kix_list_2-3>li {
+            counter-increment: lst-ctn-kix_list_2-3
+        }
+
+        .lst-kix_list_1-2>li {
+            counter-increment: lst-ctn-kix_list_1-2
+        }
+
+        ol.lst-kix_list_3-7.start {
+            counter-reset: lst-ctn-kix_list_3-7 0
+        }
+
+        .lst-kix_list_5-2>li {
+            counter-increment: lst-ctn-kix_list_5-2
+        }
+
+        .lst-kix_list_3-2>li {
+            counter-increment: lst-ctn-kix_list_3-2
+        }
+
+        .lst-kix_list_7-2>li {
+            counter-increment: lst-ctn-kix_list_7-2
+        }
+
+        .lst-kix_list_5-0>li:before {
+            content: "("counter(lst-ctn-kix_list_5-0, lower-latin) ") "
+        }
+
+        ol.lst-kix_list_6-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-4>li {
+            counter-increment: lst-ctn-kix_list_5-4
+        }
+
+        .lst-kix_list_1-4>li {
+            counter-increment: lst-ctn-kix_list_1-4
+        }
+
+        ol.lst-kix_list_1-6.start {
+            counter-reset: lst-ctn-kix_list_1-6 0
+        }
+
+        .lst-kix_list_5-3>li:before {
+            content: ""counter(lst-ctn-kix_list_5-3, decimal) ". "
+        }
+
+        .lst-kix_list_5-2>li:before {
+            content: ""counter(lst-ctn-kix_list_5-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_5-1>li:before {
+            content: ""counter(lst-ctn-kix_list_5-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_5-7>li:before {
+            content: ""counter(lst-ctn-kix_list_5-7, lower-latin) ". "
+        }
+
+        ul.lst-kix_list_8-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-6>li:before {
+            content: ""counter(lst-ctn-kix_list_5-6, decimal) ". "
+        }
+
+        .lst-kix_list_5-8>li:before {
+            content: ""counter(lst-ctn-kix_list_5-8, lower-roman) ". "
+        }
+
+        ul.lst-kix_list_8-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-4>li:before {
+            content: ""counter(lst-ctn-kix_list_5-4, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_6-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-5>li:before {
+            content: ""counter(lst-ctn-kix_list_5-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_6-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_6-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-0.start {
+            counter-reset: lst-ctn-kix_list_1-0 0
+        }
+
+        .lst-kix_list_6-1>li:before {
+            content: ""counter(lst-ctn-kix_list_6-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_6-3>li:before {
+            content: ""counter(lst-ctn-kix_list_6-3, decimal) ". "
+        }
+
+        .lst-kix_list_6-5>li {
+            counter-increment: lst-ctn-kix_list_6-5
+        }
+
+        .lst-kix_list_6-8>li {
+            counter-increment: lst-ctn-kix_list_6-8
+        }
+
+        .lst-kix_list_6-0>li:before {
+            content: "("counter(lst-ctn-kix_list_6-0, lower-roman) ") "
+        }
+
+        .lst-kix_list_6-4>li:before {
+            content: ""counter(lst-ctn-kix_list_6-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_3-0>li {
+            counter-increment: lst-ctn-kix_list_3-0
+        }
+
+        .lst-kix_list_3-6>li {
+            counter-increment: lst-ctn-kix_list_3-6
+        }
+
+        li.li-bullet-2:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        .lst-kix_list_6-2>li:before {
+            content: ""counter(lst-ctn-kix_list_6-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_2-5>li {
+            counter-increment: lst-ctn-kix_list_2-5
+        }
+
+        .lst-kix_list_2-8>li {
+            counter-increment: lst-ctn-kix_list_2-8
+        }
+
+        ol.lst-kix_list_3-2.start {
+            counter-reset: lst-ctn-kix_list_3-2 0
+        }
+
+        .lst-kix_list_6-8>li:before {
+            content: ""counter(lst-ctn-kix_list_6-8, lower-roman) ". "
+        }
+
+        .lst-kix_list_6-5>li:before {
+            content: ""counter(lst-ctn-kix_list_6-5, lower-roman) ". "
+        }
+
+        .lst-kix_list_6-7>li:before {
+            content: ""counter(lst-ctn-kix_list_6-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_2-4.start {
+            counter-reset: lst-ctn-kix_list_2-4 0
+        }
+
+        .lst-kix_list_6-6>li:before {
+            content: ""counter(lst-ctn-kix_list_6-6, decimal) ". "
+        }
+
+        ol.lst-kix_list_1-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-7>li:before {
+            content: ""counter(lst-ctn-kix_list_2-7, lower-latin) ". "
+        }
+
+        .lst-kix_list_2-7>li {
+            counter-increment: lst-ctn-kix_list_2-7
+        }
+
+        ol.lst-kix_list_1-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-4>li:before {
+            content: ""counter(lst-ctn-kix_list_7-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_7-6>li:before {
+            content: ""counter(lst-ctn-kix_list_7-6, decimal) ". "
+        }
+
+        ol.lst-kix_list_1-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-5>li:before {
+            content: ""counter(lst-ctn-kix_list_2-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_6-2.start {
+            counter-reset: lst-ctn-kix_list_6-2 0
+        }
+
+        ol.lst-kix_list_1-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-2>li:before {
+            content: ""counter(lst-ctn-kix_list_7-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_7-6>li {
+            counter-increment: lst-ctn-kix_list_7-6
+        }
+
+        ol.lst-kix_list_3-0.start {
+            counter-reset: lst-ctn-kix_list_3-0 0
+        }
+
+        .lst-kix_list_5-7>li {
+            counter-increment: lst-ctn-kix_list_5-7
+        }
+
+        .lst-kix_list_7-7>li {
+            counter-increment: lst-ctn-kix_list_7-7
+        }
+
+        .lst-kix_list_7-8>li:before {
+            content: ""counter(lst-ctn-kix_list_7-8, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_1-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_1-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-8>li {
+            counter-increment: lst-ctn-kix_list_7-8
+        }
+
+        ol.lst-kix_list_2-5.start {
+            counter-reset: lst-ctn-kix_list_2-5 0
+        }
+
+        li.li-bullet-1:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        .lst-kix_list_2-6>li {
+            counter-increment: lst-ctn-kix_list_2-6
+        }
+
+        .lst-kix_list_4-1>li:before {
+            content: "o  "
+        }
+
+        ol.lst-kix_list_7-3.start {
+            counter-reset: lst-ctn-kix_list_7-3 0
+        }
+
+        .lst-kix_list_4-3>li:before {
+            content: "\0025aa  "
+        }
+
+        .lst-kix_list_4-5>li:before {
+            content: "\0025aa  "
+        }
+
+        ol.lst-kix_list_5-7.start {
+            counter-reset: lst-ctn-kix_list_5-7 0
+        }
+
+        .lst-kix_list_1-8>li {
+            counter-increment: lst-ctn-kix_list_1-8
+        }
+
+        ol.lst-kix_list_1-4.start {
+            counter-reset: lst-ctn-kix_list_1-4 0
+        }
+
+        .lst-kix_list_5-5>li {
+            counter-increment: lst-ctn-kix_list_5-5
+        }
+
+        .lst-kix_list_3-5>li {
+            counter-increment: lst-ctn-kix_list_3-5
+        }
+
+        ol.lst-kix_list_1-1.start {
+            counter-reset: lst-ctn-kix_list_1-1 0
+        }
+
+        .lst-kix_list_3-4>li {
+            counter-increment: lst-ctn-kix_list_3-4
+        }
+
+        .lst-kix_list_6-4>li {
+            counter-increment: lst-ctn-kix_list_6-4
+        }
+
+        .lst-kix_list_6-3>li {
+            counter-increment: lst-ctn-kix_list_6-3
+        }
+
+        ol.lst-kix_list_1-3.start {
+            counter-reset: lst-ctn-kix_list_1-3 0
+        }
+
+        ol.lst-kix_list_2-8.start {
+            counter-reset: lst-ctn-kix_list_2-8 0
+        }
+
+        ol.lst-kix_list_1-2.start {
+            counter-reset: lst-ctn-kix_list_1-2 0
+        }
+
+        ol.lst-kix_list_7-6.start {
+            counter-reset: lst-ctn-kix_list_7-6 0
+        }
+
+        ol.lst-kix_list_6-1.start {
+            counter-reset: lst-ctn-kix_list_6-1 0
+        }
+
+        .lst-kix_list_1-1>li:before {
+            content: ""counter(lst-ctn-kix_list_1-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_1-3>li:before {
+            content: ""counter(lst-ctn-kix_list_1-3, decimal) ". "
+        }
+
+        .lst-kix_list_1-7>li:before {
+            content: ""counter(lst-ctn-kix_list_1-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_5-8.start {
+            counter-reset: lst-ctn-kix_list_5-8 0
+        }
+
+        ol.lst-kix_list_2-7.start {
+            counter-reset: lst-ctn-kix_list_2-7 0
+        }
+
+        .lst-kix_list_1-3>li {
+            counter-increment: lst-ctn-kix_list_1-3
+        }
+
+        .lst-kix_list_1-5>li:before {
+            content: ""counter(lst-ctn-kix_list_1-5, lower-roman) ". "
+        }
+
+        .lst-kix_list_5-6>li {
+            counter-increment: lst-ctn-kix_list_5-6
+        }
+
+        ol.lst-kix_list_7-5.start {
+            counter-reset: lst-ctn-kix_list_7-5 0
+        }
+
+        .lst-kix_list_2-1>li:before {
+            content: ""counter(lst-ctn-kix_list_2-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_6-0.start {
+            counter-reset: lst-ctn-kix_list_6-0 0
+        }
+
+        .lst-kix_list_2-3>li:before {
+            content: ""counter(lst-ctn-kix_list_2-3, decimal) ". "
+        }
+
+        ol.lst-kix_list_3-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_3-1>li {
+            counter-increment: lst-ctn-kix_list_3-1
+        }
+
+        ol.lst-kix_list_3-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-4.start {
+            counter-reset: lst-ctn-kix_list_3-4 0
+        }
+
+        .lst-kix_list_5-1>li {
+            counter-increment: lst-ctn-kix_list_5-1
+        }
+
+        ol.lst-kix_list_3-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-1>li {
+            counter-increment: lst-ctn-kix_list_1-1
+        }
+
+        .lst-kix_list_7-1>li {
+            counter-increment: lst-ctn-kix_list_7-1
+        }
+
+        ol.lst-kix_list_2-6.start {
+            counter-reset: lst-ctn-kix_list_2-6 0
+        }
+
+        .lst-kix_list_3-0>li:before {
+            content: "("counter(lst-ctn-kix_list_3-0, lower-latin) ") "
+        }
+
+        ol.lst-kix_list_7-7.start {
+            counter-reset: lst-ctn-kix_list_7-7 0
+        }
+
+        .lst-kix_list_3-1>li:before {
+            content: ""counter(lst-ctn-kix_list_3-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_3-2>li:before {
+            content: ""counter(lst-ctn-kix_list_3-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_8-1>li:before {
+            content: "o  "
+        }
+
+        ol.lst-kix_list_1-8.start {
+            counter-reset: lst-ctn-kix_list_1-8 0
+        }
+
+        .lst-kix_list_8-2>li:before {
+            content: "\0025aa  "
+        }
+
+        .lst-kix_list_6-0>li {
+            counter-increment: lst-ctn-kix_list_6-0
+        }
+
+        .lst-kix_list_3-5>li:before {
+            content: ""counter(lst-ctn-kix_list_3-5, lower-roman) ". "
+        }
+
+        .lst-kix_list_3-4>li:before {
+            content: ""counter(lst-ctn-kix_list_3-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_3-3>li:before {
+            content: ""counter(lst-ctn-kix_list_3-3, decimal) ". "
+        }
+
+        ol.lst-kix_list_3-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_8-0>li:before {
+            content: "-  "
+        }
+
+        ol.lst-kix_list_3-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_8-7>li:before {
+            content: "o  "
+        }
+
+        .lst-kix_list_3-8>li:before {
+            content: ""counter(lst-ctn-kix_list_3-8, lower-roman) ". "
+        }
+
+        .lst-kix_list_8-5>li:before {
+            content: "\0025aa  "
+        }
+
+        .lst-kix_list_8-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_2-0>li {
+            counter-increment: lst-ctn-kix_list_2-0
+        }
+
+        .lst-kix_list_8-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_3-6>li:before {
+            content: ""counter(lst-ctn-kix_list_3-6, decimal) ". "
+        }
+
+        .lst-kix_list_3-7>li:before {
+            content: ""counter(lst-ctn-kix_list_3-7, lower-latin) ". "
+        }
+
+        .lst-kix_list_8-4>li:before {
+            content: "o  "
+        }
+
+        ol.lst-kix_list_5-0.start {
+            counter-reset: lst-ctn-kix_list_5-0 0
+        }
+
+        .lst-kix_list_8-8>li:before {
+            content: "\0025aa  "
+        }
+
+        ol.lst-kix_list_2-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-2.start {
+            counter-reset: lst-ctn-kix_list_7-2 0
+        }
+
+        ol.lst-kix_list_2-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_4-8>li:before {
+            content: "\0025aa  "
+        }
+
+        ol.lst-kix_list_6-4.start {
+            counter-reset: lst-ctn-kix_list_6-4 0
+        }
+
+        .lst-kix_list_4-7>li:before {
+            content: "\0025aa  "
+        }
+
+        ul.lst-kix_list_4-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-6.start {
+            counter-reset: lst-ctn-kix_list_5-6 0
+        }
+
+        ul.lst-kix_list_4-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_4-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-3>li {
+            counter-increment: lst-ctn-kix_list_7-3
+        }
+
+        ul.lst-kix_list_4-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_4-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_3-3.start {
+            counter-reset: lst-ctn-kix_list_3-3 0
+        }
+
+        ul.lst-kix_list_4-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_4-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_4-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_2-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_4-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_7-8.start {
+            counter-reset: lst-ctn-kix_list_7-8 0
+        }
+
+        ol.lst-kix_list_7-1.start {
+            counter-reset: lst-ctn-kix_list_7-1 0
+        }
+
+        .lst-kix_list_3-3>li {
+            counter-increment: lst-ctn-kix_list_3-3
+        }
+
+        ol.lst-kix_list_6-3.start {
+            counter-reset: lst-ctn-kix_list_6-3 0
+        }
+
+        ol.lst-kix_list_5-5.start {
+            counter-reset: lst-ctn-kix_list_5-5 0
+        }
+
+        .lst-kix_list_7-0>li:before {
+            content: "("counter(lst-ctn-kix_list_7-0, lower-latin) ") "
+        }
+
+        .lst-kix_list_2-2>li {
+            counter-increment: lst-ctn-kix_list_2-2
+        }
+
+        .lst-kix_list_6-2>li {
+            counter-increment: lst-ctn-kix_list_6-2
+        }
+
+        ol.lst-kix_list_5-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-6>li:before {
+            content: ""counter(lst-ctn-kix_list_2-6, decimal) ". "
+        }
+
+        .lst-kix_list_3-7>li {
+            counter-increment: lst-ctn-kix_list_3-7
+        }
+
+        ol.lst-kix_list_5-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-4>li:before {
+            content: ""counter(lst-ctn-kix_list_2-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_2-8>li:before {
+            content: ""counter(lst-ctn-kix_list_2-8, lower-roman) ". "
+        }
+
+        .lst-kix_list_7-1>li:before {
+            content: ""counter(lst-ctn-kix_list_7-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_7-5>li:before {
+            content: ""counter(lst-ctn-kix_list_7-5, lower-roman) ". "
+        }
+
+        .lst-kix_list_6-6>li {
+            counter-increment: lst-ctn-kix_list_6-6
+        }
+
+        ol.lst-kix_list_5-4.start {
+            counter-reset: lst-ctn-kix_list_5-4 0
+        }
+
+        .lst-kix_list_7-3>li:before {
+            content: ""counter(lst-ctn-kix_list_7-3, decimal) ". "
+        }
+
+        ol.lst-kix_list_5-1.start {
+            counter-reset: lst-ctn-kix_list_5-1 0
+        }
+
+        ol.lst-kix_list_5-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_6-7>li {
+            counter-increment: lst-ctn-kix_list_6-7
+        }
+
+        ol.lst-kix_list_5-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-7>li {
+            counter-increment: lst-ctn-kix_list_1-7
+        }
+
+        ol.lst-kix_list_3-8.start {
+            counter-reset: lst-ctn-kix_list_3-8 0
+        }
+
+        ol.lst-kix_list_5-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-7>li:before {
+            content: ""counter(lst-ctn-kix_list_7-7, lower-latin) ". "
+        }
+
+        .lst-kix_list_7-5>li {
+            counter-increment: lst-ctn-kix_list_7-5
+        }
+
+        .lst-kix_list_5-8>li {
+            counter-increment: lst-ctn-kix_list_5-8
+        }
+
+        .lst-kix_list_4-0>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_3-8>li {
+            counter-increment: lst-ctn-kix_list_3-8
+        }
+
+        ol.lst-kix_list_6-8.start {
+            counter-reset: lst-ctn-kix_list_6-8 0
+        }
+
+        ol.lst-kix_list_1-7.start {
+            counter-reset: lst-ctn-kix_list_1-7 0
+        }
+
+        .lst-kix_list_4-4>li:before {
+            content: "\0025aa  "
+        }
+
+        ol.lst-kix_list_2-2.start {
+            counter-reset: lst-ctn-kix_list_2-2 0
+        }
+
+        .lst-kix_list_1-5>li {
+            counter-increment: lst-ctn-kix_list_1-5
+        }
+
+        ol.lst-kix_list_6-5.start {
+            counter-reset: lst-ctn-kix_list_6-5 0
+        }
+
+        .lst-kix_list_4-2>li:before {
+            content: "\0025aa  "
+        }
+
+        .lst-kix_list_4-6>li:before {
+            content: "\0025aa  "
+        }
+
+        ol.lst-kix_list_7-0.start {
+            counter-reset: lst-ctn-kix_list_7-0 0
+        }
+
+        .lst-kix_list_2-4>li {
+            counter-increment: lst-ctn-kix_list_2-4
+        }
+
+        ol.lst-kix_list_6-7.start {
+            counter-reset: lst-ctn-kix_list_6-7 0
+        }
+
+        ol.lst-kix_list_3-6.start {
+            counter-reset: lst-ctn-kix_list_3-6 0
+        }
+
+        .lst-kix_list_5-3>li {
+            counter-increment: lst-ctn-kix_list_5-3
+        }
+
+        .lst-kix_list_7-4>li {
+            counter-increment: lst-ctn-kix_list_7-4
+        }
+
+        .lst-kix_list_1-0>li:before {
+            content: ""counter(lst-ctn-kix_list_1-0, decimal) ". "
+        }
+
+        .lst-kix_list_1-2>li:before {
+            content: ""counter(lst-ctn-kix_list_1-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_2-0.start {
+            counter-reset: lst-ctn-kix_list_2-0 0
+        }
+
+        .lst-kix_list_1-4>li:before {
+            content: ""counter(lst-ctn-kix_list_1-4, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_3-5.start {
+            counter-reset: lst-ctn-kix_list_3-5 0
+        }
+
+        .lst-kix_list_1-0>li {
+            counter-increment: lst-ctn-kix_list_1-0
+        }
+
+        .lst-kix_list_1-6>li {
+            counter-increment: lst-ctn-kix_list_1-6
+        }
+
+        .lst-kix_list_1-6>li:before {
+            content: ""counter(lst-ctn-kix_list_1-6, decimal) ". "
+        }
+
+        li.li-bullet-0:before {
+            margin-left: -36pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 36pt
+        }
+
+        .lst-kix_list_2-0>li:before {
+            content: "("counter(lst-ctn-kix_list_2-0, lower-latin) ") "
+        }
+
+        ol.lst-kix_list_2-1.start {
+            counter-reset: lst-ctn-kix_list_2-1 0
+        }
+
+        .lst-kix_list_1-8>li:before {
+            content: ""counter(lst-ctn-kix_list_1-8, lower-roman) ". "
+        }
+
+        .lst-kix_list_2-2>li:before {
+            content: ""counter(lst-ctn-kix_list_2-2, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_5-2.start {
+            counter-reset: lst-ctn-kix_list_5-2 0
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c12 {
+            -webkit-text-decoration-skip: none;
+            color: #000000;
+            font-weight: 700;
+            text-decoration: underline;
+            vertical-align: baseline;
+            text-decoration-skip-ink: none;
+            font-size: 11pt;
+            font-family: "Calibri";
+            font-style: normal
+        }
+
+        .c2 {
+            margin-left: 18pt;
+            padding-top: 0pt;
+            padding-left: 18pt;
+            padding-bottom: 0pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c8 {
+            margin-left: 36pt;
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: justify;
+            height: 11pt
+        }
+
+        .c3 {
+            margin-left: 72pt;
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: justify;
+            height: 11pt
+        }
+
+        .c10 {
+            margin-left: 54pt;
+            padding-top: 0pt;
+            padding-left: 18pt;
+            padding-bottom: 0pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c6 {
+            margin-left: 36pt;
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Calibri";
+            font-style: normal
+        }
+
+        .c9 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Calibri";
+            font-style: normal
+        }
+
+        .c1 {
+            padding-top: 0pt;
+            padding-bottom: 8pt;
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c5 {
+            padding-top: 0pt;
+            padding-bottom: 8pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: justify
+        }
+
+        .c14 {
+            padding-top: 0pt;
+            padding-bottom: 8pt;
+            line-height: 1.0791666666666666;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c17 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #0563c1;
+            text-decoration: underline
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            max-width: 451.3pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c13 {
+            margin-left: 18pt;
+            padding-left: 18pt
+        }
+
+        .c4 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c11 {
+            margin-left: 18pt;
+            padding-left: 0pt
+        }
+
+        .c7 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c18 {
+            background-color: #ffff00
+        }
+
+        .c15 {
+            font-weight: 700
+        }
+
+        .title {
+            padding-top: 24pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 36pt;
+            padding-bottom: 6pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 18pt;
+            color: #666666;
+            font-size: 24pt;
+            padding-bottom: 4pt;
+            font-family: "Georgia";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Calibri"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Calibri"
+        }
+
+        h1 {
+            padding-top: 24pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 24pt;
+            padding-bottom: 6pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 18pt;
+            padding-bottom: 4pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 14pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 12pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 12pt;
+            padding-bottom: 2pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 11pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 11pt;
+            padding-bottom: 2pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 10pt;
+            color: #000000;
+            font-weight: 700;
+            font-size: 10pt;
+            padding-bottom: 2pt;
+            font-family: "Calibri";
+            line-height: 1.0791666666666666;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+        <link rel="stylesheet" href="../archive/new.css">
+        <link rel="stylesheet" href="../archive/privacy.css">
+</head>
+
+<body class="">
+        <div id="navmenu">
+           <!--  <div class="topnavmen">
+                <img src="archive/xp-network.png" class="navblogo" />
+                <img src="archive/closenav.svg" id="closenav">
+            </div>
+            <a href="/token-metrics">Token Metrics</a>
+            <a href="/roadmap">Roadmap</a>
+            <a href="/whitepaper">Whitepaper</a>
+            <a href="/team">Team</a>
+            <div class="footer-socials">
+                <a target="_blank" href="https://t.me/xp_network"><img src='/greytele.svg'/></a>
+                <a target="_blank" href="https://www.linkedin.com/company/xp-network/"><img src='/greylin.svg'/></a>
+                <a target="_blank" href="https://xpnetwork.medium.com/"><img src='/mediumocin.svg'/></a>
+                <a target="_blank" href="https://twitter.com/xpnetwork_"><img src='/greytwit.svg'/></a>
+                <a target="_blank" href="https://github.com/xp-network"><img src='/greygit.svg'/></a>
+            </div> -->
+        </div>
+    <div class="lasdaca11">
+
+    <nav>
+        <div class="max-container navbar team-navbar">
+            <!-- <a href="/"><img src="archive/xp-network.png" /></a> -->
+            <!-- <div class="navigation">
+                <a href="/token-metrics">Token Metrics</a>
+                <a href="/roadmap">Roadmap</a>
+                <a href="/whitepaper">Whitepaper</a>
+                <a href="/team">Team</a>
+                
+            </div>
+            <img id="menu" src="archive/burger.svg" /> -->
+ 
+        </div>
+    </nav>
+</div>
+
+    <div class="c16">
+
+        <h1>
+            <p class="c14"><span class="">Privacy Policy</span></p>
+        </h1>
+    
+        <p class="c5"><span class="c0">We recognise our responsibilities in relation to the collection, holding, processing,
+                use and/or transfer of personal data. Your privacy is of utmost importance to us.</span></p>
+        <p class="c5"><span>This policy (the </span><span class="c15">Policy</span><span>) outlines how we collect, use,
+                store and disclose your personal data. Please take a moment to read about how we collect, use and/or
+                disclose your personal data so that you know and understand the purposes for which we may collect, use
+                and/or disclose your personal data. By accessing the website at </span><span class="c17"><a class="c7"
+                    href="https://xp.network">https://xp.network</a></span><span>&nbsp;(the
+            </span><span class="c15">Website</span><span>), you agree and consent to XPDIEM LABS LTD. (the </span><span
+                class="c15">Company</span><span class="c0">), its related corporations, business units and affiliates, as
+                well as their respective representatives and/or agents (collectively referred to herein as
+                &ldquo;COMPANY&rdquo;, &ldquo;us&rdquo;, &ldquo;we&rdquo; or &ldquo;our&rdquo;), collecting, using,
+                disclosing and sharing amongst themselves the personal data, and to disclosing such personal data to
+                relevant third party providers. This Policy supplements but does not supersede nor replace any other consent
+                which you may have previously provided to us nor does it affect any rights that we may have at law in
+                connection with the collection, use and/or disclosure of your personal data. We may from time to time update
+                this Policy to ensure that this Policy is consistent with our future developments, industry trends and/or
+                any changes in legal or regulatory requirements. Subject to your rights at law, the prevailing terms of this
+                Policy shall apply. For the avoidance of doubt, this Policy forms part of the terms and conditions governing
+                your relationship with us and should be read in conjunction with such terms and conditions.</span></p>
+        <p class="c5"><span class="c0">The security of your personal data is important to us. At each stage of data
+                collection, use and disclosure, COMPANY has in place physical, electronic, administrative and procedural
+                safeguards to protect the personal data stored with us. However, do note that no transmission of personal
+                data over the internet can be guaranteed to be 100% secure &ndash; accordingly and despite our efforts,
+                COMPANY cannot guarantee or warrant the security of any information you transmit to us, or to or from our
+                online services. COMPANY shall not have any responsibility or liability for the security of information
+                transmitted via the internet.</span></p>
+        <p class="c5"><span class="c0">This Policy describes how COMPANY may collect, use, disclose, process and manage your
+                personal data, and applies to any individual&rsquo;s personal data which is in our possession or under our
+                control.</span></p>
+        <p class="c5 c12311"><span class="c9">1.1 What personal data is collected by
+                COMPANY</span></p>
+        <p class="c5"><span class="c0">&quot;Personal data&quot; means data, whether true or not, about an individual who
+                can be identified&nbsp;(i) from that data, or (ii) from that data and other information to which the
+                organisation has or is likely to have access. Some examples of personal data that COMPANY may collect
+                are:</span></p>
+        <ol class="c4 lst-kix_list_2-0 start" start="1">
+            <li class="c2 li-bullet-0"><span class="c0">personal particulars (e.g. name, contact details, residential
+                    address, date of birth, identity card/passport details, social media handles and other social media
+                    profile information, and/or education details);</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">financial details (e.g. income, expenses, credit history and/or
+                    credit card and bank information);</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">images and voice recordings of our conversations with you, whether
+                    from our events or office surveillances or otherwise;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">work experience and employment details (e.g. occupation,
+                    directorships and other positions held, employment history, salary, and/or benefits);</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">tax and insurance information;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">information about your risk profile, investments, investment
+                    objectives, knowledge and experience and/or business interests and assets;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">information about your use of our services and Website;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">usernames and password, third party account credentials (such as
+                    your Facebook login credentials, Google login credentials) and IP address;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">banking information (e.g. account numbers and banking
+                    transactions);</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">private or public cryptographic key relating to addresses on
+                    distributed ledger networks and/or similar information; and/or</span></li>
+            <li class="c5 c13 li-bullet-0"><span class="c0">personal opinions made known to us (e.g. feedback or responses
+                    to surveys).</span></li>
+        </ol>
+        <p class="c5"><span class="c0">Personal data may be collected when you interact with our services or use the
+                Website, or may be received by COMPANY from third-party databases or service providers that provide business
+                information.</span></p>
+        <p class="c5 c12311"><span class="c9">1.2 Purposes for collection, use and
+                disclosure of your personal data</span></p>
+        <p class="c5"><span class="c0">COMPANY may collect, use and/or disclose your personal data for its business
+                purposes, including operations for these purposes. These may include, without limitation, the
+                following:</span></p>
+        <ol class="c4 lst-kix_list_3-0 start" start="1">
+            <li class="c2 li-bullet-0"><span class="c0">developing and providing facilities, products or services (whether
+                    made available by us or through us), including but not limited to:</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0 start" start="1">
+            <li class="c10 li-bullet-0"><span class="c0">sale of digital tokens or virtual currencies;</span></li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="2">
+            <li class="c10 li-bullet-0"><span class="c0">acting as intermediaries through any blockchain, network or
+                    platform developed or managed by us;</span></li>
+        </ol>
+        <p class="c6"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="3">
+            <li class="c10 li-bullet-0"><span class="c0">recording and/or encryption on any blockchain, network or platform
+                    developed or managed by us;</span></li>
+        </ol>
+        <p class="c6"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="4">
+            <li class="c10 li-bullet-0"><span class="c0">promoting advertisements or marketing material, whether from us or
+                    third parties;</span></li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="5">
+            <li class="c10 li-bullet-0"><span class="c0">various products and/or services (whether digital or not, and
+                    whether provided through an external service provider or otherwise);</span></li>
+        </ol>
+        <p class="c3"><span class="c0 c18"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="6">
+            <li class="c10 li-bullet-0"><span class="c0">providing, managing or accessing digital wallets for holding
+                    digital assets;</span></li>
+        </ol>
+        <p class="c6"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="7">
+            <li class="c10 li-bullet-0"><span class="c0">making payments to you for participation in any blockchain, network
+                    or platform developed or managed by us (as applicable);</span></li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="8">
+            <li class="c10 li-bullet-0"><span class="c0">services for development and deploying of various decentralised
+                    applications, products and/or services;</span></li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="9">
+            <li class="c10 li-bullet-0"><span class="c0">various products and/or services related to digital assets;</span>
+            </li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="10">
+            <li class="c10 li-bullet-0"><span class="c0">any escrow, courier, anti-counterfeiting or dispute resolution
+                    services;</span></li>
+        </ol>
+        <p class="c3"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="11">
+            <li class="c10 li-bullet-0"><span class="c0">transactions and clearing or reporting on these
+                    transactions;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="12">
+            <li class="c10 li-bullet-0"><span class="c0">carrying out research, planning and statistical analysis;
+                    and/or</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_6-0" start="13">
+            <li class="c10 li-bullet-0"><span class="c0">analytics for the purposes of developing or improving our products,
+                    services, security, service quality, staff training, and advertising strategies;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="2">
+            <li class="c2 li-bullet-0"><span class="c0">assessing and processing applications, instructions, transactions,
+                    or requests from you or our customers;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="3">
+            <li class="c2 li-bullet-0"><span class="c0">communicating with you, including providing you with updates on
+                    changes to products, services and banking facilities (whether made available by us or through us)
+                    including any additions, expansions, suspensions and replacements of or to such products, services and
+                    banking facilities and their terms and conditions;</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">managing our infrastructure and business operations and complying
+                    with internal policies and procedures;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="5">
+            <li class="c2 li-bullet-0"><span class="c0">responding to queries or feedback;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="6">
+            <li class="c2 li-bullet-0"><span class="c0">addressing or investigating any complaints, claims or
+                    disputes;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="7">
+            <li class="c2 li-bullet-0"><span class="c0">verifying your identity for the purposes of providing facilities,
+                    products or services, which would require comparison of your personal information against third party
+                    databases and/or provision of such information to third party service providers;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="8">
+            <li class="c2 li-bullet-0"><span class="c0">conducting credit checks, screenings or due diligence checks as may
+                    be required under applicable law, regulation or directive;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="9">
+            <li class="c2 li-bullet-0"><span class="c0">complying with all applicable laws, regulations, rules, directives,
+                    orders, instructions and requests from any local or foreign authorities, including regulatory,
+                    governmental, tax and law enforcement authorities or other authorities;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="10">
+            <li class="c2 li-bullet-0"><span class="c0">enforcing obligations owed to us;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="11">
+            <li class="c2 li-bullet-0"><span class="c0">monitoring products and services provided by or made available
+                    through us;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="12">
+            <li class="c2 li-bullet-0"><span class="c0">complying with obligations and requirements imposed by us from time
+                    to time by any credit bureau or credit information sharing services of which we are a member or
+                    subscriber;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="13">
+            <li class="c2 li-bullet-0"><span class="c0">creating and maintaining credit and risk related models;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="14">
+            <li class="c2 li-bullet-0"><span class="c0">financial reporting, regulatory reporting, management reporting,
+                    risk management (including monitoring credit exposures, preventing, detecting and investigating crime,
+                    including fraud and any form of financial crime), audit and record keeping purposes;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="15">
+            <li class="c2 li-bullet-0"><span class="c0">enabling any actual or proposed assignee or transferee, participant
+                    or sub-participant of COMPANY&#39;s rights or obligations to evaluate any proposed transaction;</span>
+            </li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="16">
+            <li class="c2 li-bullet-0"><span class="c0">enforcing obligations owed to us; and/or</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_3-0" start="17">
+            <li class="c5 c13 li-bullet-0"><span class="c0">seeking professional advice, including legal or tax
+                    advice.</span></li>
+        </ol>
+        <p class="c5"><span class="c0">We may also use personal data for purposes set out in the terms and conditions that
+                govern our relationship with you or our customer.</span></p>
+        <p class="c1"><span class="c9">1.3 Use of personal data for marketing
+                purposes</span></p>
+        <p class="c1"><span class="c0">We may use your personal data to offer you products or services, including special
+                offers, promotions, contests or entitlements that may be of interest to you or for which you may be
+                eligible. Such marketing messages may be sent to you in various modes including but not limited to
+                electronic mail, direct mailers, short message service, telephone calls, facsimile and other mobile
+                messaging services. In doing so, we will comply with all applicable data protection and privacy laws.</span>
+        </p>
+        <p class="c5"><span class="c0">In respect of sending telemarketing messages to your telephone number via short
+                message service, telephone calls, facsimile and other mobile messaging services, please be assured that we
+                shall only do so if we have your clear and unambiguous consent in writing or other recorded form to do so or
+                if you have not otherwise made the appropriate registration of that number with the Do Not Call Registry. If
+                we have an ongoing relationship with you and you have not indicated to us that you do not wish to receive
+                telemarketing messages sent to your telephone number, we may send you telemarketing messages to that number
+                related to the subject of our ongoing relationship via short message service, facsimile and other mobile
+                messaging services (other than a voice or video call).</span></p>
+        <p class="c5"><span class="c0">You may at any time request that we stop contacting you for marketing purposes via
+                selected or all modes.</span></p>
+        <p class="c5"><span class="c0">To find out more on how you can change the way we use your personal data for
+                marketing purposes, please contact us.</span></p>
+        <p class="c5"><span class="c0">Nothing in this section shall vary or supersede the terms and conditions that govern
+                our relationship with you.</span></p>
+        <p class="c5 c12311"><span class="c9">1.4 Disclosure and sharing of personal
+                data</span></p>
+        <p class="c5"><span class="c0">We may from time to time and in compliance with all applicable laws on data privacy,
+                disclose your personal data to any personnel of COMPANY or to third parties (including without limitation
+                banks, financial institutions, credit card companies, credit bureaus and their respective service providers,
+                companies providing services relating to insurance and/or reinsurance to us, and associations of insurance
+                companies, agents, contractors or third party service providers who provide services to us such as
+                telecommunications, information technology, payment, data processing, storage and archival, and our
+                professional advisers such as our auditors and lawyers, and regulators and authorities), located in any
+                jurisdiction, in order to carry out the purposes set out above. Please be assured that when we disclose your
+                personal data to such parties, we require them to ensure that any personal data disclosed to them are kept
+                confidential and secure.</span></p>
+        <p class="c5"><span class="c0">For more information about the third parties with whom we share your personal data,
+                you may, where appropriate, wish to refer to the agreement(s) and/or terms and conditions that govern our
+                relationship with you or our customer. You may also contact us for more information (please see section 1.9
+                below).</span></p>
+        <p class="c5"><span class="c0">We wish to emphasise that COMPANY does not sell personal data to any third parties
+                and we shall remain fully compliant of any duty or obligation of confidentiality imposed on us under the
+                applicable agreement(s) and/or terms and conditions that govern our relationship with you or our customer or
+                any applicable law.</span></p>
+        <p class="c5"><span class="c0">You are responsible for ensuring that the personal data you provide to us is
+                accurate, complete, and not misleading and that such personal data is kept up to date. You acknowledge that
+                failure on your part to do so may result in our inability to provide you with the products and services you
+                have requested. To update your personal data, please contact us (please see section 1.9 below for contact
+                details). Where you provide us with personal data concerning individuals other than yourself, you are
+                responsible for obtaining all legally required consents from the concerned individuals and you shall retain
+                proof of such consent(s), such proof to be provided to us upon our request.</span></p>
+        <p class="c5"><span class="c0">We may transfer, store, process and/or deal with your personal data in any
+                jurisdiction. In doing so, we will comply with all applicable data protection and privacy laws.</span></p>
+        <p class="c5 c12311"><span class="c9">1.5 Cookies and related
+                technologies</span></p>
+        <p class="c5"><span class="c0">The Website uses cookies. A cookie is a small text file placed on your computer or
+                mobile device when you visit a Website or use an app. Cookies collect information about users and their
+                visit to the Website or use of the app, such as their Internet protocol (IP) address, how they arrived at
+                the Website (for example, through a search engine or a link from another Website), how they navigate within
+                the Website or app, browser information, computer or device type, operating system, internet service
+                provider, website usage, referring/exit pages, platform type, date/time stamp, number of clicks, and ads
+                viewed. We use cookies and other technologies to facilitate your internet sessions and use of our apps,
+                offer you products and/or services according to your preferred settings, track use of our websites and apps
+                and to compile statistics about activities carried out on our websites.</span></p>
+        <p class="c5"><span class="c0">You may set up your web browser to block cookies from monitoring your website visit.
+                You may also remove cookies stored from your computer or mobile device. However, if you do block cookies you
+                may not be able to use certain features and functions of our web sites.</span></p>
+        <p class="c5 c12311"><span class="c9">1.6 Other web sites</span></p>
+        <p class="c5"><span class="c0">Our websites may contain links to other websites which are not maintained by COMPANY.
+                This Policy only applies to the websites of COMPANY. When visiting these third party websites, you should
+                read their privacy policies which will apply to your use of such websites.</span></p>
+        <p class="c5 c12311"><span class="c9">1.7 Retention of personal data</span>
+        </p>
+        <p class="c5"><span class="c0">Your personal data is retained as long as the purpose for which it was collected
+                remains and until it is no longer necessary for any legal or business purposes.</span></p>
+        <p class="c5 c12311"><span class="c9">1.8 Queries, Access/Correction
+                Requests and Withdrawal of Consent</span></p>
+        <p class="c5"><span class="c0">If you:</span></p>
+        <ol class="c4 lst-kix_list_5-0 start" start="1">
+            <li class="c2 li-bullet-0"><span class="c0">have queries about our data protection processes and
+                    practices;</span></li>
+        </ol>
+        <p class="c8"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_5-0" start="2">
+            <li class="c2 li-bullet-0"><span class="c0">wish to request access to and/or make corrections to your personal
+                    data in our possession or under our control; or</span></li>
+        </ol>
+        <p class="c6"><span class="c0"></span></p>
+        <ol class="c4 lst-kix_list_5-0" start="3">
+            <li class="c5 c13 li-bullet-0"><span class="c0">wish to withdraw your consent to our collection, use or
+                    disclosure of your personal data, </span></li>
+        </ol>
+        <p class="c5"><span class="c0">please submit a written request (with supporting documents, (if any) to our
+                Compliance Officer at: <a href="mailto:compliance@xp.network">compliance@xp.network</a>&nbsp;Our Compliance Officer shall endeavour to respond to you
+                within 30 days of your submission. Please note that if you withdraw your consent to any or all use or
+                disclosure of your personal data, depending on the nature of your request, we may not be in a position to
+                continue to provide our services or products to you or administer any contractual relationship in place.
+                Such withdrawal may also result in the termination of any agreement you may have with us. Our legal rights
+                and remedies are expressly reserved in such event.</span></p>
+        <p class="c5"><span class="c0">We may charge you a fee for processing your request for access. Such a fee depends on
+                the nature and complexity of your access request. Information on the processing fee will be made available
+                to you.</span></p>
+        <p class="c1"><span class="c9">1.9 Contact information</span></p>
+        <p class="c1"><span class="c0">To contact us on any aspect of this Policy or your personal data or to provide any
+                feedback that you may have, please contact our Compliance Officer at <a href="mailto:compliance@xp.network">compliance@xp.network</a>.</span></p>
+        <p class="c1"><span class="c9">1.10 Governing Law and
+                Jurisdiction</span></p>
+        <p class="c1"><span class="c0">This Policy and your use of the Website shall be governed and construed in accordance
+                with the laws of Singapore. You agree to submit to the exclusive jurisdiction of the Singapore
+                courts.</span></p>
+        <p class="c1"><span class="c9">1.11 Amendments and updates to COMPANY
+                Privacy Policy</span></p>
+        <p class="c1"><span class="c0">We reserve the right to amend this Policy from time to time to ensure that this
+                Policy is consistent with any developments to the way COMPANY uses your personal data or any changes to the
+                laws and regulations applicable to COMPANY. We will make available the updated Policy on the Website. You
+                are encouraged to visit the Website from time to time to ensure that you are well informed of our latest
+                policies in relation to personal data protection. All communications, transactions and dealings with us
+                shall be subject to the latest version of this Policy in force at the time.</span></p>
+        <p class="c1"><span class="c9">1.12 For European Union or European
+                Economic Area Residents</span></p>
+        <p class="c1"><span class="c0">This section applies if you are an individual located in the European Union or
+                European Economic Area. Subject to applicable law, you have the following additional rights in relation to
+                your personal data:</span></p>
+        <ol class="c4 lst-kix_list_7-0 start" start="1">
+            <li class="c5 c11 li-bullet-1"><span class="c0">the right to access your personal data (if you ask us, we will
+                    confirm whether we are processing your personal data in a structured, commonly used and machine-readable
+                    format and, if so, provide you with a copy of that personal data (along with certain other details). If
+                    you require additional copies, we may need to charge a reasonable fee;</span></li>
+            <li class="c5 c11 li-bullet-2"><span class="c0">the right to ensure the accuracy of your personal data;</span>
+            </li>
+            <li class="c5 c11 li-bullet-1"><span class="c0">the right to have us delete your personal data (we will do so in
+                    some circumstances, such as where we no longer need it, but do note that we may not delete your data
+                    when other interests outweigh your right to deletion);</span></li>
+            <li class="c5 c11 li-bullet-2"><span class="c0">the right to restrict further processing of your personal data
+                    (unless we demonstrate compelling legitimate grounds for the processing);</span></li>
+            <li class="c5 c11 li-bullet-2"><span class="c0">rights in relation to automated decision-making and profiling
+                    (you have the right to be free from decisions based solely on automated processing of your personal
+                    data, including profiling, that affect you, unless such processing is necessary for entering into, or
+                    the performance of, a contract between you and us or you provide your explicit consent to such
+                    processing);</span></li>
+            <li class="c5 c11 li-bullet-2"><span class="c0">the right to withdraw consent (if we rely on your consent to
+                    process your personal data, you have the right to withdraw that consent at any time, but provided always
+                    that this shall not affect the lawfulness of processing based on your prior consent); and</span></li>
+            <li class="c5 c11 li-bullet-2"><span class="c0">the right to complain to a supervisory authority in your country
+                    of residence in the event that data is misused.</span></li>
+        </ol>
+        <p class="c5"><span class="c0">If you believe that our processing of your personal information infringes data
+                protection laws, you have a legal right to lodge a complaint with a supervisory authority responsible for
+                data protection. You may do so in the EU member state of your residence, your place of work or the place of
+                the alleged infringement. You may exercise any of your rights in relation to your personal data by
+                contacting our Compliance Officer at: <a href="mailto:compliance@xp.network">compliance@xp.network</a></span></p>
+        <p class="c1"><span class="c9">1.13 Your acceptance of these
+                terms</span></p>
+        <p class="c1"><span class="c0">This Policy applies in conjunction with any other notices, contractual clauses and
+                consent clauses that apply in relation to the collection, use and disclosure of your personal data by us. We
+                may revise this Policy from time to time without any prior notice. You may determine if any such revision
+                has taken place by referring to the date on which this Policy was last updated.</span></p>
+        <p class="c1"><span class="c0">By using the Website and/or any services provided by COMPANY, you signify your
+                acceptance of this Policy and terms of service. If you do not agree to this Policy or terms of service,
+                please do not use the Website or any services provided by COMPANY. Your continued use of the Website
+                following the posting of changes to this Policy will be deemed your acceptance of those changes.</span></p>
+    </div>
+    <div class="lasdaca11">
+
+        <footer class="footert">
+            <img style="cursor: pointer;" onclick="window.location.href = '/'" class="footer-logo" src="../archive/xp-network.png" />
+    
+            <!-- <div class="footer-first">
+                <div class="footer-links">
+                    <div class="footer-menu">
+                        <p>Why XPDiem</p>
+                        <a href="">Features</a>
+                        <a href="">Use cases</a>
+                    </div>
+                    <div class="footer-menu">
+                        <p>Technology</p>
+                        <a href="">Features</a>
+                        <a href="">Use cases</a>
+                    </div>
+                    <div class="footer-menu">
+                        <p>Product</p>
+                        <a href="">Github</a>
+                        <a href="">Whitepaper</a>
+                    </div>
+                    <div class="footer-menu">
+                        <p>Essentials</p>
+                        <a href="">Roadmap</a>
+                        <a href="">Team</a>
+                        <a href="">Token Metrics</a>
+                    </div>
+                </div>
+            </div> -->
+            <img src="../archive/footerline.svg" alt="" class="footer-line">
+            <div class="footer-first">
+                <div class="footerbottom">
+                    <div class="footerbot">
+                        <a href="/privacypolicy">Privacy Policy</a>
+                        <!-- <a>Terms of Use</a> -->
+                    </div>
+                    <p class="footerbottext">
+                        A blockchain-agnostic network for building NFT dApps
+                    </p>
+                    <p class="footerbottext allrightsres">© 2021 XP.network Ltd. All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-socials">
+                    <a target="_blank" href="https://t.me/xp_network"><img src='archive/greytele.svg'/></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/xp-network/"><img src='archive/greylin.svg'/></a>
+                    <a target="_blank" href="https://xpnetwork.medium.com/"><img src='archive/greymed.svg'/></a>
+                    <a target="_blank" href="https://twitter.com/xpnetwork_"><img src='archive/greytwit.svg'/></a>
+                    <a target="_blank" href="https://github.com/xp-network"><img src='archive/greygit.svg'/></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
