@@ -3218,3 +3218,11 @@ ul.xnet_b_logo li .livenow {
         top: -65px;
     }
 }
+input#telegram_link {
+    text-indent: 20px;
+}
+img.tele_icons {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+}

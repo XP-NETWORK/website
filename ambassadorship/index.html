@@ -150,6 +150,13 @@
                                     </div>
                                  </div>
                                  <div class="col-md-6">
+                                    <div class="inputs"> 
+                                       <img src="../assets/img/ambas/tg_icon.svg" class="tele_icons">
+                                       <input type="text" name="telegram_link" id="telegram_link" placeholder="Telegram account*" required>
+                                       <span class="invalid_text">Telegram account is required</span> 
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
                                     <div class="inputs">
                                        <select name="languages[]" multiple id="langOpt">
                                           <option value="English">English</option>
@@ -308,6 +315,7 @@
                var last_name  = jQuery("#last_name").val();
                var yourEmail  = jQuery("#yourEmail").val();
                var aboutme = jQuery("#additionalComent").val();
+               var telegram_txt = jQuery("#telegram_link").val();
                var language_multi = new Array();
                
                jQuery(".ms-options li input[type=checkbox]:checked").each(function(){
@@ -317,7 +325,7 @@
                });
                
            
-               if(first_name!="" && last_name!="" && yourEmail!="" && language_multi!=""){
+               if(first_name!="" && last_name!="" && yourEmail!="" && language_multi!="" &&telegram_txt!=""){
                  if( !isValidEmail(yourEmail) ) { 
                    jQuery("#yourEmail").next().next().css("visibility","visible");
                    jQuery("#yourEmail").next().next().css("opacity",1);
@@ -338,6 +346,7 @@
                            'lastName': last_name,
                            'email': yourEmail,
                            'languages': language_multi,
+                           'telegram':telegram_txt,
                            'aboutMe': aboutme
                        },
                        success: function(response) {
