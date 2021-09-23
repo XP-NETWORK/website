@@ -2363,19 +2363,18 @@ span.close_pop {
 */
 
 
-
 .road_map_slider .owl-stage:before {
     content: "";
     position: absolute;
     top: auto;
     bottom: 16px;
-    left: 70px;
+    left: -170px;
     width: auto;
-    right: 180px;
+    right: 0;
     display: block;
     height: 5px;
     background-image: url(assets/img/tech_page/map_line.svg);
-    background-size: 100% 100%;
+    background-size: 100% 139%;
 }
 
 .road_map_liner {
@@ -2456,7 +2455,7 @@ section.ecosystemArea .tech_banar_title {
     background: rgb(255 255 255 / 40%);
     border-radius: 10px;
     margin: 0 auto;
-    min-height: 262px;
+    min-height: 406px;
     position: relative;
     transition: 1s;
 }
